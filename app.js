@@ -96,7 +96,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK, TAN", ja: "BLACK/BLACK, TAN" },
@@ -123,7 +123,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK", ja: "BLACK/BLACK" },
@@ -150,7 +150,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK", ja: "BLACK/BLACK" },
@@ -177,7 +177,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK", ja: "BLACK/BLACK" },
@@ -396,7 +396,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road", "snow", "mixed"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Rubber',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK", ja: "BLACK/BLACK" },
@@ -424,7 +424,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "BLACK/WHITE", ja: "BLACK/WHITE" },
@@ -452,7 +452,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "BLACK/BLACK, BLACK/WHITE, TAN, NAVY, DARK BLUE, WHITE/LIGHT BLUE, WHITE/GREEN", ja: "BLACK/BLACK, BLACK/WHITE, TAN, NAVY, DARK BLUE, WHITE/LIGHT BLUE, WHITE/GREEN" },
@@ -565,7 +565,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road", "snow", "mixed"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Rubber',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK, DUSTY OLIVE", ja: "BLACK/BLACK, DUSTY OLIVE" },
@@ -593,7 +593,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "BLACK/WHITE", ja: "BLACK/WHITE" },
@@ -621,7 +621,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "LIGHT GRAY, BLACK/BLACK, WHITE/BLUE, BLACK/WHITE, BLACK/ORANGE, DARK SHADOW, DUSTY OLIVE, WHITE/LIME", ja: "LIGHT GRAY, BLACK/BLACK, WHITE/BLUE, BLACK/WHITE, BLACK/ORANGE, DARK SHADOW, DUSTY OLIVE, WHITE/LIME" },
@@ -649,7 +649,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™',
-            outsole: 'MaxTrac',
+            outsole: 'MaxTrac™',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "DUSTY OLIVE, BLACK", ja: "DUSTY OLIVE, BLACK" },
             weight: '381.3 g',
@@ -676,7 +676,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™',
-            outsole: 'MaxTrac',
+            outsole: 'MaxTrac™',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "NAVY, BLACK, BROWN/TAUPE", ja: "NAVY, BLACK, BROWN/TAUPE" },
             weight: '452.17 g',
@@ -861,7 +861,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™',
-            outsole: 'MaxTrac',
+            outsole: 'MaxTrac™',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "MAROON, BLACK", ja: "MAROON, BLACK" },
             weight: '320.35 g',
@@ -888,7 +888,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™',
-            outsole: 'MaxTrac',
+            outsole: 'MaxTrac™',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "DUSTY OLIVE, TAUPE", ja: "DUSTY OLIVE, TAUPE" },
             weight: '392.64 g',
@@ -940,7 +940,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "LIME, BLACK/BLACK, BLACK/GREEN, GRAY/BLUE, DUSTY OLIVE, GREEN, ORANGE/TEAL, BROWN/TAN, BLUE/ORANGE, GREEN/GRAY, SAND, BLACK", ja: "LIME, BLACK/BLACK, BLACK/GREEN, GRAY/BLUE, DUSTY OLIVE, GREEN, ORANGE/TEAL, BROWN/TAN, BLUE/ORANGE, GREEN/GRAY, SAND, BLACK" },
@@ -1097,7 +1097,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成型EVAフォーム',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK", ja: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK" },
@@ -1123,7 +1123,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成型EVAフォーム',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND", ja: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND" },
@@ -1151,8 +1151,8 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: '圧縮成型EVAフォーム',
-            outsole: 'MaxTrac',
+            midsole: '圧縮成形EVA',
+            outsole: 'MaxTrac™',
             waterproof: false,
             colors: { en: "RED/ORANGE, PURPLE, BLACK", ja: "RED/ORANGE, PURPLE, BLACK" },
             weight: '246 g',
@@ -1232,8 +1232,8 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
-            outsole: 'FootPod',
+            midsole: 'Altra EGO™ MAX',
+            outsole: 'FootPod™',
             waterproof: false,
             colors: { en: "PINK, DARK GRAY, WHITE/BLUE, MINT, WHITE/BLACK, YELLOW, BLACK", ja: "PINK, DARK GRAY, WHITE/BLUE, MINT, WHITE/BLACK, YELLOW, BLACK" },
             weight: '230 g',
@@ -1366,7 +1366,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "SOAR", ja: "SOAR" },
@@ -1392,7 +1392,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "SOAR", ja: "SOAR" },
@@ -1474,7 +1474,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/LIME", ja: "WHITE/CORAL, BLACK/LIME" },
@@ -1500,7 +1500,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/LIME", ja: "WHITE/CORAL, BLACK/LIME" },
@@ -1578,7 +1578,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/CORAL, GRAY/PINK", ja: "BLACK/BLACK, WHITE/CORAL, GRAY/PINK" },
@@ -1604,7 +1604,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/CORAL, GRAY/ORANGE", ja: "BLACK/BLACK, WHITE/CORAL, GRAY/ORANGE" },
@@ -1632,7 +1632,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成型EVAフォーム',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "TAN, BLACK", ja: "TAN, BLACK" },
@@ -1659,7 +1659,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成型EVAフォーム',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK", ja: "BLACK" },
@@ -1686,7 +1686,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成型EVAフォーム',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK, BROWN/TAUPE", ja: "BLACK, BROWN/TAUPE" },
@@ -1713,7 +1713,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成型EVAフォーム',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK", ja: "BLACK" },
@@ -1740,7 +1740,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK, GRAY, BLACK", ja: "BLACK/BLACK, GRAY, BLACK" },
@@ -1767,7 +1767,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK, DUSTY OLIVE, BLACK", ja: "BLACK/BLACK, DUSTY OLIVE, BLACK" },
@@ -1851,7 +1851,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Altra EGO',
+            midsole: 'Altra EGO™',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "BLACK/BLACK, BLACK/WHITE, GRAY/LIME, DARK SHADOW, DUSTY OLIVE, GRAY, WHITE, WHITE/BLACK", ja: "BLACK/BLACK, BLACK/WHITE, GRAY/LIME, DARK SHADOW, DUSTY OLIVE, GRAY, WHITE, WHITE/BLACK" },
@@ -1879,7 +1879,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Altra EGO',
+            midsole: 'Altra EGO™',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/WHITE, PURPLE, DARK BLUE, MINT, WHITE, WHITE/GREEN, BLACK", ja: "BLACK/BLACK, WHITE/WHITE, PURPLE, DARK BLUE, MINT, WHITE, WHITE/GREEN, BLACK" },
@@ -1907,7 +1907,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Altra EGO',
+            midsole: 'Altra EGO™',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/ORANGE, TEAL, TOKYO, WHITE, WHITE/CORAL, BLACK", ja: "BLACK/BLACK, WHITE/ORANGE, TEAL, TOKYO, WHITE, WHITE/CORAL, BLACK" },
@@ -1935,7 +1935,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Altra EGO',
+            midsole: 'Altra EGO™',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "BLACK/BLACK, GRAY/BLUE, GRAY/ORANGE, TOKYO, WHITE/BLACK, WHITE/LIME, BLACK", ja: "BLACK/BLACK, GRAY/BLUE, GRAY/ORANGE, TOKYO, WHITE/BLACK, WHITE/LIME, BLACK" },
@@ -1961,7 +1961,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL", ja: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL" },
@@ -1987,7 +1987,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/LIME, WHITE/CORAL, WHITE/LIME", ja: "WHITE/ORANGE, GRAY/LIME, WHITE/CORAL, WHITE/LIME" },
@@ -2013,7 +2013,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "SAND", ja: "SAND" },
@@ -2039,7 +2039,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "GRAY/GREEN", ja: "GRAY/GREEN" },
@@ -2066,7 +2066,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "DUSTY OLIVE, TAUPE, BLACK", ja: "DUSTY OLIVE, TAUPE, BLACK" },
@@ -2093,7 +2093,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "NAVY, BLACK", ja: "NAVY, BLACK" },
@@ -2119,7 +2119,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "LIME, TAUPE, RASPBERRY, NEON/CORAL, TAN, BLACK/GRAY, GREEN/FOPREST, DARK PURPLE, DUSTY OLIVE, SAND, BLACK", ja: "LIME, TAUPE, RASPBERRY, NEON/CORAL, TAN, BLACK/GRAY, GREEN/FOPREST, DARK PURPLE, DUSTY OLIVE, SAND, BLACK" },
@@ -2201,7 +2201,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Litebase',
             waterproof: false,
             colors: { en: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR", ja: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR" },
@@ -2227,7 +2227,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX',
+            midsole: 'Altra EGO™ MAX',
             outsole: 'Vibram® Litebase',
             waterproof: false,
             colors: { en: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR", ja: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR" },
