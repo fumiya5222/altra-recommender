@@ -670,7 +670,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "DUSTY OLIVE, BLACK", ja: "DUSTY OLIVE, BLACK" },
             weight: '381.3 g',
-            upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
+            upper: { en: 'Cosmo Hydroguard Waterproof Membrane Lining, Seamless Overlay & Recycled Polyester Mesh (100% PFC-free Waterproof Upper)', ja: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）' },
             footshape: 'Original',
             summary: { en: 'No stranger to foot troubles.<br>A waterproof MID-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -698,7 +698,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "NAVY, BLACK, BROWN/TAUPE", ja: "NAVY, BLACK, BROWN/TAUPE" },
             weight: '452.17 g',
-            upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
+            upper: { en: 'Cosmo Hydroguard Waterproof Membrane Lining, Seamless Overlay & Recycled Polyester Mesh (100% PFC-free Waterproof Upper)', ja: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）' },
             footshape: 'Original',
             summary: { en: 'No stranger to foot troubles.<br>A waterproof MID-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -888,7 +888,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "MAROON, BLACK", ja: "MAROON, BLACK" },
             weight: '320.35 g',
-            upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
+            upper: { en: 'Cosmo Hydroguard Waterproof Membrane Lining, Seamless Overlay & Recycled Polyester Mesh (100% PFC-free Waterproof Upper)', ja: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）' },
             footshape: 'Original',
             summary: { en: 'No stranger to foot troubles.<br>A waterproof low-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ローカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -916,7 +916,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "DUSTY OLIVE, TAUPE", ja: "DUSTY OLIVE, TAUPE" },
             weight: '392.64 g',
-            upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
+            upper: { en: 'Cosmo Hydroguard Waterproof Membrane Lining, Seamless Overlay & Recycled Polyester Mesh (100% PFC-free Waterproof Upper)', ja: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）' },
             footshape: 'Original',
             summary: { en: 'No stranger to foot troubles.<br>A waterproof low-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ローカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
