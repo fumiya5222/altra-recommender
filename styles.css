@@ -558,4 +558,16 @@ body {
     .staff-table td:first-child {
         padding-top: 0;
     }
+
+    /* Stack Image and text vertically on mobile */
+    .staff-model-container {
+        flex-direction: column !important;
+    }
+    .staff-model-container img {
+        width: 100% !important;
+        height: auto !important;
+        max-width: none !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.75rem !important;
+    }
 }

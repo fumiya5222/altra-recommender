@@ -2652,7 +2652,7 @@ function renderStaffList() {
         html += `
             <tr style="line-height: 1.3;">
                 <td style="vertical-align:top;">
-                    <div style="display:flex; align-items:flex-start;">
+                    <div class="staff-model-container" style="display:flex; align-items:flex-start;">
                         ${imgTag}
                         <div style="flex:1;">
                             <strong><a href="${shoe.url}" target="_blank" style="color:#ffffff; text-decoration:none;">${shoe.name}</a></strong>
