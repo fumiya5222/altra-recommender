@@ -2377,13 +2377,13 @@ function populateSpecsFilters() {
 
     let html = '';
     
-    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 4px 0 2px; color:#10b981;">🦶 フットシェイプ (FootShape)</div>';
+    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 4px 0 2px; color:#10b981;">☔ 防水 (Waterproof)</div>';
+    html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="true" data-type="waterproof"> 防水モデル</label>`;
+
+    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🦶 フットシェイプ (FootShape)</div>';
     footshapes.forEach(fs => {
         html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${fs}" data-type="footshape"> ${fs}</label>`;
     });
-
-    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">☔ 防水 (Waterproof)</div>';
-    html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="true" data-type="waterproof"> 防水モデル</label>`;
 
     html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🧦 ミッドソール</div>';
     midsoles.forEach(m => {
@@ -2525,7 +2525,8 @@ function renderStaffList() {
 
         let matchCat = true;
         if (selectedCats.length > 0) {
-            matchCat = shoe.category.some(c => selectedCats.includes(c.en));
+            // AND logic: single shoe must belong to EVERY selected category ID
+            matchCat = selectedCats.every(catEn => shoe.category.some(c => c.en === catEn));
         }
 
         let matchSpecs = true;
@@ -2541,17 +2542,18 @@ function renderStaffList() {
             
             if (specMap.footshape.length > 0) {
                 const fs = shoe.features.footshape || '';
-                if (!specMap.footshape.some(f => fs.includes(f))) matchSpecs = false;
+                // AND logic even within specs
+                if (!specMap.footshape.every(f => fs.includes(f))) matchSpecs = false;
             }
 
             if (specMap.midsole.length > 0) {
                 const ms = shoe.features.midsole || '';
-                if (!specMap.midsole.some(m => ms.includes(m))) matchSpecs = false;
+                if (!specMap.midsole.every(m => ms.includes(m))) matchSpecs = false;
             }
 
             if (specMap.outsole.length > 0) {
                 const os = shoe.features.outsole || '';
-                if (!specMap.outsole.some(o => os.includes(o))) matchSpecs = false;
+                if (!specMap.outsole.every(o => os.includes(o))) matchSpecs = false;
             }
         }
 
