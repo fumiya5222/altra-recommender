@@ -2635,8 +2635,7 @@ function renderStaffList() {
     let html = `
         <thead>
             <tr>
-                <th>${i18n[currentLang].thName}</th>
-                <th>${i18n[currentLang].thSpecsTitle}</th>
+                <th>${i18n[currentLang].thName} & ${i18n[currentLang].thSpecsTitle}</th>
                 <th>${i18n[currentLang].thDesc}</th>
             </tr>
         </thead>
@@ -2644,7 +2643,7 @@ function renderStaffList() {
     `;
 
     if (filteredShoes.length === 0) {
-        html += `<tr><td colspan="3" style="text-align:center; padding: 2rem;">No matching shoes found.</td></tr>`;
+        html += `<tr><td colspan="2" style="text-align:center; padding: 2rem;">No matching shoes found.</td></tr>`;
     }
 
     filteredShoes.forEach(shoe => {
@@ -2664,19 +2663,19 @@ function renderStaffList() {
                             <div style="font-size:0.75rem; color:var(--text-secondary); margin-top: 4px;">
                                 🎨 ${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}
                             </div>
+
+                            <!-- Integrated Specs -->
+                            <div style="font-size:0.75rem; line-height: 1.4; color:var(--text-secondary); margin-top: 8px; border-top: 1px solid #374151; padding-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 12px;">
+                                <div><span style="color:#fff;">重量:</span> ${shoe.features.weight || '-'}</div>
+                                <div><span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}</div>
+                                <div><span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}</div>
+                                <div><span style="color:#fff;">ミッド:</span> ${shoe.features.midsole || '-'}</div>
+                                <div><span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}</div>
+                                <div><span style="color:#fff;">アッパー:</span> ${shoe.features.upper || '-'}</div>
+                                ${shoe.features.cushion ? `<div><span style="color:#fff;">クッション:</span> ${shoe.features.cushion}</div>` : ''}
+                                ${shoe.features.insole ? `<div><span style="color:#fff;">インソール:</span> ${shoe.features.insole}</div>` : ''}
+                            </div>
                         </div>
-                    </div>
-                </td>
-                <td>
-                    <div style="font-size:0.8rem; line-height: 1.5; color:var(--text-secondary);">
-                        <span style="color:#fff;">重量:</span> ${shoe.features.weight || '-'}<br>
-                        <span style="color:#fff;">ミッド:</span> ${shoe.features.midsole || '-'}<br>
-                        <span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}<br>
-                        <span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}<br>
-                        <span style="color:#fff;">アッパー:</span> <span style="font-size:0.75rem;">${shoe.features.upper || '-'}</span><br>
-                        <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}
-                        ${shoe.features.cushion ? `<br><span style="color:#fff;">クッション:</span> ${shoe.features.cushion}` : ''}
-                        ${shoe.features.insole ? `<br><span style="color:#fff;">インソール:</span> ${shoe.features.insole}` : ''}
                     </div>
                 </td>
                 <td style="vertical-align:top; max-width:250px;">
