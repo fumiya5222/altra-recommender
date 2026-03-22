@@ -2647,7 +2647,7 @@ function renderStaffList() {
     }
 
     filteredShoes.forEach(shoe => {
-        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:80px; height:80px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:12px;" alt="${shoe.name}">` : '';
+        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:120px; height:120px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:12px;" alt="${shoe.name}">` : '';
 
         html += `
             <tr style="line-height: 1.3;">

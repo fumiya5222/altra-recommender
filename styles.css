@@ -536,4 +536,26 @@ body {
         grid-template-columns: 1fr;
         text-align: left;
     }
+    
+    /* iPhone / Small screens support */
+    .staff-table {
+        min-width: 100% !important;
+    }
+    .staff-table, .staff-table thead, .staff-table tbody, .staff-table tr, .staff-table td {
+        display: block;
+    }
+    .staff-table thead {
+        display: none; /* Hide header names */
+    }
+    .staff-table tr {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        padding-bottom: 1rem;
+    }
+    .staff-table td {
+        padding: 0.25rem 0 !important;
+    }
+    .staff-table td:first-child {
+        padding-top: 0;
+    }
 }
