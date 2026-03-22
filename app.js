@@ -1177,7 +1177,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Compression Molded EVA',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "GRAY/BLACK, MINERAL BLUE", ja: "GRAY/BLACK, MINERAL BLUE" },
@@ -1204,7 +1204,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Compression Molded EVA',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/GRAY, SAND", ja: "BLACK/GRAY, SAND" },
@@ -1526,7 +1526,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Compression Molded EVA',
+            midsole: '圧縮成形EVA',
             outsole: 'MaxTrac™',
             waterproof: false,
             colors: { en: "TAUPE, GRAY, BLACK", ja: "TAUPE, GRAY, BLACK" },
@@ -1552,7 +1552,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Compression Molded EVA',
+            midsole: '圧縮成形EVA',
             outsole: 'MaxTrac™',
             waterproof: false,
             colors: { en: "BLACK/GRAY, TAUPE, DARK GRAY", ja: "BLACK/GRAY, TAUPE, DARK GRAY" },
@@ -2174,7 +2174,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Compression Molded EVA',
+            midsole: '圧縮成形EVA',
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE", ja: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE" },
