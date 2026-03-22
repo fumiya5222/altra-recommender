@@ -2373,6 +2373,8 @@ function populateSpecsFilters() {
     // Get unique values with grouping
     const midsoles = [...new Set(shoes.map(s => s.features.midsole).filter(Boolean).map(v => v.trim()))].sort();
     const outsoles = [...new Set(shoes.map(s => s.features.outsole).filter(Boolean).map(v => v.trim()))].sort();
+    const cushions = [...new Set(shoes.map(s => s.features.cushion).filter(Boolean).map(v => v.trim()))].sort();
+    const insoles = [...new Set(shoes.map(s => s.features.insole).filter(Boolean).map(v => v.trim()))].sort();
     const footshapes = ['Standard', 'Original', 'Wide', 'Slim'];
 
     let html = '';
@@ -2394,6 +2396,20 @@ function populateSpecsFilters() {
     outsoles.forEach(o => {
         html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${o}" data-type="outsole"> ${o}</label>`;
     });
+
+    if (cushions.length > 0) {
+        html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">☁️ クッション</div>';
+        cushions.forEach(c => {
+            html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${c}" data-type="cushion"> ${c}</label>`;
+        });
+    }
+
+    if (insoles.length > 0) {
+        html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">👟 インソール</div>';
+        insoles.forEach(i => {
+            html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${i}" data-type="insole"> ${i}</label>`;
+        });
+    }
 
     container.innerHTML = html;
 
@@ -2532,7 +2548,7 @@ function renderStaffList() {
         let matchSpecs = true;
         const selectedSpecsItems = Array.from(document.querySelectorAll('#specs-checkboxes input:checked'));
         if (selectedSpecsItems.length > 0) {
-            const specMap = { footshape: [], waterproof: [], midsole: [], outsole: [] };
+            const specMap = { footshape: [], waterproof: [], midsole: [], outsole: [], cushion: [], insole: [] };
             selectedSpecsItems.forEach(el => {
                 const type = el.getAttribute('data-type');
                 if (type) specMap[type].push(el.value);
@@ -2542,7 +2558,6 @@ function renderStaffList() {
             
             if (specMap.footshape.length > 0) {
                 const fs = shoe.features.footshape || '';
-                // AND logic even within specs
                 if (!specMap.footshape.every(f => fs.includes(f))) matchSpecs = false;
             }
 
@@ -2554,6 +2569,16 @@ function renderStaffList() {
             if (specMap.outsole.length > 0) {
                 const os = shoe.features.outsole || '';
                 if (!specMap.outsole.every(o => os.includes(o))) matchSpecs = false;
+            }
+
+            if (specMap.cushion.length > 0) {
+                const cs = shoe.features.cushion || '';
+                if (!specMap.cushion.every(c => cs.includes(c))) matchSpecs = false;
+            }
+
+            if (specMap.insole.length > 0) {
+                const ins = shoe.features.insole || '';
+                if (!specMap.insole.every(i => ins.includes(i))) matchSpecs = false;
             }
         }
 
