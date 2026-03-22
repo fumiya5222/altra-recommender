@@ -119,7 +119,7 @@ const shoes = [
             weight: '334.5 g',
             upper: 'GORE-TEX Invisible Fit, 85% RPET',
             footshape: 'Standard',
-            summary: 'GORE-TEX採用、全方位に死角なし。<br>TIMP 6 GTXは、ロングトレイルや長時間の行動でその真価を発揮し、いかなる路面でも「安心して踏み込める」防水トレイルシューズです。濡れた岩場や木道、ガレ場といった不安定なコースでも安定感を損なわず、「グリップ力」「クッション性」「フィット感」「防水性」を高次元で融合させた、極めて完成度の高いモデルに仕上がっています。',
+            summary: { en: 'Equipped with GORE-TEX, no blind spots in all directions.<br>TIMP 6 GTX is a waterproof trail shoe that proves its true worth on long trails and long hours of action, allowing you to stride with confidence on any surface. Its high degree of perfection merges grip, cushioning, fit, and waterproofing at a high level without losing stability on unstable courses such as wet rocks, boardwalks, and scree.', ja: 'GORE-TEX採用、全方位に死角なし。<br>TIMP 6 GTXは、ロングトレイル及時間の行動でその真価を発揮し、いかなる路面でも「安心して踏み込める」防水トレイルシューズです。濡れた岩場や木道、ガレ場といった不安定なコースでも安定感を損なわず、「グリップ力」「クッション性」「フィット感」「防水性」を高次元で融合させた、極めて完成度の高いモデルに仕上がっています。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -146,7 +146,7 @@ const shoes = [
             weight: '306 g',
             upper: 'GORE-TEX Invisible Fit, 85% RPET',
             footshape: 'Standard',
-            summary: 'GORE-TEX採用、全方位に死角なし。<br>「TIMP 6 GTX」の機動力はそのままに、足首のサポート力を高めたMIDカットモデルが進化を遂げて登場しました。ロングハイクや過酷な環境下でも、全方位に死角のないパフォーマンスを発揮します。',
+            summary: { en: "Equipped with GORE-TEX, no blind spots in all directions.<br>The MID-cut model that provides enhanced ankle support while retaining the mobility of 'TIMP 6 GTX' has evolved and arrived. It delivers flawless performance in all directions, even on long hikes or in harsh environments.", ja: 'GORE-TEX採用、全方位に死角なし。<br>「TIMP 6 GTX」の機動力はそのままに、足首のサポート力を高めたMIDカットモデルが進化を遂げて登場しました。ロングハイクや過酷な環境下でも、全方位に死角のないパフォーマンスを発揮します。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -173,7 +173,7 @@ const shoes = [
             weight: '279.2 g',
             upper: 'GORE-TEX Invisible Fit, 85% RPET',
             footshape: 'Standard',
-            summary: 'GORE-TEX採用、全方位に死角なし。<br>TIMP 6 GTXは、ロングトレイルや長時間の行動でその真価を発揮し、いかなる路面でも「安心して踏み込める」防水トレイルシューズです。濡れた岩場や木道、ガレ場といった不安定なコースでも安定感を損なわず、「グリップ力」「クッション性」「フィット感」「防水性」を高次元で融合させた、極めて完成度の高いモデルに仕上がっています。',
+            summary: { en: 'Equipped with GORE-TEX, no blind spots in all directions.<br>TIMP 6 GTX is a waterproof trail shoe that proves its true worth on long trails and long hours of action, allowing you to stride with confidence on any surface. Its high degree of perfection merges grip, cushioning, fit, and waterproofing at a high level without losing stability on unstable courses such as wet rocks.', ja: 'GORE-TEX採用、全方位に死角なし。<br>TIMP 6 GTXは、ロングトレイルや長時間の行動でその真価を発揮し、いかなる路面でも「安心して踏み込める」防水トレイルシューズです。濡れた岩場や木道、ガレ場といった不安定なコースでも安定感を損なわず、「グリップ力」「クッション性」「フィット感」「防水性」を高次元で融合させた、極めて完成度の高いモデルに仕上がっています。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -200,7 +200,7 @@ const shoes = [
             weight: '365.7 g',
             upper: 'GORE-TEX Invisible Fit, 85% RPET',
             footshape: 'Standard',
-            summary: 'GORE-TEX採用、全方位に死角なし。<br>「TIMP 6 GTX」の機動力はそのままに、足首のサポート力を高めたMIDカットモデルが進化を遂げて登場しました。ロングハイクや過酷な環境下でも、全方位に死角のないパフォーマンスを発揮します。',
+            summary: { en: "Equipped with GORE-TEX, no blind spots in all directions.<br>The MID-cut model that provides enhanced ankle support while retaining the mobility of 'TIMP 6 GTX' has evolved and arrived. It delivers flawless performance in all directions, even on long hikes or in harsh environments.", ja: 'GORE-TEX採用、全方位に死角なし。<br>「TIMP 6 GTX」の機動力はそのままに、足首のサポート力を高めたMIDカットモデルが進化を遂げて登場しました。ロングハイクや過酷な環境下でも、全方位に死角のないパフォーマンスを発揮します。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -226,7 +226,7 @@ const shoes = [
             weight: '245.2 g',
             upper: 'Durable Quick-Dry Upper',
             footshape: 'Standard',
-            summary: '名作KINGをもう一度！<br>「キングをもう一度」との声にお応えして、ついに復活しました。ストラップをしっかり締めて、確かなグリップ力と地面を感じ取る足裏感覚を味わいながら進める一足です。King MT 2はAltraの名作モデル。そのため、あえて一切の変更を加えていません。',
+            summary: { en: "The classic KING once again!<br>In response to voices calling for 'the return of the King', it is finally back. Tighten the strap and advance while enjoying solid grip and the tactile feel of the ground. King MT 2 is an Altra masterpiece, so we have intentionally made no changes whatsoever.", ja: '名作KINGをもう一度！<br>「キングをもう一度」との声にお応えして、ついに復活しました。ストラップをしっかり締めて、確かなグリップ力と地面を感じ取る足裏感覚を味わいながら進める一足です。King MT 2はAltraの名作モデル。そのため、あえて一切の変更を加えていません。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -252,7 +252,7 @@ const shoes = [
             weight: '292 g',
             upper: 'Durable Quick-Dry Upper',
             footshape: 'Standard',
-            summary: '名作KINGをもう一度！<br>「キングをもう一度」との声にお応えして、ついに復活しました。ストラップをしっかり締めて、確かなグリップ力と地面を感じ取る足裏感覚を味わいながら進める一足です。King MT 2はAltraの名作モデル。そのため、あえて一切の変更を加えていません。',
+            summary: { en: "The classic KING once again!<br>In response to voices calling for 'the return of the King', it is finally back. Tighten the strap and advance while enjoying solid grip and the tactile feel of the ground. King MT 2 is an Altra masterpiece, so we have intentionally made no changes whatsoever.", ja: '名作KINGをもう一度！<br>「キングをもう一度」との声にお応えして、ついに復活しました。ストラップをしっかり締めて、確かなグリップ力と地面を感じ取る足裏感覚を味わいながら進める一足です。King MT 2はAltraの名作モデル。そのため、あえて一切の変更を加えていません。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -279,7 +279,7 @@ const shoes = [
             weight: '259.4 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足<br>今すぐジムバッグに。Solstice XT 3は、まもなくあなたの“定番”クロストレーニングシューズになるはずです。',
+            summary: { en: 'Protecting natural movement while remaining dependable for any training.<br>Put it in your gym bag right now. Solstice XT 3 is set to become your standard cross-training shoe.', ja: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足<br>今すぐジムバッグに。Solstice XT 3は、まもなくあなたの“定番”クロストレーニングシューズになるはずです。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -306,7 +306,7 @@ const shoes = [
             weight: '310.4 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足<br>今すぐジムバッグに。Solstice XT 3は、まもなくあなたの“定番”クロストレーニングシューズになるはずです。',
+            summary: { en: 'Protecting natural movement while remaining dependable for any training.<br>Put it in your gym bag right now. Solstice XT 3 is set to become your standard cross-training shoe.', ja: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足<br>今すぐジムバッグに。Solstice XT 3は、まもなくあなたの“定番”クロストレーニングシューズになるはずです。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -362,7 +362,7 @@ const shoes = [
             weight: '208.7 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: '「努力」から「至福」へとガイドする<br>Experience Flow STは、このシューズは、ランナーを優しく導くガイド機能を備え、至福の感覚と軽やかな走りを両立させる新しいリアリティを提案します。最大の特徴は、内側に配置された「GuideRail™」テクノロジー。必要な時だけ自然な安定性を提供し、足本来の動きを妨げることなく、スムーズで安定したライド感を実現します。',
+            summary: { en: "Guiding from 'effort' to 'bliss'.<br>Experience Flow ST proposes a new reality that yields a blissful sensation and light run, equipped with a guide function that gently leads runners. Its greatest feature is the inside GuideRail™ technology, providing natural stability only when needed, supporting smooth rides without hindering foot movement.", ja: '「努力」から「至福」へとガイドする<br>Experience Flow STは、このシューズは、ランナーを優しく導くガイド機能を備え、至福の感覚と軽やかな走りを両立させる新しいリアリティを提案します。最大の特徴は、内側に配置された「GuideRail™」テクノロジー。必要な時だけ自然な安定性を提供し、足本来の動きを妨げることなく、スムーズで安定したライド感を実現します。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -390,7 +390,7 @@ const shoes = [
             weight: '212 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'ロードランニングを「努力」から「至福」へと変える<br>このシューズの心臓部といえるのが、ALTRA独自の「フットシェイプ」です。指先が自然に広がるゆとりを確保しながらも、中足部はしっかりと固定されることで、足本来の自由な動きをサポートします。さらに、4mmというわずかなドロップと滑らかな曲線を描くロッカーシェイプの組み合わせが、身体の自然なアライメントを整え、流れるような効率的な蹴り出しを可能にしました。',
+            summary: { en: "Transforming road running from 'effort' to 'bliss'.<br>The heart of this shoe is Altra's unique 'FootShape'. Securing ample room for natural toe spread while locking down the midfoot supports the natural movement of the foot. Furthermore, the combination of 4mm drop and smooth rocker shape aligns natural posture, making efficient strides possible.", ja: 'ロードランニングを「努力」から「至福」へと変える<br>このシューズの心臓部といえるのが、ALTRA独自の「フットシェイプ」です。指先が自然に広がるゆとりを確保しながらも、中足部はしっかりと固定されることで、足本来の動きをサポートします。さらに、4mmというわずかなドロップと滑らかな曲線を描くロッカーシェイプの組み合わせが、身体の自然なアライメントを整え、流れるような効率的な蹴り出しを可能にしました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -419,7 +419,7 @@ const shoes = [
             weight: '260.8 g',
             upper: 'GORE-TEX Invisible Fit',
             footshape: 'Standard',
-            summary: '雨の日だって走りたい<br>アップデートされた「TORIN 8」をベースに、アッパーにはGORE-TEX™ Invisible Fitを採用。アッパーに直接メンブレンを接着することで、防水シューズ特有の重さや違和感を感じさせず、軽さと快適な履き心地を維持しながら、優れた耐久防水性と防風性を実現しています。',
+            summary: { en: "I want to run even on rainy days.<br>Based on updated 'TORIN 8', the upper adopts GORE-TEX™ Invisible Fit. Directly bonding the membrane avoids the heaviness of typical waterproof shoes, maintaining lightweight and comfortable wear while achieving great water and wind resistance.", ja: '雨の日だって走りたい<br>アップデートされた「TORIN 8」をベースに、アッパーにはGORE-TEX™ Invisible Fitを採用。アッパーに直接メンブレンを接着することで、防水シューズ特有の重さや違和感を感じさせず、軽さと快適な履き心地を維持しながら、優れた耐久防水性と防風性を実現しています。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -447,7 +447,7 @@ const shoes = [
             weight: '238.14 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。そのTORIN 8より全体的に横幅を広くしたのが、このワイドバージョン。',
+            summary: { en: "Altra's best fit ever.<br>The latest model of 'TORIN', highly versatile in the road category, pursues the best fit in Altra history. This wide version is generally wider overall than TORIN 8.", ja: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。その TORIN 8より全体的に横幅を広くしたのが、このワイドバージョン。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -475,7 +475,7 @@ const shoes = [
             weight: '238.14 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。',
+            summary: { en: "Altra's best fit ever.<br>The latest model of 'TORIN', highly versatile in the road category, pursues the best fit in Altra history.", ja: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -531,7 +531,7 @@ const shoes = [
             weight: '300.5 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: '「努力」から「至福」へとガイドする<br>Experience Flow STは、このシューズは、ランナーを優しく導くガイド機能を備え、至福の感覚と軽やかな走りを両立させる新しいリアリティを提案します。最大の特徴は、内側に配置された「GuideRail™」テクノロジー。必要な時だけ自然な安定性を提供し、足本来の動きを妨げることなく、スムーズで安定したライド感を実現します。',
+            summary: { en: "Guiding from 'effort' to 'bliss'.<br>Experience Flow ST proposes a new reality that yields a blissful sensation and light run, equipped with a guide function that gently leads runners. Its greatest feature is the inside GuideRail™ technology.", ja: '「努力」から「至福」へとガイドする<br>Experience Flow STは、このシューズは、ランナーを優しく導くガイド機能を備え、至福の感覚と軽やかな走りを両立させる新しいリアリティを提案します。最大の特徴は、内側に配置された「GuideRail™」テクノロジー。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -559,7 +559,7 @@ const shoes = [
             weight: '255 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'ロードランニングを「努力」から「至福」へと変える<br>このシューズの心臓部といえるのが、ALTRA独自の「フットシェイプ」です。指先が自然に広がるゆとりを確保しながらも、中足部はしっかりと固定されることで、足本来の自由な動きをサポートします。さらに、4mmというわずかなドロップと滑らかな曲線を描くロッカーシェイプの組み合わせが、身体の自然なアライメントを整え、流れるような効率的な蹴り出しを可能にしました。',
+            summary: { en: "Transforming road running from 'effort' to 'bliss'.<br>The heart of this shoe is Altra's unique 'FootShape'. Securing ample room for natural toe spread while locking down the midfoot supports the natural movement of the foot.", ja: 'ロードランニングを「努力」から「至福」へと変える<br>このシューズの心臓部といえるのが、ALTRA独自の「フットシェイプ」です。指先が自然に広がるゆとりを確保しながらも、中足部はしっかりと固定されることで、足本来の自由な動きをサポートします。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -588,7 +588,7 @@ const shoes = [
             weight: '319 g',
             upper: 'GORE-TEX Invisible Fit',
             footshape: 'Standard',
-            summary: '雨の日だって走りたい<br>アップデートされた「TORIN 8」をベースに、アッパーにはGORE-TEX™ Invisible Fitを採用。アッパーに直接メンブレンを接着することで、防水シューズ特有の重さや違和感を感じさせず、軽さと快適な履き心地を維持しながら、優れた耐久防水性と防風性を実現しています。',
+            summary: { en: "I want to run even on rainy days.<br>Based on updated 'TORIN 8', the upper adopts GORE-TEX™ Invisible Fit. Directly bonding the membrane avoids the heaviness of typical waterproof shoes.", ja: '雨の日だって走りたい<br>アップデートされた「TORIN 8」をベースに、アッパーにはGORE-TEX™ Invisible Fitを採用。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -616,7 +616,7 @@ const shoes = [
             weight: '287.7 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。そのTORIN 8より全体的に横幅を広くしたのが、このワイドバージョン。',
+            summary: { en: "Altra's best fit ever.<br>The latest model of 'TORIN', highly versatile in the road category, pursues the best fit in Altra history. This wide version is generally wider overall than TORIN 8.", ja: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。その TORIN 8より全体的に横幅を広くしたのが、このワイドバージョン。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -644,7 +644,7 @@ const shoes = [
             weight: '287.7 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。',
+            summary: { en: "Altra's best fit ever.<br>The latest model of 'TORIN', highly versatile in the road category, pursues the best fit in Altra history.", ja: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -672,7 +672,7 @@ const shoes = [
             weight: '381.3 g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
             footshape: 'Original',
-            summary: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。',
+            summary: { en: 'No stranger to foot troubles.<br>A waterproof MID-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -700,7 +700,7 @@ const shoes = [
             weight: '452.17 g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
             footshape: 'Original',
-            summary: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。',
+            summary: { en: 'No stranger to foot troubles.<br>A waterproof MID-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -890,7 +890,7 @@ const shoes = [
             weight: '320.35 g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
             footshape: 'Original',
-            summary: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ローカットモデル。',
+            summary: { en: 'No stranger to foot troubles.<br>A waterproof low-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ローカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -918,7 +918,7 @@ const shoes = [
             weight: '392.64 g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（ 100% PFCフリーの防水アッパー）',
             footshape: 'Original',
-            summary: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ローカットモデル。',
+            summary: { en: 'No stranger to foot troubles.<br>A waterproof low-cut model based on updated LONE PEAK.', ja: '足のトラブルを知りません<br>アップデートされたLONE PEAKをベースにした防水ローカットモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -944,7 +944,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "DARK CLAY, BLACK", ja: "DARK CLAY, BLACK" },
             weight: '428 g',
-            upper: '防水ブーティ構造',
+            upper: { en: 'Waterproof Bootie Construction', ja: '防水ブーティ構造' },
             footshape: 'Original',
             summary: '快適さとサポート力を兼ね備えた防水シューズ<br>Lone Peak ALL-WTHR MID 2はトレイルランニングシューズの快適さとハイキングブーツのサポート力を兼ね備えたシューズです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -973,7 +973,7 @@ const shoes = [
             weight: '277 g',
             upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
-            summary: '全てが高次元なトレイルシューズ<br>Timpは、一日中履いても疲れにくい快適なクッション性と絶妙なフィット感が魅力のモデルです。',
+            summary: { en: 'High-level everything trail shoe.<br>Timp features attractive daily-wear cushioning and an exquisite fit that limits fatigue.', ja: '全てが高次元なトレイルシューズ<br>Timpは、一日中履いても疲れにくい快適なクッション性と絶妙なフィット感が魅力のモデルです。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1026,7 +1026,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "LIGHT BLUE, BLACK", ja: "LIGHT BLUE, BLACK" },
             weight: '428 g',
-            upper: '防水ブーティ構造',
+            upper: { en: 'Waterproof Bootie Construction', ja: '防水ブーティ構造' },
             footshape: 'Original',
             summary: '快適さとサポート力を兼ね備えた防水シューズ<br>Lone Peak ALL-WTHR MID 2はトレイルランニングシューズの快適さとハイキングブーツのサポート力を兼ね備えたシューズです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1081,7 +1081,7 @@ const shoes = [
             weight: '324.6 g',
             upper: 'Soft Rolled Mesh',
             footshape: 'Standard',
-            summary: '全方位、死角なし。<br>TIMP 6（ティンプ 6）は、ロングトレイルや長時間行動で真価を発揮する、どんな路面でも「安心して踏み込める」トレイルシューズです。濡れた岩や木道、ガレ場など足場が不安定になりやすいコースでも安定感を失わず、「グリップ力」「クッション性」「フィット感」に加え、「快適性」までを高水準でまとめ上げたモデルに仕上がっています。',
+            summary: { en: 'All-round flawless performance.<br>TIMP 6 proves its worth on long trails and action, allowing you to stride with confidence. High-standard merge of grip, cushioning, fit, and comfort on unstable surfaces like wet rock.', ja: '全方位、死角なし。<br>TIMP 6（ティンプ 6）は、ロングトレイルや長時間行動で真価を発揮する、どんな路面でも「安心して踏み込める」トレイルシューズです。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1108,7 +1108,7 @@ const shoes = [
             weight: '269 g',
             upper: 'Soft Rolled Mesh',
             footshape: 'Standard',
-            summary: '全方位、死角なし。<br>TIMP 6（ティンプ 6）は、ロングトレイルや長時間行動で真価を発揮する、どんな路面でも「安心して踏み込める」トレイルシューズです。濡れた岩や木道、ガレ場など足場が不安定になりやすいコースでも安定感を失わず、「グリップ力」「クッション性」「フィット感」に加え、「快適性」までを高水準でまとめ上げたモデルに仕上がっています。',
+            summary: { en: 'All-round flawless performance.<br>TIMP 6 proves its worth on long trails and action, allowing you to stride with confidence.', ja: '全方位、死角なし。<br>TIMP 6（ティンプ 6）は、ロングトレイルや長時間行動で真価を発揮する、どんな路面でも「安心して踏み込める」トレイルシューズです。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1134,7 +1134,7 @@ const shoes = [
             weight: '289 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: 'クッション、グリップ、快適、安定<br>オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。',
+            summary: { en: 'Cushion, grip, comfort, stability.<br>Olympus is loved in scenes like 100km+ long trail running and heavily loaded mountaineering.', ja: 'クッション、グリップ、快適、安定<br>オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1160,7 +1160,7 @@ const shoes = [
             weight: '345 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: 'クッション、グリップ、快適、安定<br>オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。',
+            summary: { en: 'Cushion, grip, comfort, stability.<br>Olympus is loved in scenes like 100km+ long trail running and heavily loaded mountaineering.', ja: 'クッション、グリップ、快適、安定<br>オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1187,7 +1187,7 @@ const shoes = [
             colors: { en: "RED/ORANGE, PURPLE, BLACK", ja: "RED/ORANGE, PURPLE, BLACK" },
             weight: '246 g',
             upper: 'Engineered Mesh',
-            summary: 'ALTRA初ドロップ差のあるトレイルシューズ<br>ランニング障害のリスクを減らすためには、ゼロドロップが最良の選択と考えています。しかし、ALTRAのゼロドロップシューズを履いたことがないランナーからは、走りにくそうとの声も聞かれます。 こういった声に応えるため、ALTRAは低ドロップ（4mmドロップ）の「EXPERIENCEコレクション」を開発しました。',
+            summary: { en: "Altra's first trail shoe with drop-offset.<br>To reduce injury risk, zero drop is ideal. However, runners who haven't tried zero drop have expressed hesitation. To meet these voices, Altra developed the low-drop (4mm drop) 'EXPERIENCE collection'.", ja: 'ALTRA初ドロップ差のあるトレイルシューズ<br>ランニング障害のリスクを減らすためには、ゼロドロップが最良の選択と考えています。しかし、ALTRAのゼロドロップシューズを履いたことがないランナーからは、走りにくそうとの声も聞かれます。 こういった声に応えるため、ALTRAは低ドロップ（4mmドロップ）の「EXPERIENCEコレクション」を開発しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1269,7 +1269,7 @@ const shoes = [
             weight: '230 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: '快適さとパフォーマンスの新次元へ<br>最新のデザインと革新的なテクノロジーが融合したトーリン 7は、究極の快適性とパフォーマンスを追求しました。',
+            summary: { en: 'To a new dimension of comfort and performance.<br>Torin 7 latest design and innovative technology pursue ultimate comfort.', ja: '快適さとパフォーマンスの新次元へ<br>最新のデザインと革新的なテクノロジーが融合したトーリン 7は、究極の快適性とパフォーマンスを追求しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1298,7 +1298,7 @@ const shoes = [
             weight: '244.6 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: '最大級のクッションと快適さを備えたモデル。<br>エンジニアードメッシュアッパーは高い通気性を確保し、柔らかなシュータンが足入れ直後から心地よいフィット感を提供。4mmドロップとロッカー形状により、自然で効率的な蹴り出しをサポートします。',
+            summary: { en: 'Max cushion and comfort model.<br>Engineered mesh provides high breathability, fit soft tongue yields immediate comfort. 4mm drop creates natural efficient toe-off.', ja: '最大級のクッションと快適さを備えたモデル。<br>エンジニアードメッシュアッパーは高い通気性を確保し、柔らかなシュータンが足入れ直後から心地よいフィット感を提供。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1327,7 +1327,7 @@ const shoes = [
             weight: '300.5 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: '最大級のクッションと快適さを備えたモデル。<br>エンジニアードメッシュアッパーは高い通気性を確保し、柔らかなシュータンが足入れ直後から心地よいフィット感を提供。4mmドロップとロッカー形状により、自然で効率的な蹴り出しをサポートします。',
+            summary: { en: 'Max cushion and comfort model.<br>Engineered mesh provides high breathability, fit soft tongue yields immediate comfort. 4mm drop creates natural efficient toe-off.', ja: '最大級のクッションと快適さを備えたモデル。<br>エンジニアードメッシュアッパーは高い通気性を確保し、柔らかなシュータンが足入れ直後能なモデルにアップデート。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1353,7 +1353,7 @@ const shoes = [
             weight: '273.6 g',
             upper: 'MATRYX® one-piece woven upp',
             footshape: 'Original',
-            summary: '数字が物語る、革新の証。<br>「OLYMPUS」シリーズは、抜群のクッショニング、グリップ力、そして安定感によって、100マイルレースのような途方も無い距離に挑むトレイルランナーから、重い装備を背負って何泊も山を縦走するハイカーまで、幅広い層から絶大な信頼を得てきた、ALTRAの象徴的なモデル。',
+            summary: { en: "Proof in numbers, evidence of innovation.<br>The 'OLYMPUS' series is Altra's symbolic model that has gained absolute trust from trail runners tackling 100-mile races and hikers traversing mountains for days with heavy gear, thanks to its outstanding cushioning, grip, and stability.", ja: '数字が物語る、革新の証。<br>「OLYMPUS」シリーズは、抜群のクッショニング、グリップ力、そして安定感によって、100マイルレースのような途方も無い距離に挑むトレイルランナーから、重い装備を背負って何泊も山を縦走するハイカーまで、幅広い層から絶大な信頼を得てきた、ALTRAの象徴的なモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1379,7 +1379,7 @@ const shoes = [
             weight: '338.8 g',
             upper: 'MATRYX® one-piece woven upp',
             footshape: 'Original',
-            summary: '数字が物語る、革新の証。<br>「OLYMPUS」シリーズは、抜群のクッショニング、グリップ力、そして安定感によって、100マイルレースのような途方も無い距離に挑むトレイルランナーから、重い装備を背負って何泊も山を縦走するハイカーまで、幅広い層から絶大な信頼を得てきた、ALTRAの象徴的なモデル。',
+            summary: { en: "Proof in numbers, evidence of innovation.<br>The 'OLYMPUS' series is Altra's symbolic model that has gained absolute trust from trail runners tackling 100-mile races and hikers traversing mountains.", ja: '数字が物語る、革新の証。<br>「OLYMPUS」シリーズは、抜群のクッショニング、グリップ力、そして安定感によって、100マイルレースのような途方も無い距離に挑むトレイルランナーから、重い装備を背負って何泊も山を縦走するハイカーまで、幅広い層から絶大な信頼を得てきた、ALTRAの象徴的なモデル。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1405,7 +1405,7 @@ const shoes = [
             weight: '249 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
-            summary: 'SOARとALTRAの融合<br>これにより、スピーディでテクニカルな地形での走行に最適なシューズとなっています。',
+            summary: { en: 'The fusion of SOAR and ALTRA.<br>This makes it the ideal shoe for running on speedy, technical terrain.', ja: 'SOARとALTRAの融合<br>これにより、スピーディでテクニカルな地形での走行に最適なシューズとなっています。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1431,7 +1431,7 @@ const shoes = [
             weight: '309 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
-            summary: 'SOARとALTRAの融合<br>これにより、スピーディでテクニカルな地形での走行に最適なシューズとなっています。',
+            summary: { en: 'The fusion of SOAR and ALTRA.<br>This makes it the ideal shoe for running on speedy, technical terrain.', ja: 'SOARとALTRAの融合<br>これにより、スピーディでテクニカルな地形での走行に最適なシューズとなっています。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1459,7 +1459,7 @@ const shoes = [
             weight: '307.6 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'サポート、クッション、ナチュラルムーブ<br>キーとなるのは、必要なときだけ補正する「GuideRail™」テクノロジー。内側への過度な倒れ込みを自然な形でサポートし、走行時の安定性を確保。癖のあるランナーや、疲労が蓄積するロングランの後半でもしっかりとしたフォームを維持できます。',
+            summary: { en: 'Support, cushion, natural movement.<br>The key is GuideRail™ technology that corrects only when needed. It naturally supports excessive inward roll, securing stability. Good for runners with specific habits or maintaining form in the latter half of fatigue-storing long runs.', ja: 'サポート、クッション、ナチュラルムーブ<br>キーとなるのは、必要なときだけ補正する「GuideRail™」テクノロジー。内側への過度な倒れ込みを自然な形でサポートし、走行時の安定性を確保。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1487,7 +1487,7 @@ const shoes = [
             weight: '243.8 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'サポート、クッション、ナチュラルムーブ<br>キーとなるのは、必要なときだけ補正する「GuideRail™」テクノロジー。内側への過度な倒れ込みを自然な形でサポートし、走行時の安定性を確保。癖のあるランナーや、疲労が蓄積するロングランの後半でもしっかりとしたフォームを維持できます。',
+            summary: { en: 'Support, cushion, natural movement.<br>The key is GuideRail™ technology that corrects only when needed. It naturally supports excessive inward roll, securing stability.', ja: 'サポート、クッション、ナチュラルムーブ<br>キーとなるのは、必要なときだけ補正する「GuideRail™」テクノロジー。内側への過度な倒れ込みを自然な形でサポートし、走行時の安定性を確保。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1514,7 +1514,7 @@ const shoes = [
             weight: '232.5 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
-            summary: 'スピードに、安定感という武器を<br>スピードを追求するトレイルランナーに愛されるレースモデル「MONT BLANC CARBON」をベースに、より安定した走りを実現するStoneGuard™テクノロジーを搭載した新モデル「MONT BLANC SPEED」が登場。',
+            summary: { en: "Adding the weapon of stability to speed.<br>Based on the race model 'MONT BLANC CARBON' loved by speed-seeking trail runners, the new 'MONT BLANC SPEED' arrives equipped with StoneGuard™ technology for an even more stable run.", ja: 'スピードに、安定感という武器を<br>スピードを追求するトレイルランナーに愛されるレースモデル「MONT BLANC CARBON」をベースに、より安定した走りを実現するStoneGuard™テクノロジーを搭載した新モデル「MONT BLANC SPEED」が登場。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1541,7 +1541,7 @@ const shoes = [
             weight: '286.3 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
-            summary: 'スピードに、安定感という武器を<br>スピードを追求するトレイルランナーに愛されるレースモデル「MONT BLANC CARBON」をベースに、より安定した走りを実現するStoneGuard™テクノロジーを搭載した新モデル「MONT BLANC SPEED」が登場。',
+            summary: { en: "Adding the weapon of stability to speed.<br>Based on the race model 'MONT BLANC CARBON' loved by speed-seeking trail runners, the new 'MONT BLANC SPEED' arrives equipped with StoneGuard™ technology for an even more stable run.", ja: 'スピードに、安定感という武器を<br>スピードを追求するトレイルランナーに愛されるレースモデル「MONT BLANC CARBON」をベースに、より安定した走りを実現するStoneGuard™テクノロジーを搭載した新モデル「MONT BLANC SPEED」が登場。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1568,7 +1568,7 @@ const shoes = [
             weight: '218.3 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'トレイルに足を置いた瞬間、感覚が研ぎ澄まされる<br>俊敏さ、軽さ、そしてナチュラルな走り心地を追求した本モデルは、トレイルランナーから高い信頼を集めてきた定番モデル。そのDNAはそのままに、さらなる進化を遂げました。',
+            summary: { en: 'The moment you set foot on the trail, your senses sharpen.<br>Pursuing agility, lightness, and a natural running feel, this classic model has gathered deep trust from trail runners. Its DNA remains unchanged through its evolution.', ja: 'トレイルに足を置いた瞬間、感覚が研ぎ澄まされる<br>俊敏さ、軽さ、そしてナチュラルな走り心地を追求した本モデルは、トレイルランナーから高い信頼を集めてきた定番モデル。そのDNAはそのままに、さらなる進化を遂げました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1595,7 +1595,7 @@ const shoes = [
             weight: '263.6 g',
             upper: 'Engineered Mesh',
             footshape: 'Standard',
-            summary: 'トレイルに足を置いた瞬間、自分の感覚が研ぎ澄まされる<br>俊敏さ、軽さ、そしてナチュラルな走り心地を追求した本モデルは、トレイルランナーから高い信頼を集めてきた定番モデル。そのDNAはそのままに、さらなる進化を遂げました。',
+            summary: { en: 'The moment you set foot on the trail, your senses sharpen.<br>Pursuing agility, lightness, and a natural running feel, this classic model has gathered deep trust from trail runners. Its DNA remains unchanged through its evolution.', ja: 'トレイルに足を置いた瞬間、自分の感覚が研ぎ澄まされる<br>俊敏さ、軽さ、そしてナチュラルな走り心地を追求した本モデルは、トレイルランナーから高い信頼を集めてきた定番モデル。そのDNAはそのままに、さらなる進化を遂げました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1622,7 +1622,7 @@ const shoes = [
             weight: '256.56 g',
             upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
-            summary: 'TIMPファミリーにBOAモデルが仲間入り<br>高いフィット感、軽量性、アップデートしたグリップ力によって人気を博したTIMP 5シリーズにボアモデルが登場します。',
+            summary: { en: 'BOA model joins the TIMP family.<br>The boa model is here for the popular TIMP 5 series famous for high fit, lightness, and updated grip.', ja: 'TIMPファミリーにBOAモデルが仲間入り<br>高いフィット感、軽量性、アップデートしたグリップ力によって人気を博したTIMP 5シリーズにボアモデルが登場します。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1649,7 +1649,7 @@ const shoes = [
             weight: '286 g',
             upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
-            summary: 'TIMPファミリーにBOAモデルが仲間入り<br>高いフィット感、軽量性、アップデートしたグリップ力によって人気を博したTIMP 5シリーズにボアモデルが登場します。',
+            summary: { en: 'BOA model joins the TIMP family.<br>The boa model is here for the popular TIMP 5 series famous for high fit, lightness, and updated grip.', ja: 'TIMPファミリーにBOAモデルが仲間入り<br>高いフィット感、軽量性、アップデートしたグリップ力によって人気を博したTIMP 5シリーズにボアモデルが登場します。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1677,7 +1677,7 @@ const shoes = [
             weight: '528 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
             footshape: 'Original',
-            summary: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE MID」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。',
+            summary: { en: 'GORE-TEX, VIBRAM, leather, stability, comfort.<br>The OLYMPUS series features cushion, grip, stability, and comfort. This new Hike Mid uses durable leather upper and innovative GORE-TEX Invisible Fit for waterproofing.', ja: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE MID」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1704,7 +1704,7 @@ const shoes = [
             weight: '436 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
             footshape: 'Original',
-            summary: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE MID」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。',
+            summary: { en: 'GORE-TEX, VIBRAM, leather, stability, comfort.<br>The OLYMPUS series features cushion, grip, stability, and comfort. This new Hike Mid uses durable leather upper and innovative GORE-TEX Invisible Fit for waterproofing.', ja: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE MID」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1731,7 +1731,7 @@ const shoes = [
             weight: '473 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
             footshape: 'Original',
-            summary: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE LOW」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。',
+            summary: { en: 'GORE-TEX, VIBRAM, leather, stability, comfort.<br>The OLYMPUS series features cushion, grip, stability, and comfort. This new Hike Low uses durable leather upper and innovative GORE-TEX Invisible Fit for waterproofing.', ja: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE LOW」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1758,7 +1758,7 @@ const shoes = [
             weight: '376 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
             footshape: 'Original',
-            summary: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE LOW」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。',
+            summary: { en: 'GORE-TEX, VIBRAM, leather, stability, comfort.<br>The OLYMPUS series features cushion, grip, stability, and comfort. This new Hike Low uses durable leather upper and innovative GORE-TEX Invisible Fit for waterproofing.', ja: 'GORE-TEX、VIBRAM、レザー、安定、快適<br>OLYMPUSシリーズは、クッション性、グリップ力、安定性、そして快適さが特長です。新しい「OLYMPUS 6 HIKE LOW」は、これらの特長をそのままに、アッパーに耐久性の高いレザーを使用し、防水素材には革新的なGORE-TEX Invisible Fitを採用しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1785,7 +1785,7 @@ const shoes = [
             weight: '277 g',
             upper: 'GORE-TEX',
             footshape: 'Standard',
-            summary: 'GORE-TEX + Vibram MEGAGRIP + 軽量 + クッション<br>「グリップ」「クッション」「軽量」「フィット感」といった特徴を持ち、様々な面で高次元なTimp 5。そのTimp 5の防水モデルとして発売されました。',
+            summary: { en: 'GORE-TEX + Vibram MEGAGRIP + Light + Cushion.<br>Timp 5 is highly versatile with grip, cushion, lightness, and fit. Released as the waterproof model of Timp 5.', ja: 'GORE-TEX + Vibram MEGAGRIP + 軽量 + クッション<br>「グリップ」「クッション」「軽量」「フィット感」といった特徴を持ち、様々な面で高次元なTimp 5。そのTimp 5の防水モデルとして発売されました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1812,7 +1812,7 @@ const shoes = [
             weight: '331 g',
             upper: 'GORE-TEX',
             footshape: 'Standard',
-            summary: 'GORE-TEX + Vibram MEGAGRIP + 軽量 + クッション<br>「グリップ」「クッション」「軽量」「フィット感」といった特徴を持ち、様々な面で高次元なTimp 5。そのTimp 5の防水モデルとして発売されました。',
+            summary: { en: 'GORE-TEX + Vibram MEGAGRIP + Light + Cushion.<br>Timp 5 is highly versatile with grip, cushion, lightness, and fit. Released as the waterproof model of Timp 5.', ja: 'GORE-TEX + Vibram MEGAGRIP + 軽量 + クッション<br>「グリップ」「クッション」「軽量」「フィット感」といった特徴を持ち、様々な面で高次元なTimp 5。そのTimp 5の防水モデルとして発売されました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1840,7 +1840,7 @@ const shoes = [
             weight: '229 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Slim',
-            summary: 'カーボンプレート内蔵セロドロップシューズ<br>従来のモデルでは前足部にのみ配置されていたカーボンプレートを、今回はシューズ全長にわたって搭載しました。これにより、更なる推進力と自然な前進を促しながらも、軽量で柔軟、安定感のある走り心地を実現しました。柔軟性が75%、安定性が14%向上しています。',
+            summary: { en: 'Zero-drop shoe with built-in carbon plate.<br>Equipped with a full-length carbon plate instead of just the forefoot in previous models. Supports NATURAL forward motion with propulsion while maintaining lightweight, flexible, and stable rides. 75% flexibility increase, 14% stability increase.', ja: 'カーボンプレート内蔵セロドロップシューズ<br>従来のモデルでは前足部にのみ配置されていたカーボンプレートを、今回はシューズ全長にわたって搭載しました。これにより、更なる推進力と自然な前進を促しながらも、軽量で柔軟、安定感のある走り心地を実現しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1868,7 +1868,7 @@ const shoes = [
             weight: '164 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Slim',
-            summary: 'カーボンプレート内蔵セロドロップシューズ<br>従来のモデルでは前足部にのみ配置されていたカーボンプレートを、今回はシューズ全長にわたって搭載しました。これにより、更なる推進力と自然な前進を促しながらも、軽量で柔軟、安定感のある走り心地を実現しました。柔軟性が75%、安定性が14%向上しています。',
+            summary: { en: 'Zero-drop shoe with built-in carbon plate.<br>Equipped with a full-length carbon plate instead of just the forefoot in previous models. Supports NATURAL forward motion with propulsion while maintaining lightweight, flexible, and stable rides.', ja: 'カーボンプレート内蔵セロドロップシューズ<br>従来のモデルでは前足部にのみ配置されていたカーボンプレートを、今回はシューズ全長にわたって搭載しました。これにより、更なる推進力と自然な前進を促しながらも、軽量で柔軟、安定感のある走り心地を実現しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1896,7 +1896,7 @@ const shoes = [
             weight: '269 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: 'まるでソックスを履いているかのよう<br>「エスカランテ」、それはまるで足が自由を得たかのような感覚。アルトラの定番ロードシューズは、そのアッパーがまるでソックスのような柔らかさで、窮屈感なんて言葉は忘れさせてくれます。このシューズは、朝のランニングからウォーキング、買い物、立ち仕事まで、一日中多目的に使用できるよう設計されています。朝のランニングから、ウォーキング、買い物、立ち仕事。どんな一日も、どんなシーンでも、このシューズがあれば心地よく過ごせます。',
+            summary: { en: "Feels like wearing a sock.<br>Escalante feels as if your feet have gained freedom. Altra's classic road shoe features a sock-like soft upper that makes you forget confinement. Designed for morning runs, walks, shopping, and standing work all day.", ja: 'まるでソックスを履いているかのよう<br>「エスカランテ」、それはまるで足が自由を得たかのような感覚。アルトラの定番ロードシューズは、そのアッパーがまるでソックスのような柔らかさで、窮屈感なんて言葉は忘れさせてくれます。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1924,7 +1924,7 @@ const shoes = [
             weight: '212 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: 'まるでソックスを履いているかのよう<br>「エスカランテ」、それはまるで足が自由を得たかのような感覚。アルトラの定番ロードシューズは、そのアッパーがまるでソックスのような柔らかさで、窮屈感なんて言葉は忘れさせてくれます。このシューズは、朝のランニングからウォーキング、買い物、立ち仕事まで、一日中多目的に使用できるよう設計されています。朝のランニングから、ウォーキング、買い物、立ち仕事。どんな一日も、どんなシーンでも、このシューズがあれば心地よく過ごせます。',
+            summary: { en: "Feels like wearing a sock.<br>Escalante feels as if your feet have gained freedom. Altra's classic road shoe features a sock-like soft upper that makes you forget confinement. Designed for morning runs, walks, shopping, and standing work all day.", ja: 'まるでソックスを履いているかのよう<br>「エスカランテ」、それはまるで足が自由を得たかのような感覚。アルトラの定番ロードシューズは、そのアッパーがまるでソックスのような柔らかさで、窮屈感なんて言葉は忘れさせてくれます。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1952,7 +1952,7 @@ const shoes = [
             weight: '181 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: 'あなたの足音を聞いてください<br>とうとうその時が来ました。何度も手に入れたくなる「エスカランテ レーサー」が、待望のアップデートです。完成形とも言えるこのシューズ、履いて走り出すとその魅力がすぐにわかります。',
+            summary: { en: "Listen to your footfalls.<br>The time has come. The updates is here for 'Escalante Racer' which will make you pick it up over and over again. Take it out and run to immediately understand its charm.", ja: 'あなたの足音を聞いてください<br>とうとうその時が来ました。何度も手に入れたくなる「エスカランテ レーサー」が、待望のアップデートです。完成形とも言えるこのシューズ、履いて走り出すとその魅力がすぐにわかります。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -1980,7 +1980,7 @@ const shoes = [
             weight: '249 g',
             upper: 'Engineered Mesh',
             footshape: 'Original',
-            summary: 'あなたの足音を聞いてください<br>とうとうその時が来ました。何度も手に入れたくなる「エスカランテ レーサー」が、待望のアップデートです。完成形とも言えるこのシューズ、履いて走り出すとその魅力がすぐにわかります。',
+            summary: { en: "Listen to your footfalls.<br>The time has come. The updates is here for 'Escalante Racer' which will make you pick it up over and over again. Take it out and run to immediately understand its charm.", ja: 'あなたの足音を聞いてください<br>とうとうその時が来ました。何度も手に入れたくなる「エスカランテ レーサー」が、待望のアップデートです。完成形とも言えるこのシューズ、履いて走り出すとその魅力がすぐにわかります。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2006,7 +2006,7 @@ const shoes = [
             weight: '249 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
-            summary: 'グリップ力、推進力+快適性、カーボン<br>モンブランに新しい仲間が登場しました。その名も、モンブランカーボン。',
+            summary: { en: 'Grip, propulsion + comfort, carbon.<br>A new addition joins the Mont Blanc family: Mont Blanc Carbon.', ja: 'グリップ力、推進力+快適性、カーボン<br>モンブランに新しい仲間が登場しました。その名も、モンブランカーボン。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2032,7 +2032,7 @@ const shoes = [
             weight: '309 g',
             upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
-            summary: 'グリップ力、推進力+快適性、カーボン<br>モンブランに新しい仲間が登場しました。その名も、モンブランカーボン。',
+            summary: { en: 'Grip, propulsion + comfort, carbon.<br>A new addition joins the Mont Blanc family: Mont Blanc Carbon.', ja: 'グリップ力、推進力+快適性、カーボン<br>モンブランに新しい仲間が登場しました。その名も、モンブランカーボン。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2059,7 +2059,7 @@ const shoes = [
             weight: '343 g',
             upper: 'Engineered Mesh (Durable)',
             footshape: 'Standard',
-            summary: '通気性に優れた超軽量ミッドカットモデル<br>快適なクッション性と抜群のフィット感が特徴のTimpシリーズから、ミッドカットモデル「Timp Hiker」が登場。',
+            summary: { en: "Ultra-lightweight MID-cut model with superior breathability.<br>The MID-cut 'Timp Hiker' emerges from the Timp series known for comfortable cushion and striking fit.", ja: '通気性に優れた超軽量ミッドカットモデル<br>快適なクッション性と抜群のフィット感が特徴のTimpシリーズから、ミッドカットモデル「Timp Hiker」が登場。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2086,7 +2086,7 @@ const shoes = [
             weight: '272 g',
             upper: 'Engineered Mesh (Durable)',
             footshape: 'Standard',
-            summary: '通気性に優れた超軽量ミッドカットモデル<br>快適なクッション性と抜群のフィット感が特徴のTimpシリーズから、ミッドカットモデル「Timp Hiker」が登場。',
+            summary: { en: "Ultra-lightweight MID-cut model with superior breathability.<br>The MID-cut 'Timp Hiker' emerges from the Timp series known for comfortable cushion and striking fit.", ja: '通気性に優れた超軽量ミッドカットモデル<br>快適なクッション性と抜群のフィット感が特徴のTimpシリーズから、ミッドカットモデル「Timp Hiker」が登場。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2114,7 +2114,7 @@ const shoes = [
             weight: '368 g',
             upper: 'GORE-TEX',
             footshape: 'Standard',
-            summary: 'GORE-TEX+Megagrip+軽量 ミッドカット<br>⁡今シーズン、大幅にアップデートされたTimpシリーズから足首までしっかりサポートする防水ミッドカットモデル Timp Hiker GTXが誕生しました。',
+            summary: { en: 'GORE-TEX + Megagrip + Light MID-cut.<br>Timp Hiker GTX is born from significantly updated Timp series providing solid ankle support and waterproofing.', ja: 'GORE-TEX+Megagrip+軽量 ミッドカット<br>\u2061今シーズン、大幅にアップデートされたTimpシリーズから足首までしっかりサポートする防水ミッドカットモデル Timp Hiker GTXが誕生しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2142,7 +2142,7 @@ const shoes = [
             weight: '283 g',
             upper: 'GORE-TEX',
             footshape: 'Standard',
-            summary: 'GORE-TEX+Megagrip+軽量 ミッドカット<br>⁡今シーズン、大幅にアップデートされたTimpシリーズから足首までしっかりサポートする防水ミッドカットモデル Timp Hiker GTXが誕生しました。',
+            summary: { en: 'GORE-TEX + Megagrip + Light MID-cut.<br>Timp Hiker GTX is born from significantly updated Timp series providing solid ankle support and waterproofing.', ja: 'GORE-TEX+Megagrip+軽量 ミッドカット<br>\u2061今シーズン、大幅にアップデートされたTimpシリーズから足首までしっかりサポートする防水ミッドカットモデル Timp Hiker GTXが誕生しました。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2169,7 +2169,7 @@ const shoes = [
             weight: '243 g',
             upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
-            summary: '全てが高次元なトレイルシューズ<br>Timpは、一日中履いても疲れにくい快適なクッション性と絶妙なフィット感が魅力のモデルです。',
+            summary: { en: 'High-level everything trail shoe.<br>Timp features attractive daily-wear cushioning and an exquisite fit that limits fatigue.', ja: '全てが高次元なトレイルシューズ<br>Timpは、一日中履いても疲れにくい快適なクッション性と絶妙なフィット感が魅力のモデルです。' },
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
     },
@@ -2872,7 +2872,7 @@ function renderStaffList() {
                     </div>
                 </td>
                 <td style="vertical-align:top; max-width:250px;">
-                    <p style="font-size:0.85rem; margin:0; color:#d1d5db; line-height: 1.4;">${shoe.features.summary || shoe.desc[currentLang]}</p>
+                    <p style="font-size:0.85rem; margin:0; color:#d1d5db; line-height: 1.4;">${getVal(shoe.features.summary) || shoe.desc[currentLang]}</p>
                 </td>
             </tr>
         `;
@@ -3106,7 +3106,7 @@ function renderResult(shoe) {
             </div>
 
             <p class="shoe-desc" style="font-size:1rem; line-height:1.5; color:#e2e8f0; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
-                ${shoe.features.summary || shoe.desc[currentLang]}
+                ${getVal(shoe.features.summary) || shoe.desc[currentLang]}
             </p>
             
             <div style="display:flex; gap:1rem; align-items:center; flex-wrap:wrap;">
