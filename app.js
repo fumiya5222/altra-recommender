@@ -262,7 +262,7 @@ const shoes = [
             colors: { en: "WHITE, BLACK", ja: "WHITE, BLACK" },
             weight: '259.4 g',
             upper: 'メッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -289,7 +289,7 @@ const shoes = [
             colors: { en: "WHITE, BLACK", ja: "WHITE, BLACK" },
             weight: '310.4 g',
             upper: 'メッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -402,7 +402,7 @@ const shoes = [
             colors: { en: "BLACK/BLACK", ja: "BLACK/BLACK" },
             weight: '260.8 g',
             upper: 'GORE-TEX Invisible Fit &ジャガードメッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: '多少の雨なら日々のランニングを続けたい方や、通勤時に防水性と快適さを兼ね備えたシューズを求める方、また寒い季節に風をシャットアウトしたい方に特におすすめです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -430,7 +430,7 @@ const shoes = [
             colors: { en: "BLACK/WHITE", ja: "BLACK/WHITE" },
             weight: '238.14 g',
             upper: 'ジャカードメッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: 'ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。そのTORIN 8より全体的に…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -458,7 +458,7 @@ const shoes = [
             colors: { en: "BLACK/BLACK, BLACK/WHITE, TAN, NAVY, DARK BLUE, WHITE/LIGHT BLUE, WHITE/GREEN", ja: "BLACK/BLACK, BLACK/WHITE, TAN, NAVY, DARK BLUE, WHITE/LIGHT BLUE, WHITE/GREEN" },
             weight: '238.14 g',
             upper: 'ジャカードメッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: 'ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -571,7 +571,7 @@ const shoes = [
             colors: { en: "BLACK/BLACK, DUSTY OLIVE", ja: "BLACK/BLACK, DUSTY OLIVE" },
             weight: '319 g',
             upper: 'GORE-TEX Invisible Fit &ジャガードメッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: '多少の雨なら日々のランニングを続けたい方や、通勤時に防水性と快適さを兼ね備えたシューズを求める方、また寒い季節に風をシャットアウトしたい方に特におすすめです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -599,7 +599,7 @@ const shoes = [
             colors: { en: "BLACK/WHITE", ja: "BLACK/WHITE" },
             weight: '287.7g',
             upper: 'ジャカードメッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: 'ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。そのTORIN 8より全体的に…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -627,7 +627,7 @@ const shoes = [
             colors: { en: "LIGHT GRAY, BLACK/BLACK, WHITE/BLUE, BLACK/WHITE, BLACK/ORANGE, DARK SHADOW, DUSTY OLIVE, WHITE/LIME", ja: "LIGHT GRAY, BLACK/BLACK, WHITE/BLUE, BLACK/WHITE, BLACK/ORANGE, DARK SHADOW, DUSTY OLIVE, WHITE/LIME" },
             weight: '287.7 g',
             upper: 'ジャカードメッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: 'ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -654,7 +654,7 @@ const shoes = [
             colors: { en: "DUSTY OLIVE, BLACK", ja: "DUSTY OLIVE, BLACK" },
             weight: '381.3g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（100% PFCフリーの防水アッパー）',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -681,7 +681,7 @@ const shoes = [
             colors: { en: "NAVY, BLACK, BROWN/TAUPE", ja: "NAVY, BLACK, BROWN/TAUPE" },
             weight: '452.17g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（100% PFCフリーの防水アッパー）',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'アップデートされたLONE PEAKをベースにした防水ミッドカットモデル。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -707,7 +707,7 @@ const shoes = [
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '263.7g',
             upper: 'リップストップメッシュアッパー',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -733,7 +733,7 @@ const shoes = [
             colors: { en: "MAROON, TEAL/BLACK, TAUPE, TEAL, GLACIER, BROWN/TAN, PURPLE/ORANGE, GRAY/ORANGE, GRAY, BLACK", ja: "MAROON, TEAL/BLACK, TAUPE, TEAL, GLACIER, BROWN/TAN, PURPLE/ORANGE, GRAY/ORANGE, GRAY, BLACK" },
             weight: '263.7g',
             upper: 'リップストップメッシュアッパー',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -759,7 +759,7 @@ const shoes = [
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '327.7g',
             upper: 'リップストップメッシュアッパー',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -785,7 +785,7 @@ const shoes = [
             colors: { en: "LIME, RED, BASALT, TAN, BLUE, NAVY, BLACK/ORANGE, GREEN, DARK BLUE, DUSTY OLIVE, GRAY, BLACK", ja: "LIME, RED, BASALT, TAN, BLUE, NAVY, BLACK/ORANGE, GREEN, DARK BLUE, DUSTY OLIVE, GRAY, BLACK" },
             weight: '327.7g',
             upper: 'リップストップメッシュアッパー',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -812,7 +812,7 @@ const shoes = [
             colors: { en: "BLACK/BLACK", ja: "BLACK/BLACK" },
             weight: '283.5 g',
             upper: 'GORE-TEX Invisible Fit, 85% RPET',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '＜必然の融合＞ GORE-TEX × Vibram® × LONE PEAK',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -839,7 +839,7 @@ const shoes = [
             colors: { en: "DUSTY OLIVE, BLACK/BLACK", ja: "DUSTY OLIVE, BLACK/BLACK" },
             weight: '351.5 g',
             upper: 'GORE-TEX Invisible Fit, 85% RPET',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '＜必然の融合＞ GORE-TEX × Vibram® × LONE PEAK',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -866,7 +866,7 @@ const shoes = [
             colors: { en: "MAROON, BLACK", ja: "MAROON, BLACK" },
             weight: '320.35g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（100% PFCフリーの防水アッパー）',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'アップデートされたLONE PEAKをベースにした防水ローカットモデル。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -893,7 +893,7 @@ const shoes = [
             colors: { en: "DUSTY OLIVE, TAUPE", ja: "DUSTY OLIVE, TAUPE" },
             weight: '392.64g',
             upper: 'Cosmo社製 Hydroguard 防水メンブレンライニング、縫い目なしのオーバーレイ＆リサイクルポリエステルメッシュ（100% PFCフリーの防水アッパー）',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'アップデートされたLONE PEAKをベースにした防水ローカットモデル。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -920,7 +920,7 @@ const shoes = [
             colors: { en: "DARK CLAY, BLACK", ja: "DARK CLAY, BLACK" },
             weight: '428g',
             upper: '防水ブーティ構造',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '快適さとサポート力を兼ね備えた防水シューズ',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -972,7 +972,7 @@ const shoes = [
             colors: { en: "ORANGE, DARK RED, TAN, DARK PURPLE, PURPLE/ORANGE, GREEN, BLUE/ORANGE", ja: "ORANGE, DARK RED, TAN, DARK PURPLE, PURPLE/ORANGE, GREEN, BLUE/ORANGE" },
             weight: '261g',
             upper: '速乾性のあるエアメッシュ',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'ローンピークはその厚すぎず薄すぎずの絶妙なバランスと、多くの人の足型にフィットすることからトレイルランニングを楽しまれる方は勿論、ハイカーにも絶大な支持をいた…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -999,7 +999,7 @@ const shoes = [
             colors: { en: "LIGHT BLUE, BLACK", ja: "LIGHT BLUE, BLACK" },
             weight: '428g',
             upper: '防水ブーティ構造',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '快適さとサポート力を兼ね備えた防水シューズ',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1025,7 +1025,7 @@ const shoes = [
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '237g',
             upper: '通気性の高いアップデートされた前足部のメッシュ',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: 'FootShape™：STANDARD',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1103,7 +1103,7 @@ const shoes = [
             colors: { en: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK", ja: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK" },
             weight: '289 g',
             upper: 'Engineered mesh',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1129,7 +1129,7 @@ const shoes = [
             colors: { en: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND", ja: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND" },
             weight: '345 g',
             upper: 'Engineered mesh',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1183,7 +1183,7 @@ const shoes = [
             colors: { en: "GRAY/BLACK, MINERAL BLUE", ja: "GRAY/BLACK, MINERAL BLUE" },
             weight: '376g',
             upper: 'GORE-TEX PRODUCT',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '雨風からしっかりと守ってくれる安心の「GORE-TEX」。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1210,7 +1210,7 @@ const shoes = [
             colors: { en: "BLACK/GRAY, SAND", ja: "BLACK/GRAY, SAND" },
             weight: '436g',
             upper: 'GORE-TEX PRODUCT',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '雨風からしっかりと守ってくれる安心の「GORE-TEX」。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1238,7 +1238,7 @@ const shoes = [
             colors: { en: "PINK, DARK GRAY, WHITE/BLUE, MINT, WHITE/BLACK, YELLOW, BLACK", ja: "PINK, DARK GRAY, WHITE/BLUE, MINT, WHITE/BLACK, YELLOW, BLACK" },
             weight: '230 g',
             upper: 'Engineered Mesh',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: '快適さとパフォーマンスの新次元へ',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1266,7 +1266,7 @@ const shoes = [
             colors: { en: "WHITE, WHITE/CORAL, BLACK/WHITE", ja: "WHITE, WHITE/CORAL, BLACK/WHITE" },
             weight: '244.6g',
             upper: 'エンジニアード・メッシュ',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'アルトラの中でも最もゆとりのある Original FootShape™ Fit が、足指の自由な動きを叶える広々としたトゥボックスと、ミッドフットの余裕ある…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1294,7 +1294,7 @@ const shoes = [
             colors: { en: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL", ja: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL" },
             weight: '300.5g',
             upper: 'エンジニアード・メッシュ',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'アルトラの中でも最もゆとりのある Original FootShape™ Fit が、足指の自由な動きを叶える広々としたトゥボックスと、ミッドフットの余裕ある…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1320,7 +1320,7 @@ const shoes = [
             colors: { en: "WHITE/CORAL, BLACK/GRAY, CORAL/BLACK", ja: "WHITE/CORAL, BLACK/GRAY, CORAL/BLACK" },
             weight: '273.6g',
             upper: 'MATRYX® one-piece woven upp',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '「OLYMPUS」シリーズは、抜群のクッショニング、グリップ力、そして安定感によって、100マイルレースのような途方も無い距離に挑むトレイルランナーから、重い…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1346,7 +1346,7 @@ const shoes = [
             colors: { en: "BLACK/YELLOW, GRAY/ORANGE, TAUPE", ja: "BLACK/YELLOW, GRAY/ORANGE, TAUPE" },
             weight: '338.8g',
             upper: 'MATRYX® one-piece woven upp',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '「OLYMPUS」シリーズは、抜群のクッショニング、グリップ力、そして安定感によって、100マイルレースのような途方も無い距離に挑むトレイルランナーから、重い…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1638,7 +1638,7 @@ const shoes = [
             colors: { en: "TAN, BLACK", ja: "TAN, BLACK" },
             weight: '528 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'GORE-TEX、VIBRAM、レザー、安定、快適',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1665,7 +1665,7 @@ const shoes = [
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '436 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'GORE-TEX、VIBRAM、レザー、安定、快適',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1692,7 +1692,7 @@ const shoes = [
             colors: { en: "BLACK, BROWN/TAUPE", ja: "BLACK, BROWN/TAUPE" },
             weight: '473 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'GORE-TEX、VIBRAM、レザー、安定、快適',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1719,7 +1719,7 @@ const shoes = [
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '376 g',
             upper: 'Leather and GORE-TEX Invisible Fit',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'GORE-TEX、VIBRAM、レザー、安定、快適',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1885,7 +1885,7 @@ const shoes = [
             colors: { en: "BLACK/BLACK, WHITE/WHITE, PURPLE, DARK BLUE, MINT, WHITE, WHITE/GREEN, BLACK", ja: "BLACK/BLACK, WHITE/WHITE, PURPLE, DARK BLUE, MINT, WHITE, WHITE/GREEN, BLACK" },
             weight: '212g',
             upper: 'エンジニアードメッシュ',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'まるでソックスを履いているかのよう',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1913,7 +1913,7 @@ const shoes = [
             colors: { en: "BLACK/BLACK, WHITE/ORANGE, TEAL, TOKYO, WHITE, WHITE/CORAL, BLACK", ja: "BLACK/BLACK, WHITE/ORANGE, TEAL, TOKYO, WHITE, WHITE/CORAL, BLACK" },
             weight: '181g',
             upper: 'エンジニアードメッシュ',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: 'とうとうその時が来ました。何度も手に入れたくなる「エスカランテ レーサー」が、待望のアップデートです。完成形とも言えるこのシューズ、履いて走り出すとその魅力が…',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -2180,7 +2180,7 @@ const shoes = [
             colors: { en: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE", ja: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE" },
             weight: '295g',
             upper: 'Durable, engineered mesh',
-            footshape: 'ORIGINAL',
+            footshape: 'Original',
             summary: '今回、バージョン5にアップデートする事でかかと部分を中心に「フィット感」が向上。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -2207,7 +2207,7 @@ const shoes = [
             colors: { en: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR", ja: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR" },
             weight: '264 g',
             upper: 'Ultra-lightweight, hyper-breathable',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: '今その瞬間、自分好みのフィット感を。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -2233,7 +2233,7 @@ const shoes = [
             colors: { en: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR", ja: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR" },
             weight: '317 g',
             upper: 'Ultra-lightweight, hyper-breathable',
-            footshape: 'STANDARD',
+            footshape: 'Standard',
             summary: '今その瞬間、自分好みのフィット感を。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -2514,7 +2514,7 @@ function renderStaffList() {
                         <span style="color:#fff;">重量:</span> ${shoe.features.weight || '-'}<br>
                         <span style="color:#fff;">ミッド:</span> ${shoe.features.midsole || '-'}<br>
                         <span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}<br>
-                        <span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'} ${wpBadge}<br>
+                        <span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}<br>
                         <span style="color:#fff;">アッパー:</span> <span style="font-size:0.75rem;">${shoe.features.upper || '-'}</span><br>
                         <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}
                     </div>
