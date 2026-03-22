@@ -2622,6 +2622,8 @@ function renderStaffList() {
                         <span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}<br>
                         <span style="color:#fff;">アッパー:</span> <span style="font-size:0.75rem;">${shoe.features.upper || '-'}</span><br>
                         <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}
+                        ${shoe.features.cushion ? `<br><span style="color:#fff;">クッション:</span> ${shoe.features.cushion}` : ''}
+                        ${shoe.features.insole ? `<br><span style="color:#fff;">インソール:</span> ${shoe.features.insole}` : ''}
                     </div>
                 </td>
                 <td style="vertical-align:top; max-width:250px;">
