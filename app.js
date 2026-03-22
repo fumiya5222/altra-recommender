@@ -1715,12 +1715,14 @@ const questions = [
     },
     {
         id: 'terrain',
-        question: { en: 'Where do you run mostly?', ja: '主にどんな環境で使用しますか？' },
+        question: { en: 'How will you mainly use these shoes?', ja: '主にどんなシーンで使いますか？' },
         options: [
-            { value: 'road', icon: '🛣️', title: { en: 'Roads & Pavement', ja: 'ロード (舗装路)' }, desc: { en: 'Town running around Kutchan or Niseko.', ja: '倶知安やニセコ市街地のアスファルトやコンクリートの道。' } },
-            { value: 'trail', icon: '⛰️', title: { en: 'Trails & Mountains', ja: 'トレイル (山・未舗装路)' }, desc: { en: 'Mt. Yotei, Annupuri, and dirt trails.', ja: '羊蹄山やアンヌプリなどの本格的な山や森の道。' } },
-            { value: 'snow', icon: '❄️', title: { en: 'Snow & Winter', ja: 'スノー / 雨天 (防水機能)', ja_alt: 'スノー (雪道・冬期)' }, desc: { en: 'Niseko\'s famous powder snow and winter trails.', ja: 'ニセコの雪道や寒冷地、または雨天時でもドライに保ちたい。' } },
-            { value: 'mixed', icon: '🌲', title: { en: 'A Bit of Both', ja: '両方 (ミックス)' }, desc: { en: 'I run from my front door to the trails.', ja: '自宅からトレイルまで、ロードとダートの両方を走ります。' } }
+            { value: 'road', icon: '🛣️', title: { en: 'Road Running', ja: '🛣️ ロードランニング' }, desc: { en: 'Town running, tarmac and paved roads.', ja: 'アスファルト・コンクリートの道をランニング。' } },
+            { value: 'trail', icon: '⛰️', title: { en: 'Trail Running', ja: '🏔️ トレイルランニング' }, desc: { en: 'Mt. Yotei, Annupuri, dirt trails and mountains.', ja: '羊蹄山やアンヌプリなどの未舗装路・山道。' } },
+            { value: 'snow', icon: '🏕️', title: { en: 'Outdoor / Hiking', ja: '🏕️ アウトドアアドベンチャー' }, desc: { en: 'Snow, rain, hiking — waterproof protection needed.', ja: '雪道・雨天・ハイキング。防水機能が欲しい方に。' } },
+            { value: 'walking', icon: '🚶', title: { en: 'Walking / Daily', ja: '🚶 ウォーキング・日常生活' }, desc: { en: 'Everyday walking, light exercise, commuting.', ja: '散歩・買い物・最初のアルトラに。足に優しい日常調。' } },
+            { value: 'lifestyle', icon: '🏙️', title: { en: 'Lifestyle / Casual', ja: '🏙️ ライフスタイル・お活気に' }, desc: { en: 'Casual wear, travel, town use — stylish yet functional.', ja: 'カジュアル・旅行・良い塗履など、オン・オフきれいに使えるシューズ。' } },
+            { value: 'gym', icon: '🏋️', title: { en: 'Gym / Training', ja: '🏋️ ジムトレーニング' }, desc: { en: 'Strength training, HIIT, gym workouts.', ja: '筋トレ・HIIT・フィットネスジムでのトレーニング向け。' } }
         ]
     },
     {
@@ -2082,6 +2084,19 @@ function calculateResults() {
         
         if (shoe.attributes.terrain.includes(userAnswers.terrain)) {
             score += (userAnswers.terrain === 'snow' && shoe.attributes.terrain.includes('snow')) ? 5 : 3;
+        }
+        
+        // Extra scoring for Walking / Lifestyle / Gym based on category
+        if (userAnswers.terrain === 'walking') {
+            if (shoe.category['en'] === 'Walking') score += 10;
+            else if (shoe.category['en'] === 'Road Running') score += 3;
+        }
+        if (userAnswers.terrain === 'lifestyle') {
+            if (shoe.category['en'] === 'Lifestyle') score += 10;
+            else if (shoe.category['en'] === 'Road Running') score += 2;
+        }
+        if (userAnswers.terrain === 'gym') {
+            if (shoe.category['en'] === 'Gym Training') score += 10;
         }
         
         if (shoe.attributes.support.includes(userAnswers.support)) {
