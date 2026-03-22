@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stride Lab Niseko - Altra Recommender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+<body>
+    <div class="background-mesh"></div>
+    <div class="lang-toggle">
+        <button id="view-toggle-btn" class="lang-btn" style="margin-right: 1rem; border-color: var(--accent);">📋 店員用一覧</button>
+        <button id="lang-ja" class="lang-btn active">JA</button>
+        <button id="lang-en" class="lang-btn">EN</button>
+    </div>
+
+    <div class="container" id="app-container">
+        <!-- Landing Section -->
+        <section id="landing-screen" class="screen active">
+            <h1 class="title">Find Your Perfect <br> <span class="brand-text">ALTRA</span> Shoe</h1>
+            <p class="subtitle">Answer a few quick questions to discover the ideal Altra running or trail shoe tailored specifically for your needs.</p>
+            <button id="start-btn" class="primary-btn pulse-glow">Start Matchmaker</button>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-screen" class="screen">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <h2 id="question-text" class="question-text">Question goes here?</h2>
+            <div id="options-container" class="options-grid">
+                <!-- Options will be injected here via JS -->
+            </div>
+            <div class="quiz-footer">
+                <button id="back-btn" class="secondary-btn hidden">Back</button>
+            </div>
+        </section>
+
+        <!-- Result Section -->
+        <section id="result-screen" class="screen">
+            <h2 class="result-title">Your Top Match</h2>
+            <div id="result-container" class="result-card">
+                <!-- Result will be injected here -->
+            </div>
+            <h3 class="runner-up-title" id="runner-up-title" style="display: none;">Runner Up</h3>
+            <div id="runner-up-container" class="runner-up-grid">
+                <!-- Runner up will be injected here -->
+            </div>
+            <button id="restart-btn" class="primary-btn restart-btn">Retake Quiz</button>
+        </section>
+
+        <!-- Staff View Section -->
+        <section id="staff-screen" class="screen" style="display: none; width: 100%;">
+            <h2 id="staff-title" class="title" style="font-size: 2.5rem; text-align: left; margin-bottom: 1rem;">Staff Shoe Database</h2>
+            
+            <div class="filter-controls">
+                <input type="text" id="staff-search" placeholder="Search models..." class="staff-filter-input">
+                <select id="staff-gender-filter" class="staff-filter-select">
+                    <option value="ALL" id="opt-gender-all">All Genders</option>
+                    <option value="M" id="opt-gender-m">Men's</option>
+                    <option value="W" id="opt-gender-w">Women's</option>
+                </select>
+                <select id="staff-category-filter" class="staff-filter-select">
+                    <option value="ALL" id="opt-cat-all">All Categories</option>
+                    <option value="Trail" id="opt-cat-trail">Trail</option>
+                    <option value="Road" id="opt-cat-road">Road</option>
+                    <option value="Snow" id="opt-cat-snow">Snow / Wet</option>
+                </select>
+                <select id="staff-sort" class="staff-filter-select">
+                    <option value="default" id="opt-sort-def">Sort: Default</option>
+                    <option value="name_asc" id="opt-sort-name">Name (A-Z)</option>
+                    <option value="stack_asc" id="opt-sort-stack">Stack Height (Low to High)</option>
+                    <option value="stack_desc" id="opt-sort-stack-high">Stack Height (High to Low)</option>
+                </select>
+                <button id="staff-filter-apply" class="primary-btn pulse-glow" style="padding: 0.5rem 1rem; font-size: 1rem;">適用 / Apply</button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="staff-table" id="staff-table">
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js?v=2"></script>
+</body>
+</html>
