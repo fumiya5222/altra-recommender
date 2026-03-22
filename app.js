@@ -3070,6 +3070,22 @@ function renderResult(shoe) {
 
     const isJa = (currentLang === 'ja');
 
+    const specsToDisplay = [
+        { label: isJa ? '重量' : 'Weight', value: shoe.features.weight },
+        { label: i18n[currentLang].specStack, value: shoe.stackHeight },
+        { label: isJa ? 'フットシェイプ' : 'FootShape', value: shoe.features.footshape },
+        { label: isJa ? 'ミッドソール' : 'Midsole', value: shoe.features.midsole },
+        { label: isJa ? 'アウトソール' : 'Outsole', value: shoe.features.outsole },
+        { label: isJa ? 'アッパー' : 'Upper', value: shoe.features.upper },
+        { label: isJa ? 'クッション' : 'Cushion', value: shoe.features.cushion },
+        { label: isJa ? 'インソール' : 'Insole', value: shoe.features.insole }
+    ];
+
+    const specsHtml = specsToDisplay
+        .filter(s => s.value && s.value !== '-')
+        .map(s => `<div>${s.label}: ${s.value}</div>`)
+        .join('');
+
     resultContainer.innerHTML = `
         <div class="result-img-container" style="background:none; padding:0; height:200px; display:flex; justify-content:center; align-items:center;">
             ${imageHtml}
@@ -3084,9 +3100,7 @@ function renderResult(shoe) {
             <div class="specs-compact-list" style="font-size:0.95rem; line-height:1.6; color:var(--text-secondary); margin-bottom: 1.5rem;">
                 <div>${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' • ')}</div>
                 <div>🎨 ${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}</div>
-                <div>${isJa ? '重量' : 'Weight'}: ${shoe.features.weight || '-'}</div>
-                <div>${isJa ? 'スタック' : 'Stack'}: ${shoe.stackHeight || '-'}</div>
-                <div>${isJa ? 'フットシェイプ' : 'FootShape'}: ${shoe.features.footshape || '-'}</div>
+                ${specsHtml}
             </div>
 
             <p class="shoe-desc" style="font-size:1rem; line-height:1.5; color:#e2e8f0; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
