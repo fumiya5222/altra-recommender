@@ -1717,12 +1717,12 @@ const questions = [
         id: 'terrain',
         question: { en: 'How will you mainly use these shoes?', ja: '主にどんなシーンで使いますか？' },
         options: [
-            { value: 'road', icon: '🛣️', title: { en: 'Road Running', ja: '🛣️ ロードランニング' }, desc: { en: 'Town running, tarmac and paved roads.', ja: 'アスファルト・コンクリートの道をランニング。' } },
-            { value: 'trail', icon: '⛰️', title: { en: 'Trail Running', ja: '🏔️ トレイルランニング' }, desc: { en: 'Mt. Yotei, Annupuri, dirt trails and mountains.', ja: '羊蹄山やアンヌプリなどの未舗装路・山道。' } },
-            { value: 'snow', icon: '🏕️', title: { en: 'Outdoor / Hiking', ja: '🏕️ アウトドアアドベンチャー' }, desc: { en: 'Snow, rain, hiking — waterproof protection needed.', ja: '雪道・雨天・ハイキング。防水機能が欲しい方に。' } },
-            { value: 'walking', icon: '🚶', title: { en: 'Walking / Daily', ja: '🚶 ウォーキング・日常生活' }, desc: { en: 'Everyday walking, light exercise, commuting.', ja: '散歩・買い物・最初のアルトラに。足に優しい日常調。' } },
-            { value: 'lifestyle', icon: '🏙️', title: { en: 'Lifestyle / Casual', ja: '🏙️ ライフスタイル・お活気に' }, desc: { en: 'Casual wear, travel, town use — stylish yet functional.', ja: 'カジュアル・旅行・良い塗履など、オン・オフきれいに使えるシューズ。' } },
-            { value: 'gym', icon: '🏋️', title: { en: 'Gym / Training', ja: '🏋️ ジムトレーニング' }, desc: { en: 'Strength training, HIIT, gym workouts.', ja: '筋トレ・HIIT・フィットネスジムでのトレーニング向け。' } }
+            { value: 'road', icon: '🛣️', title: { en: 'Road Running', ja: 'ロードランニング' }, desc: { en: 'Town running, tarmac and paved roads.', ja: 'アスファルト・コンクリートの道をランニング。' } },
+            { value: 'trail', icon: '🏔️', title: { en: 'Trail Running', ja: 'トレイルランニング' }, desc: { en: 'Mt. Yotei, Annupuri, dirt trails and mountains.', ja: '羊蹄山やアンヌプリなどの未舗装路・山道。' } },
+            { value: 'snow', icon: '🏕️', title: { en: 'Outdoor / Hiking', ja: 'アウトドアアドベンチャー' }, desc: { en: 'Snow, rain, hiking — waterproof protection needed.', ja: '雪道・雨天・ハイキング。防水機能が欲しい方に。' } },
+            { value: 'walking', icon: '🚶', title: { en: 'Walking / Daily', ja: 'ウォーキング・日常生活' }, desc: { en: 'Everyday walking, light exercise, commuting.', ja: '散歩・買い物・最初のアルトラに。足に優しい日常調。' } },
+            { value: 'lifestyle', icon: '🏙️', title: { en: 'Lifestyle / Casual', ja: 'ライフスタイル・お活気に' }, desc: { en: 'Casual wear, travel, town use — stylish yet functional.', ja: 'カジュアル・旅行・良い塗履など、オン・オフきれいに使えるシューズ。' } },
+            { value: 'gym', icon: '🏋️', title: { en: 'Gym / Training', ja: 'ジムトレーニング' }, desc: { en: 'Strength training, HIIT, gym workouts.', ja: '筋トレ・HIIT・フィットネスジムでのトレーニング向け。' } }
         ]
     },
     {
