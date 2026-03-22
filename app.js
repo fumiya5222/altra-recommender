@@ -3075,49 +3075,24 @@ function renderResult(shoe) {
             ${imageHtml}
         </div>
         <div class="result-info">
-            <div class="shoe-tag">${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' • ')} • ${shoe.tag[currentLang]}</div>
-            <h2 class="shoe-name">${shoe.name} <a href="${shoe.url}" target="_blank" style="font-size:1.5rem; text-decoration:none;" title="${i18n[currentLang].officialLink}">🛒</a></h2>
-            <p class="shoe-desc">${shoe.features.summary || shoe.desc[currentLang]}</p>
+            <h2 class="shoe-name" style="margin-bottom:0.4rem; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                ${shoe.name} 
+                <span style="font-weight:normal; font-size:1rem; color:var(--accent);">${shoe.support[currentLang]}</span>
+                <a href="${shoe.url}" target="_blank" style="font-size:1.2rem; text-decoration:none;" title="${i18n[currentLang].officialLink}">🛒</a>
+            </h2>
             
-            <div class="specs-grid" style="margin-bottom: 2rem; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));">
-                <div class="spec-item">
-                    <div class="spec-label">${isJa ? '重量' : 'Weight'}</div>
-                    <div class="spec-value" style="font-size:0.9rem;">${shoe.features.weight || '-'}</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-label">${i18n[currentLang].specStack}</div>
-                    <div class="spec-value" style="font-size:0.9rem;">${shoe.stackHeight || '-'}</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-label">${isJa ? 'フットシェイプ' : 'FootShape'}</div>
-                    <div class="spec-value" style="font-size:0.9rem;">${shoe.features.footshape || '-'}</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-label">${isJa ? 'ミッドソール' : 'Midsole'}</div>
-                    <div class="spec-value" style="font-size:0.85rem; line-height:1.2;">${shoe.features.midsole || '-'}</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-label">${isJa ? 'アウトソール' : 'Outsole'}</div>
-                    <div class="spec-value" style="font-size:0.85rem; line-height:1.2;">${shoe.features.outsole || '-'}</div>
-                </div>
-                <div class="spec-item">
-                    <div class="spec-label">${isJa ? 'アッパー' : 'Upper'}</div>
-                    <div class="spec-value" style="font-size:0.85rem; line-height:1.2;">${shoe.features.upper || '-'}</div>
-                </div>
-                ${shoe.features.cushion ? `
-                <div class="spec-item">
-                    <div class="spec-label">${isJa ? 'クッション' : 'Cushion'}</div>
-                    <div class="spec-value" style="font-size:0.85rem;">${shoe.features.cushion}</div>
-                </div>` : ''}
-                <div class="spec-item">
-                    <div class="spec-label">${i18n[currentLang].specWaterproof}</div>
-                    <div class="spec-value" style="font-size:0.85rem;">${wpText}</div>
-                </div>
-                <div class="spec-item" style="grid-column: span 2;">
-                    <div class="spec-label">${i18n[currentLang].specColors}</div>
-                    <div class="spec-value" style="font-size:0.8rem; line-height:1.3;">${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}</div>
-                </div>
+            <div class="specs-compact-list" style="font-size:0.95rem; line-height:1.6; color:var(--text-secondary); margin-bottom: 1.5rem;">
+                <div>${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' • ')}</div>
+                <div>🎨 ${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}</div>
+                <div>${isJa ? '重量' : 'Weight'}: ${shoe.features.weight || '-'}</div>
+                <div>${isJa ? 'スタック' : 'Stack'}: ${shoe.stackHeight || '-'}</div>
+                <div>${isJa ? 'フットシェイプ' : 'FootShape'}: ${shoe.features.footshape || '-'}</div>
             </div>
+
+            <p class="shoe-desc" style="font-size:1rem; line-height:1.5; color:#e2e8f0; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
+                ${shoe.features.summary || shoe.desc[currentLang]}
+            </p>
+        </div>
             
             <div style="display:flex; gap:1rem; align-items:center; flex-wrap:wrap;">
                 <a href="${shoe.url}" target="_blank" class="primary-btn" style="text-decoration:none;">${i18n[currentLang].officialLink}</a>
