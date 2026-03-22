@@ -2360,8 +2360,47 @@ function init() {
         el.addEventListener('change', renderStaffList);
     });
 
+    populateSpecsFilters(); // Generate dynamic specs checkbox options
+
     setLanguage(currentLang);
     renderQuestion(0, false);
+}
+
+function populateSpecsFilters() {
+    const container = document.getElementById('specs-checkboxes');
+    if (!container) return;
+
+    // Get unique values with grouping
+    const midsoles = [...new Set(shoes.map(s => s.features.midsole).filter(Boolean).map(v => v.trim()))].sort();
+    const outsoles = [...new Set(shoes.map(s => s.features.outsole).filter(Boolean).map(v => v.trim()))].sort();
+    const footshapes = ['Standard', 'Original', 'Wide', 'Slim'];
+
+    let html = '';
+    
+    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 4px 0 2px; color:#10b981;">🦶 フットシェイプ (FootShape)</div>';
+    footshapes.forEach(fs => {
+        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${fs}" data-type="footshape"> ${fs}</label>`;
+    });
+
+    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">☔ 防水 (Waterproof)</div>';
+    html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="true" data-type="waterproof"> 防水モデル</label>`;
+
+    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🧦 ミッドソール</div>';
+    midsoles.forEach(m => {
+        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${m}" data-type="midsole"> ${m}</label>`;
+    });
+
+    html += '<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🗺️ アウトソール</div>';
+    outsoles.forEach(o => {
+        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${o}" data-type="outsole"> ${o}</label>`;
+    });
+
+    container.innerHTML = html;
+
+    // Add listeners to these dynamic checkboxes
+    container.querySelectorAll('input').forEach(el => {
+        el.addEventListener('change', renderStaffList);
+    });
 }
 
 function toggleView() {
@@ -2490,14 +2529,29 @@ function renderStaffList() {
         }
 
         let matchSpecs = true;
-        if (selectedSpecs.length > 0) {
-            const checkWp = selectedSpecs.includes('waterproof');
-            const footnotes = selectedSpecs.filter(s => ['Standard', 'Original', 'Wide'].includes(s));
+        const selectedSpecsItems = Array.from(document.querySelectorAll('#specs-checkboxes input:checked'));
+        if (selectedSpecsItems.length > 0) {
+            const specMap = { footshape: [], waterproof: [], midsole: [], outsole: [] };
+            selectedSpecsItems.forEach(el => {
+                const type = el.getAttribute('data-type');
+                if (type) specMap[type].push(el.value);
+            });
+
+            if (specMap.waterproof.length > 0 && !shoe.features.waterproof) matchSpecs = false;
             
-            if (checkWp && !shoe.features.waterproof) matchSpecs = false;
-            if (footnotes.length > 0) {
-                const sf = shoe.features.footshape || '';
-                if (!footnotes.some(f => sf.includes(f))) matchSpecs = false;
+            if (specMap.footshape.length > 0) {
+                const fs = shoe.features.footshape || '';
+                if (!specMap.footshape.some(f => fs.includes(f))) matchSpecs = false;
+            }
+
+            if (specMap.midsole.length > 0) {
+                const ms = shoe.features.midsole || '';
+                if (!specMap.midsole.some(m => ms.includes(m))) matchSpecs = false;
+            }
+
+            if (specMap.outsole.length > 0) {
+                const os = shoe.features.outsole || '';
+                if (!specMap.outsole.some(o => os.includes(o))) matchSpecs = false;
             }
         }
 
@@ -2539,14 +2593,14 @@ function renderStaffList() {
     }
 
     filteredShoes.forEach(shoe => {
-        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:40px; height:40px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:12px;" alt="${shoe.name}">` : '';
+        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:80px; height:80px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:12px;" alt="${shoe.name}">` : '';
 
         html += `
             <tr style="line-height: 1.3;">
                 <td style="vertical-align:top;">
                     <div style="display:flex; align-items:flex-start;">
                         ${imgTag}
-                        <div>
+                        <div style="flex:1;">
                             <strong><a href="${shoe.url}" target="_blank" style="color:#ffffff; text-decoration:none;">${shoe.name}</a></strong>
                             <span style="color:var(--text-secondary);font-size:0.75rem;margin-left:6px;">${shoe.support[currentLang]}</span>
                             <div style="font-size:0.8rem; color: #a7f3d0; margin-top: 4px; line-height: 1.2;">
