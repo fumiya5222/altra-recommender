@@ -1795,7 +1795,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'ALTRA EGO™ PRO',
+            midsole: 'Altra EGO™ PRO',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "GRAY/LIME, WHITE/CORAL, WHITE/LIME, BLUE/LIME", ja: "GRAY/LIME, WHITE/CORAL, WHITE/LIME, BLUE/LIME" },
@@ -1823,7 +1823,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'ALTRA EGO™ PRO',
+            midsole: 'Altra EGO™ PRO',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL", ja: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL" },
@@ -2147,7 +2147,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'ALTRA EGO™ PRO',
+            midsole: 'Altra EGO™ PRO',
             outsole: 'EVA Rubber',
             waterproof: false,
             colors: { en: "WHITE/CORAL, GRAY, DARK PURPLE, GRAY/YELLOW", ja: "WHITE/CORAL, GRAY, DARK PURPLE, GRAY/YELLOW" },
@@ -2255,7 +2255,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'ALTRA EGO™ PRO',
+            midsole: 'Altra EGO™ PRO',
             outsole: 'EVA Foam',
             waterproof: false,
             colors: { en: "BLACK/YELLOW, WHITE/GRAY, CORAL/BLACK, DARK PURPLE", ja: "BLACK/YELLOW, WHITE/GRAY, CORAL/BLACK, DARK PURPLE" },
