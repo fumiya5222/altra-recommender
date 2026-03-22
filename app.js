@@ -2549,10 +2549,10 @@ function populateSpecsFilters() {
     const isChecked = (type, val) => checkedVals.some(c => c.type === type && c.value === val) ? 'checked' : '';
 
     // Get unique values with grouping
-    const midsoles = [...new Set(shoes.map(s => s.features.midsole).filter(Boolean).map(v => v.trim()))].sort();
-    const outsoles = [...new Set(shoes.map(s => s.features.outsole).filter(Boolean).map(v => v.trim()))].sort();
-    const cushions = [...new Set(shoes.map(s => s.features.cushion).filter(Boolean).map(v => v.trim()))].sort();
-    const uppers = [...new Set(shoes.map(s => s.features.upper).filter(Boolean).map(v => v.trim()))].sort();
+    const midsoles = [...new Set(shoes.map(s => getVal(s.features.midsole)).filter(Boolean).map(v => v.trim()))].sort();
+    const outsoles = [...new Set(shoes.map(s => getVal(s.features.outsole)).filter(Boolean).map(v => v.trim()))].sort();
+    const cushions = [...new Set(shoes.map(s => getVal(s.features.cushion)).filter(Boolean).map(v => v.trim()))].sort();
+    const uppers = [...new Set(shoes.map(s => getVal(s.features.upper)).filter(Boolean).map(v => v.trim()))].sort();
     const footshapes = ['Standard', 'Original', 'Wide', 'Slim'];
 
     let html = '';
@@ -2778,27 +2778,27 @@ function renderStaffList() {
             
             
             if (specMap.footshape.length > 0) {
-                const fs = shoe.features.footshape || '';
+                const fs = getVal(shoe.features.footshape) || '';
                 if (!specMap.footshape.every(f => fs.includes(f))) matchSpecs = false;
             }
 
             if (specMap.midsole.length > 0) {
-                const ms = shoe.features.midsole || '';
+                const ms = getVal(shoe.features.midsole) || '';
                 if (!specMap.midsole.every(m => ms.includes(m))) matchSpecs = false;
             }
 
             if (specMap.outsole.length > 0) {
-                const os = shoe.features.outsole || '';
+                const os = getVal(shoe.features.outsole) || '';
                 if (!specMap.outsole.every(o => os.includes(o))) matchSpecs = false;
             }
 
             if (specMap.cushion.length > 0) {
-                const cs = shoe.features.cushion || '';
+                const cs = getVal(shoe.features.cushion) || '';
                 if (!specMap.cushion.every(c => cs.includes(c))) matchSpecs = false;
             }
 
             if (specMap.upper.length > 0) {
-                const up = shoe.features.upper || '';
+                const up = getVal(shoe.features.upper) || '';
                 if (!specMap.upper.every(u => up.includes(u))) matchSpecs = false;
             }
         }
