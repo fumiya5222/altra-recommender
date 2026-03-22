@@ -3068,6 +3068,8 @@ function renderResult(shoe) {
         ? `<img src="${shoe.image}" alt="${shoe.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">`
         : `<div class="shoe-placeholder">🏃</div>`;
 
+    const isJa = (currentLang === 'ja');
+
     resultContainer.innerHTML = `
         <div class="result-img-container" style="background:none; padding:0; height:200px; display:flex; justify-content:center; align-items:center;">
             ${imageHtml}
@@ -3075,23 +3077,45 @@ function renderResult(shoe) {
         <div class="result-info">
             <div class="shoe-tag">${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' • ')} • ${shoe.tag[currentLang]}</div>
             <h2 class="shoe-name">${shoe.name} <a href="${shoe.url}" target="_blank" style="font-size:1.5rem; text-decoration:none;" title="${i18n[currentLang].officialLink}">🛒</a></h2>
-            <p class="shoe-desc">${shoe.desc[currentLang]}</p>
-            <div class="specs-grid" style="margin-bottom: 2rem;">
+            <p class="shoe-desc">${shoe.features.summary || shoe.desc[currentLang]}</p>
+            
+            <div class="specs-grid" style="margin-bottom: 2rem; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));">
+                <div class="spec-item">
+                    <div class="spec-label">${isJa ? '重量' : 'Weight'}</div>
+                    <div class="spec-value" style="font-size:0.9rem;">${shoe.features.weight || '-'}</div>
+                </div>
                 <div class="spec-item">
                     <div class="spec-label">${i18n[currentLang].specStack}</div>
-                    <div class="spec-value">${shoe.stackHeight}</div>
+                    <div class="spec-value" style="font-size:0.9rem;">${shoe.stackHeight || '-'}</div>
                 </div>
                 <div class="spec-item">
-                    <div class="spec-label">${i18n[currentLang].specSupport}</div>
-                    <div class="spec-value">${shoe.support[currentLang]}</div>
+                    <div class="spec-label">${isJa ? 'フットシェイプ' : 'FootShape'}</div>
+                    <div class="spec-value" style="font-size:0.9rem;">${shoe.features.footshape || '-'}</div>
                 </div>
+                <div class="spec-item">
+                    <div class="spec-label">${isJa ? 'ミッドソール' : 'Midsole'}</div>
+                    <div class="spec-value" style="font-size:0.85rem; line-height:1.2;">${shoe.features.midsole || '-'}</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">${isJa ? 'アウトソール' : 'Outsole'}</div>
+                    <div class="spec-value" style="font-size:0.85rem; line-height:1.2;">${shoe.features.outsole || '-'}</div>
+                </div>
+                <div class="spec-item">
+                    <div class="spec-label">${isJa ? 'アッパー' : 'Upper'}</div>
+                    <div class="spec-value" style="font-size:0.85rem; line-height:1.2;">${shoe.features.upper || '-'}</div>
+                </div>
+                ${shoe.features.cushion ? `
+                <div class="spec-item">
+                    <div class="spec-label">${isJa ? 'クッション' : 'Cushion'}</div>
+                    <div class="spec-value" style="font-size:0.85rem;">${shoe.features.cushion}</div>
+                </div>` : ''}
                 <div class="spec-item">
                     <div class="spec-label">${i18n[currentLang].specWaterproof}</div>
-                    <div class="spec-value">${wpText}</div>
+                    <div class="spec-value" style="font-size:0.85rem;">${wpText}</div>
                 </div>
-                <div class="spec-item">
+                <div class="spec-item" style="grid-column: span 2;">
                     <div class="spec-label">${i18n[currentLang].specColors}</div>
-                    <div class="spec-value" style="font-size:0.85rem; line-height:1.4;">${shoe.features.colors[currentLang]}</div>
+                    <div class="spec-value" style="font-size:0.8rem; line-height:1.3;">${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}</div>
                 </div>
             </div>
             
