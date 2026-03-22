@@ -2,7 +2,7 @@ const i18n = {
     en: {
         title: "STRIDE LAB Niseko <br> <span class=\"brand-text\">ALTRA Matchmaker</span>",
         subtitle: "Supporting your 'Lifelong Sports' journey in Niseko's rich nature. Answer a few questions to find your perfect Altra shoes for natural running and injury prevention.",
-        startBtn: "Start Matchmaker",
+        startBtn: "⚡ Quick Match (3 Qs)",
         backBtn: "Back",
         resultTitle: "Your Top Match",
         retakeBtn: "Retake Quiz",
@@ -41,12 +41,14 @@ const i18n = {
         summaryCat: "Categories (All)",
         summarySpecs: "Specs (All)",
         optSortWeightLight: "Weight (Lightest)",
-        optSortWeightHeavy: "Weight (Heaviest)"
+        optSortWeightHeavy: "Weight (Heaviest)",
+        startDetailBtn: "🔍 Deep Match (7 Qs) ›",
+        detailBtnDesc: "For gear enthusiasts — select by footshape, midsole & upper"
     },
     ja: {
         title: "STRIDE LAB ニセコ <br> <span class=\"brand-text\">ALTRA セレクター</span>",
         subtitle: "ニセコの豊かな自然の中で「生涯スポーツ」を楽しむために。ケガの予防と自然な走りをサポートする、あなたに最適なアルトラのシューズをご提案します。",
-        startBtn: "診断を始める",
+        startBtn: "👟 かんたん診断 (3問)",
         backBtn: "戻る",
         resultTitle: "おすすめのシューズ",
         retakeBtn: "もう一度診断する",
@@ -85,7 +87,9 @@ const i18n = {
         summaryCat: "カテゴリー選択 (すべて)",
         summarySpecs: "仕様フィルター (すべて)",
         optSortWeightLight: "重量 (軽い順)",
-        optSortWeightHeavy: "重量 (重い順)"
+        optSortWeightHeavy: "重量 (重い順)",
+        startDetailBtn: "🔍 こだわり診断 (7問) ›",
+        detailBtnDesc: "フットシェイプ・ミッドソール・アッパーから選定 — シューズに詳しい方向け"
     }
 };
 
@@ -2356,10 +2360,118 @@ const questions = [
     }
 ];
 
+// Simple quiz (quick): terrain, cushion, gender only
+const simpleQuestions = [
+    {
+        id: 'gender',
+        question: { en: 'Which fit are you looking for?', ja: 'どちらのモデルをお探しですか？' },
+        options: [
+            { value: 'M', icon: '👨', title: { en: "Men's", ja: 'メンズ' }, desc: { en: "Standard men's fit", ja: 'メンズモデル' } },
+            { value: 'W', icon: '👩', title: { en: "Women's", ja: 'ウィメンズ' }, desc: { en: "Standard women's fit", ja: 'ウィメンズモデル' } },
+            { value: 'U', icon: '👟', title: { en: "No Preference", ja: 'どちらでもOK' }, desc: { en: 'Show me all options', ja: 'すべてのモデルを見たい' } }
+        ]
+    },
+    {
+        id: 'terrain',
+        question: { en: 'How will you mainly use these shoes?', ja: '主にどんなシーンで使いますか？' },
+        options: [
+            { value: 'road', icon: '🛣️', title: { en: 'Road Running', ja: 'ロードランニング' }, desc: { en: 'Town running, tarmac and paved roads.', ja: 'アスファルト・コンクリートの道をランニング。' } },
+            { value: 'trail', icon: '🏔️', title: { en: 'Trail Running', ja: 'トレイルランニング' }, desc: { en: 'Mt. Yotei, Annupuri, dirt trails and mountains.', ja: '羊蹄山やアンヌプリなどの未舗装路・山道。' } },
+            { value: 'snow', icon: '🏕️', title: { en: 'Outdoor / Hiking', ja: 'アウトドアアドベンチャー' }, desc: { en: 'Snow, rain, hiking — waterproof protection needed.', ja: '雪道・雨天・ハイキング。防水機能が欲しい方に。' } },
+            { value: 'walking', icon: '🚶', title: { en: 'Walking / Daily', ja: 'ウォーキング・日常生活' }, desc: { en: 'Everyday walking, light exercise, commuting.', ja: '散歩・買い物・最初のアルトラに。足に優しい日常調。' } },
+            { value: 'lifestyle', icon: '🏙️', title: { en: 'Lifestyle / Casual', ja: 'ライフスタイル・カジュアル' }, desc: { en: 'Casual wear, travel, town use.', ja: 'カジュアル・旅行・オン・オフきれいに使えるシューズ。' } },
+            { value: 'gym', icon: '🏋️', title: { en: 'Gym / Training', ja: 'ジムトレーニング' }, desc: { en: 'Strength training, HIIT, gym workouts.', ja: '筋トレ・HIIT・フィットネスジム向け。' } }
+        ]
+    },
+    {
+        id: 'cushion',
+        question: { en: 'How much cushioning do you prefer?', ja: '好みのクッション性は？' },
+        options: [
+            { value: 'minimal', icon: '⚡', title: { en: 'Minimal / Low', ja: '薄め / ミニマル' }, desc: { en: 'I want to feel the ground and move naturally.', ja: '足裏感覚重視。軽くて自然な動き。' } },
+            { value: 'moderate', icon: '⚖️', title: { en: 'Moderate / Balanced', ja: '普通 / バランス重視' }, desc: { en: 'A balance of cushion and ground feel.', ja: '足裏感覚を残しつつ適度なクッション。' } },
+            { value: 'max', icon: '☁️', title: { en: 'Maximum / Plush', ja: '厚め / マックス' }, desc: { en: 'Top-tier comfort and joint protection.', ja: '最高レベルのクッションで関節に優しく。' } }
+        ]
+    }
+];
+
+// Detail quiz: full questions + footshape + upper material
+const detailQuestions = [
+    {
+        id: 'gender',
+        question: { en: 'Which fit are you looking for?', ja: 'どちらのモデルをお探しですか？' },
+        options: [
+            { value: 'M', icon: '👨', title: { en: "Men's", ja: 'メンズ' }, desc: { en: "Standard men's fit", ja: 'メンズモデル' } },
+            { value: 'W', icon: '👩', title: { en: "Women's", ja: 'ウィメンズ' }, desc: { en: "Standard women's fit", ja: 'ウィメンズモデル' } },
+            { value: 'U', icon: '👟', title: { en: "No Preference", ja: 'どちらでもOK' }, desc: { en: 'Show me all options', ja: 'すべてのモデルを見たい' } }
+        ]
+    },
+    {
+        id: 'terrain',
+        question: { en: 'How will you mainly use these shoes?', ja: '主にどんなシーンで使いますか？' },
+        options: [
+            { value: 'road', icon: '🛣️', title: { en: 'Road Running', ja: 'ロードランニング' }, desc: { en: 'Town running, tarmac and paved roads.', ja: 'アスファルト・コンクリートの道をランニング。' } },
+            { value: 'trail', icon: '🏔️', title: { en: 'Trail Running', ja: 'トレイルランニング' }, desc: { en: 'Mt. Yotei, Annupuri, dirt trails and mountains.', ja: '羊蹄山やアンヌプリなどの未舗装路・山道。' } },
+            { value: 'snow', icon: '🏕️', title: { en: 'Outdoor / Hiking', ja: 'アウトドアアドベンチャー' }, desc: { en: 'Snow, rain, hiking — waterproof protection needed.', ja: '雪道・雨天・ハイキング。防水機能が欲しい方に。' } },
+            { value: 'walking', icon: '🚶', title: { en: 'Walking / Daily', ja: 'ウォーキング・日常生活' }, desc: { en: 'Everyday walking, light exercise, commuting.', ja: '散歩・買い物・最初のアルトラに。足に優しい日常調。' } },
+            { value: 'lifestyle', icon: '🏙️', title: { en: 'Lifestyle / Casual', ja: 'ライフスタイル・カジュアル' }, desc: { en: 'Casual wear, travel, town use.', ja: 'カジュアル・旅行・オン・オフきれいに使えるシューズ。' } },
+            { value: 'gym', icon: '🏋️', title: { en: 'Gym / Training', ja: 'ジムトレーニング' }, desc: { en: 'Strength training, HIIT, gym workouts.', ja: '筋トレ・HIIT・フィットネスジム向け。' } }
+        ]
+    },
+    {
+        id: 'cushion',
+        question: { en: 'How much cushioning do you prefer?', ja: '好みのクッション性 (靴底の厚さ) は？' },
+        options: [
+            { value: 'minimal', icon: '⚡', title: { en: 'Minimal / Low', ja: '薄め / ミニマル' }, desc: { en: 'I like to feel the ground and want a natural, faster shoe.', ja: '足裏の感覚を重視し、軽くて自然な動きができる靴が好きです。' } },
+            { value: 'moderate', icon: '⚖️', title: { en: 'Moderate / Balanced', ja: '普通 / バランス重視' }, desc: { en: 'A nice balance of protection without losing ground feel.', ja: '足裏の感覚を残しつつ、適度な保護があるバランス型。' } },
+            { value: 'max', icon: '☁️', title: { en: 'Maximum / Plush', ja: '厚め / マックス' }, desc: { en: 'I want top-tier comfort and joint protection for lifelong sports.', ja: '生涯スポーツとして関節への負担を減らすため、最高レベルのクッションが欲しいです。' } }
+        ]
+    },
+    {
+        id: 'support',
+        question: { en: 'Do you need stability support?', ja: 'ケガ予防などのサポート機能は必要ですか？' },
+        options: [
+            { value: 'neutral', icon: '🏃', title: { en: 'Neutral (No)', ja: '不要 (ニュートラル)' }, desc: { en: 'I prefer a free, unguided feel for natural running.', ja: 'ナチュラルランニングのために、足の自然な動きを邪魔しない靴を好みます。' } },
+            { value: 'support', icon: '🛡️', title: { en: 'Support (Yes)', ja: '必要 (サポートあり)' }, desc: { en: 'I overpronate or like arch support to prevent injuries.', ja: '足首の倒れ込み(過回内)があり、ケガ予防のためにアーチサポートが欲しいです。' } }
+        ]
+    },
+    {
+        id: 'goal',
+        question: { en: 'What is your primary goal?', ja: '走る主な目的は何ですか？' },
+        options: [
+            { value: 'everyday', icon: '🌿', title: { en: 'Lifelong Sports & Health', ja: '生涯スポーツ・健康維持' }, desc: { en: 'Enjoying outdoor activities safely and preventing injuries.', ja: 'ケガを予防し、生涯にわたって安全にランニングやアウトドアを楽しみたい。' } },
+            { value: 'speed', icon: '⏱️', title: { en: 'Speed & Racing', ja: 'スピード練習・レース' }, desc: { en: 'Setting new PRs and intense workouts.', ja: '自己ベスト更新や本格的なトレーニング。' } },
+            { value: 'distance', icon: '🗺️', title: { en: 'Long Distance & Hiking', ja: 'ロングディスタンス・ハイク' }, desc: { en: 'Ultra-marathons or long hikes in Niseko.', ja: 'ウルトラマラソンや、ニセコの大自然でのロングハイク。' } }
+        ]
+    },
+    {
+        id: 'footshape',
+        question: { en: 'Which FootShape width do you prefer?', ja: 'フットシェイプ（つま先の広がり）はどのタイプが好みですか？' },
+        options: [
+            { value: 'Standard', icon: '👟', title: { en: 'Standard', ja: 'スタンダード' }, desc: { en: 'Roomy toe box, but snug heel — the most popular Altra shape.', ja: '幅広のつま先＋しっかりしたヒール。アルトラで一番人気のシェイプ。' } },
+            { value: 'Original', icon: '🦶', title: { en: 'Original (Widest)', ja: 'オリジナル (最もゆったり)' }, desc: { en: 'The widest, most natural foot-shaped like "foot on ground".', ja: '足の自然な形に最も近い、最もゆったりとしたフィット感。' } },
+            { value: 'Wide', icon: '📐', title: { en: 'Wide', ja: 'ワイド' }, desc: { en: 'Extra-wide version of Standard for those needing more room.', ja: 'スタンダードにさらに幅を足した広め版。足の幅が広い方に。' } },
+            { value: 'Slim', icon: '⚡', title: { en: 'Slim (Race)', ja: 'スリム (レース向け)' }, desc: { en: 'A slightly narrower fit — mainly on performance racing shoes.', ja: 'レーシングシューズに多い、やや細めのシェイプ。' } },
+            { value: 'any', icon: '🔀', title: { en: 'No preference', ja: 'こだわらない' }, desc: { en: 'Skip this filter — show all FootShapes.', ja: 'フットシェイプは問いません。' } }
+        ]
+    },
+    {
+        id: 'upper',
+        question: { en: 'Which upper material do you prefer?', ja: 'アッパー素材の好みは？' },
+        options: [
+            { value: 'GORE-TEX', icon: '☔', title: { en: 'GORE-TEX (Waterproof)', ja: 'ゴアテックス (防水)' }, desc: { en: 'Fully waterproof — best for rain, snow and wet trails.', ja: '防水性抜群。雨・雪・濡れたトレイルに最適。' } },
+            { value: 'Engineered Mesh', icon: '💨', title: { en: 'Engineered Mesh (Breathable)', ja: 'エンジニアードメッシュ (通気性)' }, desc: { en: 'Lightweight and breathable — best for warm conditions.', ja: '軽量で通気性に優れる。暑い季節や長距離に最適。' } },
+            { value: 'Ultra-lightweight Breathable Mesh', icon: '🪶', title: { en: 'Ultra-lightweight (Race)', ja: '超軽量メッシュ (レース向け)' }, desc: { en: 'Minimal weight — ideal for speed and racing.', ja: '極限まで軽量化。スピード重視・レース向け。' } },
+            { value: 'any', icon: '🔀', title: { en: 'No preference', ja: 'こだわらない' }, desc: { en: 'Skip this filter — show all uppers.', ja: 'アッパー素材は問いません。' } }
+        ]
+    }
+];
+
 let currentLang = 'ja';
 let currentQuestionIndex = 0;
 let userAnswers = {};
 let isStaffView = false;
+let quizMode = 'simple'; // 'simple' | 'detail'
+let activeQuestions = simpleQuestions;
 
 const screens = document.querySelectorAll('.screen');
 const startBtn = document.getElementById('start-btn');
@@ -2375,7 +2487,27 @@ const viewToggleBtn = document.getElementById('view-toggle-btn');
 const staffTable = document.getElementById('staff-table');
 
 function init() {
-    startBtn.addEventListener('click', () => switchScreen(1));
+    startBtn.addEventListener('click', () => {
+        quizMode = 'simple';
+        activeQuestions = simpleQuestions;
+        userAnswers = {};
+        currentQuestionIndex = 0;
+        renderQuestion(0, false);
+        switchScreen(1);
+    });
+
+    const startDetailBtn = document.getElementById('start-detail-btn');
+    if (startDetailBtn) {
+        startDetailBtn.addEventListener('click', () => {
+            quizMode = 'detail';
+            activeQuestions = detailQuestions;
+            userAnswers = {};
+            currentQuestionIndex = 0;
+            renderQuestion(0, false);
+            switchScreen(1);
+        });
+    }
+
     backBtn.addEventListener('click', () => navigateQuiz(-1));
     restartBtn.addEventListener('click', restartQuiz);
 
@@ -2532,7 +2664,9 @@ function setLanguage(lang) {
 
     document.querySelector('.title').innerHTML = i18n[lang].title;
     document.querySelector('.subtitle').textContent = i18n[lang].subtitle;
-    startBtn.textContent = i18n[lang].startBtn;
+    if (startBtn) startBtn.textContent = i18n[lang].startBtn;
+    let detailBtn = document.getElementById('start-detail-btn');
+    if (detailBtn) detailBtn.textContent = i18n[lang].startDetailBtn;
     backBtn.textContent = i18n[lang].backBtn;
     document.querySelector('.result-title').textContent = i18n[lang].resultTitle;
     restartBtn.textContent = i18n[lang].retakeBtn;
@@ -2775,7 +2909,7 @@ function navigateQuiz(direction) {
         return;
     }
 
-    if (currentQuestionIndex >= questions.length) {
+    if (currentQuestionIndex >= activeQuestions.length) {
         calculateResults();
         switchScreen(2);
         return;
@@ -2785,10 +2919,10 @@ function navigateQuiz(direction) {
 }
 
 function renderQuestion(index, animate = true) {
-    const q = questions[index];
+    const q = activeQuestions[index];
     questionText.textContent = q.question.ja_alt && currentLang === 'ja' ? q.question.ja_alt : q.question[currentLang];
 
-    const progress = ((index) / questions.length) * 100;
+    const progress = ((index) / activeQuestions.length) * 100;
     progressBar.style.width = `${progress}%`;
 
     if (index === 0) {
@@ -2843,7 +2977,7 @@ function handleOptionSelect(questionId, value) {
         card.style.background = 'var(--card-bg)';
     });
 
-    const q = questions[currentQuestionIndex];
+    const q = activeQuestions[currentQuestionIndex];
     let selectedTitle = q.options.find(o => o.value === value).title[currentLang];
     if (q.options.find(o => o.value === value).title.ja_alt && currentLang === 'ja') {
         selectedTitle = q.options.find(o => o.value === value).title.ja_alt;
@@ -2874,31 +3008,49 @@ function calculateResults() {
             }
         }
 
-        if (shoe.attributes.terrain.includes(userAnswers.terrain)) {
-            score += (userAnswers.terrain === 'snow' && shoe.attributes.terrain.includes('snow')) ? 5 : 3;
+        if (userAnswers.terrain) {
+            if (shoe.attributes.terrain.includes(userAnswers.terrain)) {
+                score += (userAnswers.terrain === 'snow' && shoe.attributes.terrain.includes('snow')) ? 5 : 3;
+            }
+            // Extra scoring for Walking / Lifestyle / Gym based on category
+            if (userAnswers.terrain === 'walking') {
+                if (shoe.category.some(c => c.en === 'Walking')) score += 10;
+                else if (shoe.category.some(c => c.en === 'Road Running')) score += 3;
+            }
+            if (userAnswers.terrain === 'lifestyle') {
+                if (shoe.category.some(c => c.en === 'Lifestyle')) score += 10;
+                else if (shoe.category.some(c => c.en === 'Road Running')) score += 2;
+            }
+            if (userAnswers.terrain === 'gym') {
+                if (shoe.category.some(c => c.en === 'Gym Training')) score += 10;
+            }
         }
 
-        // Extra scoring for Walking / Lifestyle / Gym based on category
-        if (userAnswers.terrain === 'walking') {
-            if (shoe.category.some(c => c.en === 'Walking')) score += 10;
-            else if (shoe.category.some(c => c.en === 'Road Running')) score += 3;
-        }
-        if (userAnswers.terrain === 'lifestyle') {
-            if (shoe.category.some(c => c.en === 'Lifestyle')) score += 10;
-            else if (shoe.category.some(c => c.en === 'Road Running')) score += 2;
-        }
-        if (userAnswers.terrain === 'gym') {
-            if (shoe.category.some(c => c.en === 'Gym Training')) score += 10;
+        if (userAnswers.support) {
+            if (shoe.attributes.support.includes(userAnswers.support)) {
+                score += 3;
+            } else if (userAnswers.support === 'support' && shoe.support.en === 'Neutral') {
+                score -= 2;
+            }
         }
 
-        if (shoe.attributes.support.includes(userAnswers.support)) {
-            score += 3;
-        } else if (userAnswers.support === 'support' && shoe.support.en === 'Neutral') {
-            score -= 2;
+        if (userAnswers.cushion && shoe.attributes.cushion.includes(userAnswers.cushion)) score += 2;
+        if (userAnswers.goal && shoe.attributes.goal.includes(userAnswers.goal)) score += 2;
+
+        if (userAnswers.footshape && userAnswers.footshape !== 'any') {
+            if (shoe.features.footshape && shoe.features.footshape.includes(userAnswers.footshape)) {
+                score += 5;
+            }
         }
 
-        if (shoe.attributes.cushion.includes(userAnswers.cushion)) score += 2;
-        if (shoe.attributes.goal.includes(userAnswers.goal)) score += 2;
+        if (userAnswers.upper && userAnswers.upper !== 'any') {
+            const u = userAnswers.upper;
+            const su = shoe.features.upper || '';
+            if (u === 'GORE-TEX' && su.includes('GORE-TEX')) score += 5;
+            else if (u === 'Engineered Mesh' && su.includes('Engineered Mesh')) score += 5;
+            else if (u === 'Ultra-lightweight Breathable Mesh' && su.includes('Ultra-lightweight')) score += 5;
+            else if (su.includes(u)) score += 5; 
+        }
 
         return { shoe, score };
     });
