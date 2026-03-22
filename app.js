@@ -3040,14 +3040,15 @@ function calculateResults() {
         if (userAnswers.goal && shoe.attributes.goal.includes(userAnswers.goal)) score += 2;
 
         if (userAnswers.footshape && userAnswers.footshape !== 'any') {
-            if (shoe.features.footshape && shoe.features.footshape.includes(userAnswers.footshape)) {
+            const fs = getVal(shoe.features.footshape) || '';
+            if (fs.includes(userAnswers.footshape)) {
                 score += 5;
             }
         }
 
         if (userAnswers.upper && userAnswers.upper !== 'any') {
             const u = userAnswers.upper;
-            const su = shoe.features.upper || '';
+            const su = getVal(shoe.features.upper) || '';
             if (u === 'GORE-TEX' && su.includes('GORE-TEX')) score += 5;
             else if (u === 'Engineered Mesh' && su.includes('Engineered Mesh')) score += 5;
             else if (u === 'Ultra-lightweight Breathable Mesh' && su.includes('Ultra-lightweight')) score += 5;
