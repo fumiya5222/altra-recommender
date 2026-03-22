@@ -3092,7 +3092,6 @@ function renderResult(shoe) {
             <p class="shoe-desc" style="font-size:1rem; line-height:1.5; color:#e2e8f0; margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;">
                 ${shoe.features.summary || shoe.desc[currentLang]}
             </p>
-        </div>
             
             <div style="display:flex; gap:1rem; align-items:center; flex-wrap:wrap;">
                 <a href="${shoe.url}" target="_blank" class="primary-btn" style="text-decoration:none;">${i18n[currentLang].officialLink}</a>
