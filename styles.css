@@ -411,6 +411,83 @@ body {
     color: #fff;
 }
 
+/* Custom Dropdown Checklist Checkboxes */
+.staff-dropdown-checkbox {
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    min-width: 160px;
+}
+
+.staff-dropdown-checkbox summary {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    list-style: none; /* remove default arrow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.staff-dropdown-checkbox summary::-webkit-details-marker {
+    display: none; /* for safari */
+}
+
+.staff-dropdown-checkbox summary::after {
+    content: '▼';
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.staff-dropdown-checkbox[open] summary::after {
+    content: '▲';
+}
+
+.staff-dropdown-content {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: #1a1e24;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    z-index: 100;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.6);
+    max-height: 250px;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+}
+
+.staff-dropdown-content label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #e5e7eb;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.staff-dropdown-content label:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.staff-dropdown-content input[type="checkbox"] {
+    accent-color: var(--accent);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .staff-filter-input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }

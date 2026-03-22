@@ -61,21 +61,36 @@
                     <option value="M" id="opt-gender-m">Men's</option>
                     <option value="W" id="opt-gender-w">Women's</option>
                 </select>
-                <select id="staff-category-filter" class="staff-filter-select">
-                    <option value="ALL" id="opt-cat-all">All Categories</option>
-                    <option value="Trail Running" id="opt-cat-trail">🏔️ Trail Running</option>
-                    <option value="Road Running" id="opt-cat-road">🛣️ Road Running</option>
-                    <option value="Outdoor Adventure" id="opt-cat-snow">🏕️ Outdoor Adventure</option>
-                    <option value="Walking" id="opt-cat-walking">🚶 Walking</option>
-                    <option value="Lifestyle" id="opt-cat-lifestyle">🏙️ Lifestyle</option>
-                    <option value="Gym Training" id="opt-cat-gym">🏋️ Gym Training</option>
-                    <option value="Waterproof" id="opt-cat-waterproof">☔ Waterproof</option>
-                </select>
+                <details class="staff-dropdown-checkbox" id="category-dropdown">
+                    <summary id="summary-cat">カテゴリー選択 (すべて)</summary>
+                    <div class="staff-dropdown-content" id="category-checkboxes">
+                        <label><input type="checkbox" value="Trail Running"> 🏔️ トレイルランニング</label>
+                        <label><input type="checkbox" value="Road Running"> 🛣️ ロードランニング</label>
+                        <label><input type="checkbox" value="Outdoor Adventure"> 🏕️ アウトドアアドベンチャー</label>
+                        <label><input type="checkbox" value="Walking"> 🚶 ウォーキング</label>
+                        <label><input type="checkbox" value="Lifestyle"> 🏙️ ライフスタイル</label>
+                        <label><input type="checkbox" value="Gym Training"> 🏋️ ジムトレーニング</label>
+                        <label><input type="checkbox" value="Waterproof"> ☔ 防水シューズ</label>
+                    </div>
+                </details>
+
+                <details class="staff-dropdown-checkbox" id="specs-dropdown">
+                    <summary id="summary-specs">仕様フィルター (すべて)</summary>
+                    <div class="staff-dropdown-content" id="specs-checkboxes">
+                        <label><input type="checkbox" value="waterproof"> ☔ 防水 (Waterproof)</label>
+                        <label><input type="checkbox" value="Standard"> 🦶 FootShape: Standard</label>
+                        <label><input type="checkbox" value="Original"> 🦶 FootShape: Original</label>
+                        <label><input type="checkbox" value="Wide"> 🦶 FootShape: Wide</label>
+                    </div>
+                </details>
+
                 <select id="staff-sort" class="staff-filter-select">
-                    <option value="default" id="opt-sort-def">Sort: Default</option>
-                    <option value="name_asc" id="opt-sort-name">Name (A-Z)</option>
-                    <option value="stack_asc" id="opt-sort-stack">Stack Height (Low to High)</option>
-                    <option value="stack_desc" id="opt-sort-stack-high">Stack Height (High to Low)</option>
+                    <option value="default" id="opt-sort-def">並び順: デフォルト</option>
+                    <option value="name_asc" id="opt-sort-name">名前順 (A-Z)</option>
+                    <option value="stack_asc" id="opt-sort-stack">スタックハイト (低い順)</option>
+                    <option value="stack_desc" id="opt-sort-stack-high">スタックハイト (高い順)</option>
+                    <option value="weight_asc" id="opt-sort-weight-light">重量 (軽い順)</option>
+                    <option value="weight_desc" id="opt-sort-weight-heavy">重量 (重い順)</option>
                 </select>
                 <button id="staff-filter-apply" class="primary-btn pulse-glow" style="padding: 0.5rem 1rem; font-size: 1rem;">適用 / Apply</button>
             </div>

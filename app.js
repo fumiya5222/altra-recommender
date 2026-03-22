@@ -2350,6 +2350,16 @@ function init() {
 
     document.getElementById('staff-filter-apply')?.addEventListener('click', renderStaffList);
 
+    // Live filtering & sorting listeners
+    document.getElementById('staff-search')?.addEventListener('input', renderStaffList);
+    document.getElementById('staff-gender-filter')?.addEventListener('change', renderStaffList);
+    document.getElementById('staff-sort')?.addEventListener('change', renderStaffList);
+
+    // checkbox triggers
+    document.querySelectorAll('#category-checkboxes input, #specs-checkboxes input').forEach(el => {
+        el.addEventListener('change', renderStaffList);
+    });
+
     setLanguage(currentLang);
     renderQuestion(0, false);
 }
@@ -2449,24 +2459,56 @@ function getCatEmoji(enCat) {
 }
 
 function renderStaffList() {
+    const staffTable = document.getElementById('staff-table');
     if (!staffTable) return;
 
     let searchTxt = (document.getElementById('staff-search')?.value || '').toLowerCase();
     let genderVal = document.getElementById('staff-gender-filter')?.value || 'ALL';
-    let catVal = document.getElementById('staff-category-filter')?.value || 'ALL';
     let sortVal = document.getElementById('staff-sort')?.value || 'default';
+
+    // Get selected Checkbox details
+    const selectedCats = Array.from(document.querySelectorAll('#category-checkboxes input:checked')).map(c => c.value);
+    const selectedSpecs = Array.from(document.querySelectorAll('#specs-checkboxes input:checked')).map(c => c.value);
+
+    // Update Summary Title
+    const summaryCat = document.getElementById('summary-cat');
+    if (summaryCat) {
+        summaryCat.innerText = selectedCats.length === 0 ? 'カテゴリー選択 (すべて)' : `カテゴリー (${selectedCats.length})`;
+    }
+    const summarySpecs = document.getElementById('summary-specs');
+    if (summarySpecs) {
+        summarySpecs.innerText = selectedSpecs.length === 0 ? '仕様フィルター (すべて)' : `仕様 (${selectedSpecs.length})`;
+    }
 
     let filteredShoes = shoes.filter(shoe => {
         let matchSearch = shoe.name.toLowerCase().includes(searchTxt) || shoe.category.some(c => c[currentLang].toLowerCase().includes(searchTxt));
         let matchGender = genderVal === 'ALL' || shoe.gender === genderVal || shoe.gender === 'U';
 
         let matchCat = true;
-        if (catVal !== 'ALL') {
-            matchCat = shoe.category.some(c => c.en === catVal);
+        if (selectedCats.length > 0) {
+            matchCat = shoe.category.some(c => selectedCats.includes(c.en));
         }
 
-        return matchSearch && matchGender && matchCat;
+        let matchSpecs = true;
+        if (selectedSpecs.length > 0) {
+            const checkWp = selectedSpecs.includes('waterproof');
+            const footnotes = selectedSpecs.filter(s => ['Standard', 'Original', 'Wide'].includes(s));
+            
+            if (checkWp && !shoe.features.waterproof) matchSpecs = false;
+            if (footnotes.length > 0) {
+                const sf = shoe.features.footshape || '';
+                if (!footnotes.some(f => sf.includes(f))) matchSpecs = false;
+            }
+        }
+
+        return matchSearch && matchGender && matchCat && matchSpecs;
     });
+
+    const parseWeight = (wStr, def) => {
+        if (!wStr) return def;
+        const m = wStr.match(/([0-9.]+)\s*g/);
+        return m ? parseFloat(m[1]) : def;
+    };
 
     // Sort copy
     if (sortVal === 'name_asc') {
@@ -2475,6 +2517,10 @@ function renderStaffList() {
         filteredShoes.sort((a, b) => parseFloat(a.stackHeight) - parseFloat(b.stackHeight));
     } else if (sortVal === 'stack_desc') {
         filteredShoes.sort((a, b) => parseFloat(b.stackHeight) - parseFloat(a.stackHeight));
+    } else if (sortVal === 'weight_asc') {
+        filteredShoes.sort((a, b) => parseWeight(a.features.weight, 9999) - parseWeight(b.features.weight, 9999));
+    } else if (sortVal === 'weight_desc') {
+        filteredShoes.sort((a, b) => parseWeight(b.features.weight, -1) - parseWeight(a.features.weight, -1));
     }
 
     let html = `
@@ -2516,12 +2562,12 @@ function renderStaffList() {
                         <span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}<br>
                         <span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}<br>
                         <span style="color:#fff;">アッパー:</span> <span style="font-size:0.75rem;">${shoe.features.upper || '-'}</span><br>
-                        <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}
+                        <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}<br>
+                        <span style="font-size:0.75rem;color:var(--text-secondary);margin-top:4px;display:inline-block;">🎨 ${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}</span>
                     </div>
                 </td>
                 <td style="vertical-align:top; max-width:250px;">
-                    <p style="font-size:0.85rem; margin:0 0 8px; color:#d1d5db; line-height: 1.4;">${shoe.features.summary || shoe.desc[currentLang]}</p>
-                    <span style="font-size:0.75rem;color:var(--text-secondary);">🎨 ${shoe.features.colors[currentLang]}</span>
+                    <p style="font-size:0.85rem; margin:0; color:#d1d5db; line-height: 1.4;">${shoe.features.summary || shoe.desc[currentLang]}</p>
                 </td>
             </tr>
         `;
