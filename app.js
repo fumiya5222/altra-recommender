@@ -1995,9 +1995,9 @@ const questions = [
     }
 ];
 
-let currentLang = 'ja'; 
+let currentLang = 'ja';
 let currentQuestionIndex = 0;
-let userAnswers = {}; 
+let userAnswers = {};
 let isStaffView = false;
 
 const screens = document.querySelectorAll('.screen');
@@ -2017,14 +2017,14 @@ function init() {
     startBtn.addEventListener('click', () => switchScreen(1));
     backBtn.addEventListener('click', () => navigateQuiz(-1));
     restartBtn.addEventListener('click', restartQuiz);
-    
+
     langEnBtn.addEventListener('click', () => setLanguage('en'));
     langJaBtn.addEventListener('click', () => setLanguage('ja'));
-    
-    if(viewToggleBtn) {
+
+    if (viewToggleBtn) {
         viewToggleBtn.addEventListener('click', toggleView);
     }
-    
+
     document.getElementById('staff-filter-apply')?.addEventListener('click', renderStaffList);
 
     setLanguage(currentLang);
@@ -2033,7 +2033,7 @@ function init() {
 
 function toggleView() {
     isStaffView = !isStaffView;
-    
+
     let appContainer = document.getElementById('app-container');
 
     if (isStaffView) {
@@ -2041,13 +2041,13 @@ function toggleView() {
             s.classList.remove('active');
             s.style.display = 'none';
         });
-        
+
         let staffScreen = document.getElementById('staff-screen');
         if (staffScreen) {
             staffScreen.style.display = 'flex';
             setTimeout(() => staffScreen.classList.add('active'), 50);
         }
-        
+
         if (appContainer) appContainer.classList.add('staff-mode');
     } else {
         if (appContainer) appContainer.classList.remove('staff-mode');
@@ -2058,7 +2058,7 @@ function toggleView() {
 
 function setLanguage(lang) {
     currentLang = lang;
-    
+
     if (lang === 'en') {
         langEnBtn.classList.add('active');
         langJaBtn.classList.remove('active');
@@ -2077,13 +2077,13 @@ function setLanguage(lang) {
     backBtn.textContent = i18n[lang].backBtn;
     document.querySelector('.result-title').textContent = i18n[lang].resultTitle;
     restartBtn.textContent = i18n[lang].retakeBtn;
-    
+
     const staffTitleEl = document.getElementById('staff-title');
     if (staffTitleEl) {
         staffTitleEl.textContent = i18n[lang].staffTitle;
     }
 
-    const setI18n = (id, key) => { let el=document.getElementById(id); if(el) el.textContent = i18n[lang][key]; };
+    const setI18n = (id, key) => { let el = document.getElementById(id); if (el) el.textContent = i18n[lang][key]; };
     setI18n('opt-gender-all', 'optGenderAll');
     setI18n('opt-gender-m', 'optGenderM');
     setI18n('opt-gender-w', 'optGenderW');
@@ -2100,7 +2100,7 @@ function setLanguage(lang) {
     setI18n('opt-sort-stack', 'optSortStack');
     setI18n('opt-sort-stack-high', 'optSortStackHigh');
     let searchEl = document.getElementById('staff-search');
-    if(searchEl) searchEl.placeholder = i18n[lang].searchPlaceholder;
+    if (searchEl) searchEl.placeholder = i18n[lang].searchPlaceholder;
 
 
     if (isStaffView) {
@@ -2121,12 +2121,13 @@ function getCatEmoji(enCat) {
     if (enCat.includes('Walking')) return '🚶 ';
     if (enCat.includes('Lifestyle')) return '🏙️ ';
     if (enCat.includes('Gym')) return '🏋️ ';
+    if (enCat.includes('Waterproof')) return '☔ ';
     return '🚶 ';
 }
 
 function renderStaffList() {
     if (!staffTable) return;
-    
+
     let searchTxt = (document.getElementById('staff-search')?.value || '').toLowerCase();
     let genderVal = document.getElementById('staff-gender-filter')?.value || 'ALL';
     let catVal = document.getElementById('staff-category-filter')?.value || 'ALL';
@@ -2135,15 +2136,15 @@ function renderStaffList() {
     let filteredShoes = shoes.filter(shoe => {
         let matchSearch = shoe.name.toLowerCase().includes(searchTxt) || shoe.category.some(c => c[currentLang].toLowerCase().includes(searchTxt));
         let matchGender = genderVal === 'ALL' || shoe.gender === genderVal || shoe.gender === 'U';
-        
+
         let matchCat = true;
         if (catVal !== 'ALL') {
             matchCat = shoe.category.some(c => c.en === catVal);
         }
-        
+
         return matchSearch && matchGender && matchCat;
     });
-    
+
     // Sort copy
     if (sortVal === 'name_asc') {
         filteredShoes.sort((a, b) => a.name.localeCompare(b.name));
@@ -2173,7 +2174,7 @@ function renderStaffList() {
     filteredShoes.forEach(shoe => {
         let wpBadge = shoe.features.waterproof ? `<span class="tag-badge wp" style="margin-left:4px;display:inline-block;padding:2px 4px;font-size:0.7rem;">☔ ${shoe.features.waterproof}</span>` : '';
         let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:30px; height:30px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:8px;" alt="${shoe.name}">` : '';
-        
+
         html += `
             <tr style="line-height: 1.3;">
                 <td>
@@ -2198,8 +2199,8 @@ function renderStaffList() {
 }
 
 function switchScreen(index) {
-    if (isStaffView) return; 
-    
+    if (isStaffView) return;
+
     screens.forEach((screen, i) => {
         if (i === index) {
             screen.style.display = 'flex';
@@ -2210,56 +2211,56 @@ function switchScreen(index) {
             screen.classList.remove('active');
             setTimeout(() => {
                 screen.style.display = 'none';
-            }, 500); 
+            }, 500);
         }
     });
 }
 
 function navigateQuiz(direction) {
     if (isStaffView) return;
-    
+
     currentQuestionIndex += direction;
-    
+
     if (currentQuestionIndex < 0) {
         currentQuestionIndex = 0;
-        switchScreen(0); 
+        switchScreen(0);
         return;
     }
-    
+
     if (currentQuestionIndex >= questions.length) {
         calculateResults();
-        switchScreen(2); 
+        switchScreen(2);
         return;
     }
-    
+
     renderQuestion(currentQuestionIndex, true);
 }
 
 function renderQuestion(index, animate = true) {
     const q = questions[index];
     questionText.textContent = q.question.ja_alt && currentLang === 'ja' ? q.question.ja_alt : q.question[currentLang];
-    
+
     const progress = ((index) / questions.length) * 100;
     progressBar.style.width = `${progress}%`;
-    
+
     if (index === 0) {
-        backBtn.classList.remove('hidden'); 
+        backBtn.classList.remove('hidden');
     } else {
         backBtn.classList.remove('hidden');
     }
-    
+
     const renderOpts = () => {
         optionsContainer.innerHTML = '';
-        
+
         q.options.forEach(opt => {
             const card = document.createElement('div');
             card.className = 'option-card';
-            
+
             if (userAnswers[q.id] === opt.value) {
                 card.style.borderColor = 'var(--accent)';
                 card.style.background = 'rgba(59, 130, 246, 0.1)';
             }
-            
+
             let titleText = opt.title.ja_alt && currentLang === 'ja' ? opt.title.ja_alt : opt.title[currentLang];
 
             card.innerHTML = `
@@ -2267,12 +2268,12 @@ function renderQuestion(index, animate = true) {
                 <h3 class="option-title">${titleText}</h3>
                 <p class="option-desc">${opt.desc[currentLang]}</p>
             `;
-            
+
             card.addEventListener('click', () => handleOptionSelect(q.id, opt.value));
-            
+
             optionsContainer.appendChild(card);
         });
-        
+
         if (animate) optionsContainer.style.opacity = 1;
     };
 
@@ -2287,21 +2288,21 @@ function renderQuestion(index, animate = true) {
 
 function handleOptionSelect(questionId, value) {
     userAnswers[questionId] = value;
-    
+
     const cards = optionsContainer.querySelectorAll('.option-card');
     cards.forEach(card => {
         card.style.borderColor = 'var(--card-border)';
         card.style.background = 'var(--card-bg)';
     });
-    
+
     const q = questions[currentQuestionIndex];
     let selectedTitle = q.options.find(o => o.value === value).title[currentLang];
-    if(q.options.find(o => o.value === value).title.ja_alt && currentLang === 'ja') {
+    if (q.options.find(o => o.value === value).title.ja_alt && currentLang === 'ja') {
         selectedTitle = q.options.find(o => o.value === value).title.ja_alt;
     }
-    
+
     const selectedCard = Array.from(cards).find(card => card.querySelector('.option-title').textContent === selectedTitle);
-    if(selectedCard) {
+    if (selectedCard) {
         selectedCard.style.borderColor = 'var(--accent)';
         selectedCard.style.background = 'rgba(59, 130, 246, 0.1)';
     }
@@ -2313,22 +2314,22 @@ function handleOptionSelect(questionId, value) {
 
 function calculateResults() {
     let bestMatch = null;
-    
+
     const scores = shoes.map(shoe => {
         let score = 0;
-        
+
         if (shoe.gender && userAnswers.gender && userAnswers.gender !== 'U') {
             if (shoe.gender === userAnswers.gender) {
-                score += 50; 
+                score += 50;
             } else if (shoe.gender !== 'U') {
                 score -= 1000;
             }
         }
-        
+
         if (shoe.attributes.terrain.includes(userAnswers.terrain)) {
             score += (userAnswers.terrain === 'snow' && shoe.attributes.terrain.includes('snow')) ? 5 : 3;
         }
-        
+
         // Extra scoring for Walking / Lifestyle / Gym based on category
         if (userAnswers.terrain === 'walking') {
             if (shoe.category.some(c => c.en === 'Walking')) score += 10;
@@ -2341,19 +2342,19 @@ function calculateResults() {
         if (userAnswers.terrain === 'gym') {
             if (shoe.category.some(c => c.en === 'Gym Training')) score += 10;
         }
-        
+
         if (shoe.attributes.support.includes(userAnswers.support)) {
             score += 3;
         } else if (userAnswers.support === 'support' && shoe.support.en === 'Neutral') {
-            score -= 2; 
+            score -= 2;
         }
-        
+
         if (shoe.attributes.cushion.includes(userAnswers.cushion)) score += 2;
         if (shoe.attributes.goal.includes(userAnswers.goal)) score += 2;
-        
+
         return { shoe, score };
     });
-    
+
     scores.sort((a, b) => b.score - a.score);
     bestMatch = scores[0].shoe;
     renderResult(bestMatch);
@@ -2362,8 +2363,8 @@ function calculateResults() {
 function renderResult(shoe) {
     let catEmoji = getCatEmoji(shoe.category[0].en);
     let wpText = shoe.features.waterproof ? `<span style="color:#93c5fd; font-weight:bold;">${shoe.features.waterproof}</span>` : i18n[currentLang].wpNo;
-    
-    let imageHtml = shoe.image 
+
+    let imageHtml = shoe.image
         ? `<img src="${shoe.image}" alt="${shoe.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">`
         : `<div class="shoe-placeholder">🏃</div>`;
 
@@ -2406,18 +2407,18 @@ function restartQuiz() {
     currentQuestionIndex = 0;
     userAnswers = {};
     progressBar.style.width = '0%';
-    
+
     let appContainer = document.getElementById('app-container');
     if (appContainer) appContainer.classList.remove('staff-mode');
-    
+
     let staffScreen = document.getElementById('staff-screen');
-    if(staffScreen) {
+    if (staffScreen) {
         staffScreen.classList.remove('active');
         staffScreen.style.display = 'none';
     }
-    
+
     renderQuestion(0, false);
-    
+
     screens.forEach((screen, i) => {
         if (i === 0) {
             screen.style.display = 'flex';
