@@ -218,7 +218,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '245.2 g',
-            upper: '耐久性のあるクイックドライアッパー',
+            upper: 'Durable Quick-Dry Upper',
             footshape: 'Standard',
             summary: '名作KINGをもう一度！<br>「キングをもう一度」との声にお応えして、ついに復活しました。ストラップをしっかり締めて、確かなグリップ力と地面を感じ取る足裏感覚を味わいながら進める一足です。King MT 2はAltraの名作モデル。そのため、あえて一切の変更を加えていません。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -244,7 +244,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '292 g',
-            upper: '耐久性のあるクイックドライアッパー',
+            upper: 'Durable Quick-Dry Upper',
             footshape: 'Standard',
             summary: '名作KINGをもう一度！<br>「キングをもう一度」との声にお応えして、ついに復活しました。ストラップをしっかり締めて、確かなグリップ力と地面を感じ取る足裏感覚を味わいながら進める一足です。King MT 2はAltraの名作モデル。そのため、あえて一切の変更を加えていません。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -271,7 +271,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE, BLACK", ja: "WHITE, BLACK" },
             weight: '259.4 g',
-            upper: 'メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足<br>今すぐジムバッグに。Solstice XT 3は、まもなくあなたの“定番”クロストレーニングシューズになるはずです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -298,7 +298,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE, BLACK", ja: "WHITE, BLACK" },
             weight: '310.4 g',
-            upper: 'メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: '自然な動きを守りつつ、どんなトレーニングでも頼れる一足<br>今すぐジムバッグに。Solstice XT 3は、まもなくあなたの“定番”クロストレーニングシューズになるはずです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -326,7 +326,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, SAND", ja: "BLACK/BLACK, SAND" },
             weight: '263.7 g',
-            upper: 'メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: '過保護なまでの安心感が、4mmドロップを次の次元へ。<br>『Experience Wild 3+』は、初めてALTRAを履く方でも違和感のない4mmドロップ設計をベースに、トレイルに求められる機能と安心感を徹底的に詰め込んだ最新モデルです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -354,7 +354,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/WHITE", ja: "WHITE/CORAL, BLACK/WHITE" },
             weight: '208.7 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: '「努力」から「至福」へとガイドする<br>Experience Flow STは、このシューズは、ランナーを優しく導くガイド機能を備え、至福の感覚と軽やかな走りを両立させる新しいリアリティを提案します。最大の特徴は、内側に配置された「GuideRail™」テクノロジー。必要な時だけ自然な安定性を提供し、足本来の動きを妨げることなく、スムーズで安定したライド感を実現します。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -382,7 +382,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/WHITE", ja: "WHITE/CORAL, BLACK/WHITE" },
             weight: '212 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'ロードランニングを「努力」から「至福」へと変える<br>このシューズの心臓部といえるのが、ALTRA独自の「フットシェイプ」です。指先が自然に広がるゆとりを確保しながらも、中足部はしっかりと固定されることで、足本来の自由な動きをサポートします。さらに、4mmというわずかなドロップと滑らかな曲線を描くロッカーシェイプの組み合わせが、身体の自然なアライメントを整え、流れるような効率的な蹴り出しを可能にしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -411,7 +411,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK", ja: "BLACK/BLACK" },
             weight: '260.8 g',
-            upper: 'GORE-TEX Invisible Fit &ジャガードメッシュ',
+            upper: 'GORE-TEX Invisible Fit',
             footshape: 'Standard',
             summary: '雨の日だって走りたい<br>アップデートされた「TORIN 8」をベースに、アッパーにはGORE-TEX™ Invisible Fitを採用。アッパーに直接メンブレンを接着することで、防水シューズ特有の重さや違和感を感じさせず、軽さと快適な履き心地を維持しながら、優れた耐久防水性と防風性を実現しています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -439,7 +439,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/WHITE", ja: "BLACK/WHITE" },
             weight: '238.14 g',
-            upper: 'ジャカードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。そのTORIN 8より全体的に横幅を広くしたのが、このワイドバージョン。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -467,7 +467,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, BLACK/WHITE, TAN, NAVY, DARK BLUE, WHITE/LIGHT BLUE, WHITE/GREEN", ja: "BLACK/BLACK, BLACK/WHITE, TAN, NAVY, DARK BLUE, WHITE/LIGHT BLUE, WHITE/GREEN" },
             weight: '238.14 g',
-            upper: 'ジャカードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -495,7 +495,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, BROWN, WHITE/LIME", ja: "BLACK/BLACK, BROWN, WHITE/LIME" },
             weight: '323.2 g',
-            upper: 'メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: '過保護なまでの安心感が、4mmドロップを次の次元へ。<br>『Experience Wild 3+』は、初めてALTRAを履く方でも違和感のない4mmドロップ設計をベースに、トレイルに求められる機能と安心感を徹底的に詰め込んだ最新モデルです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -523,7 +523,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLUE/GRAY, BLACK/WHITE", ja: "BLUE/GRAY, BLACK/WHITE" },
             weight: '300.5 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: '「努力」から「至福」へとガイドする<br>Experience Flow STは、このシューズは、ランナーを優しく導くガイド機能を備え、至福の感覚と軽やかな走りを両立させる新しいリアリティを提案します。最大の特徴は、内側に配置された「GuideRail™」テクノロジー。必要な時だけ自然な安定性を提供し、足本来の動きを妨げることなく、スムーズで安定したライド感を実現します。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -551,7 +551,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL", ja: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL" },
             weight: '255 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'ロードランニングを「努力」から「至福」へと変える<br>このシューズの心臓部といえるのが、ALTRA独自の「フットシェイプ」です。指先が自然に広がるゆとりを確保しながらも、中足部はしっかりと固定されることで、足本来の自由な動きをサポートします。さらに、4mmというわずかなドロップと滑らかな曲線を描くロッカーシェイプの組み合わせが、身体の自然なアライメントを整え、流れるような効率的な蹴り出しを可能にしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -580,7 +580,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK, DUSTY OLIVE", ja: "BLACK/BLACK, DUSTY OLIVE" },
             weight: '319 g',
-            upper: 'GORE-TEX Invisible Fit &ジャガードメッシュ',
+            upper: 'GORE-TEX Invisible Fit',
             footshape: 'Standard',
             summary: '雨の日だって走りたい<br>アップデートされた「TORIN 8」をベースに、アッパーにはGORE-TEX™ Invisible Fitを採用。アッパーに直接メンブレンを接着することで、防水シューズ特有の重さや違和感を感じさせず、軽さと快適な履き心地を維持しながら、優れた耐久防水性と防風性を実現しています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -608,7 +608,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/WHITE", ja: "BLACK/WHITE" },
             weight: '287.7 g',
-            upper: 'ジャカードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。そのTORIN 8より全体的に横幅を広くしたのが、このワイドバージョン。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -636,7 +636,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "LIGHT GRAY, BLACK/BLACK, WHITE/BLUE, BLACK/WHITE, BLACK/ORANGE, DARK SHADOW, DUSTY OLIVE, WHITE/LIME", ja: "LIGHT GRAY, BLACK/BLACK, WHITE/BLUE, BLACK/WHITE, BLACK/ORANGE, DARK SHADOW, DUSTY OLIVE, WHITE/LIME" },
             weight: '287.7 g',
-            upper: 'ジャカードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'ALTRA史上最高のフィット感<br>ロードカテゴリー随一の万能モデルとして人気が高い「TORIN」の最新モデルは、ALTRA史上最高のフィット感を追求した一足です。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -719,7 +719,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '263.7 g',
-            upper: 'リップストップメッシュアッパー',
+            upper: 'Ripstop Mesh',
             footshape: 'Original',
             summary: '誰もが待ち望んだアウトソールを装備<br>ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -746,7 +746,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "MAROON, TEAL/BLACK, TAUPE, TEAL, GLACIER, BROWN/TAN, PURPLE/ORANGE, GRAY/ORANGE, GRAY, BLACK", ja: "MAROON, TEAL/BLACK, TAUPE, TEAL, GLACIER, BROWN/TAN, PURPLE/ORANGE, GRAY/ORANGE, GRAY, BLACK" },
             weight: '263.7 g',
-            upper: 'リップストップメッシュアッパー',
+            upper: 'Ripstop Mesh',
             footshape: 'Original',
             summary: '誰もが待ち望んだアウトソールを装備<br>ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -773,7 +773,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '327.7 g',
-            upper: 'リップストップメッシュアッパー',
+            upper: 'Ripstop Mesh',
             footshape: 'Original',
             summary: '誰もが待ち望んだアウトソールを装備<br>ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -800,7 +800,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "LIME, RED, BASALT, TAN, BLUE, NAVY, BLACK/ORANGE, GREEN, DARK BLUE, DUSTY OLIVE, GRAY, BLACK", ja: "LIME, RED, BASALT, TAN, BLUE, NAVY, BLACK/ORANGE, GREEN, DARK BLUE, DUSTY OLIVE, GRAY, BLACK" },
             weight: '327.7 g',
-            upper: 'リップストップメッシュアッパー',
+            upper: 'Ripstop Mesh',
             footshape: 'Original',
             summary: '誰もが待ち望んだアウトソールを装備<br>ALTRAのアイコン的モデル「LONE PEAK」が「9+」としてモデルチェンジしました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -965,7 +965,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "LIME, BLACK/BLACK, BLACK/GREEN, GRAY/BLUE, DUSTY OLIVE, GREEN, ORANGE/TEAL, BROWN/TAN, BLUE/ORANGE, GREEN/GRAY, SAND, BLACK", ja: "LIME, BLACK/BLACK, BLACK/GREEN, GRAY/BLUE, DUSTY OLIVE, GREEN, ORANGE/TEAL, BROWN/TAN, BLUE/ORANGE, GREEN/GRAY, SAND, BLACK" },
             weight: '277 g',
-            upper: 'Quick-Dry Air Mesh',
+            upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
             summary: '全てが高次元なトレイルシューズ<br>Timpは、一日中履いても疲れにくい快適なクッション性と絶妙なフィット感が魅力のモデルです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -992,7 +992,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "ORANGE, DARK RED, TAN, DARK PURPLE, PURPLE/ORANGE, GREEN, BLUE/ORANGE", ja: "ORANGE, DARK RED, TAN, DARK PURPLE, PURPLE/ORANGE, GREEN, BLUE/ORANGE" },
             weight: '261 g',
-            upper: '速乾性のあるエアメッシュ',
+            upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Original',
             summary: '進化を止めない。<br>ローンピークはその厚すぎず薄すぎずの絶妙なバランスと、多くの人の足型にフィットすることからトレイルランニングを楽しまれる方は勿論、ハイカーにも絶大な支持をいただいてきました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1046,7 +1046,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '237 g',
-            upper: '通気性の高いアップデートされた前足部のメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: '1日のワークアウトに<br>•重量：237g（US8.5 / 25.5cm）',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1073,7 +1073,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "DUSTY OLIVE, TAUPE, GRAY, BLACK/BLACK", ja: "DUSTY OLIVE, TAUPE, GRAY, BLACK/BLACK" },
             weight: '324.6 g',
-            upper: 'Soft Rolled Mesh （ 85% RPET ）',
+            upper: 'Soft Rolled Mesh',
             footshape: 'Standard',
             summary: '全方位、死角なし。<br>TIMP 6（ティンプ 6）は、ロングトレイルや長時間行動で真価を発揮する、どんな路面でも「安心して踏み込める」トレイルシューズです。濡れた岩や木道、ガレ場など足場が不安定になりやすいコースでも安定感を失わず、「グリップ力」「クッション性」「フィット感」に加え、「快適性」までを高水準でまとめ上げたモデルに仕上がっています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1100,7 +1100,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, MINT, DARK BLUE", ja: "BLACK/BLACK, MINT, DARK BLUE" },
             weight: '269 g',
-            upper: 'Soft Rolled Mesh （ 85% RPET ）',
+            upper: 'Soft Rolled Mesh',
             footshape: 'Standard',
             summary: '全方位、死角なし。<br>TIMP 6（ティンプ 6）は、ロングトレイルや長時間行動で真価を発揮する、どんな路面でも「安心して踏み込める」トレイルシューズです。濡れた岩や木道、ガレ場など足場が不安定になりやすいコースでも安定感を失わず、「グリップ力」「クッション性」「フィット感」に加え、「快適性」までを高水準でまとめ上げたモデルに仕上がっています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1126,7 +1126,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK", ja: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK" },
             weight: '289 g',
-            upper: 'Engineered mesh',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: 'クッション、グリップ、快適、安定<br>オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1152,7 +1152,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND", ja: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND" },
             weight: '345 g',
-            upper: 'Engineered mesh',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: 'クッション、グリップ、快適、安定<br>オリンパスは、100kmを超えるロングトレイルランニングや重い荷物を背負った登山などのシーンで多くの方に愛用されています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1180,7 +1180,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "RED/ORANGE, PURPLE, BLACK", ja: "RED/ORANGE, PURPLE, BLACK" },
             weight: '246 g',
-            upper: 'メッシュ',
+            upper: 'Engineered Mesh',
             summary: 'ALTRA初ドロップ差のあるトレイルシューズ<br>ランニング障害のリスクを減らすためには、ゼロドロップが最良の選択と考えています。しかし、ALTRAのゼロドロップシューズを履いたことがないランナーからは、走りにくそうとの声も聞かれます。 こういった声に応えるため、ALTRAは低ドロップ（4mmドロップ）の「EXPERIENCEコレクション」を開発しました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
         }
@@ -1206,7 +1206,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "GRAY/BLACK, MINERAL BLUE", ja: "GRAY/BLACK, MINERAL BLUE" },
             weight: '376 g',
-            upper: 'GORE-TEX PRODUCT',
+            upper: 'GORE-TEX',
             footshape: 'Original',
             summary: 'オリンパスに防水タイプが登場。<br>雨風からしっかりと守ってくれる安心の「GORE-TEX」。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1233,7 +1233,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/GRAY, SAND", ja: "BLACK/GRAY, SAND" },
             weight: '436 g',
-            upper: 'GORE-TEX PRODUCT',
+            upper: 'GORE-TEX',
             footshape: 'Original',
             summary: 'オリンパスに防水タイプが登場。<br>雨風からしっかりと守ってくれる安心の「GORE-TEX」。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1290,7 +1290,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE, WHITE/CORAL, BLACK/WHITE", ja: "WHITE, WHITE/CORAL, BLACK/WHITE" },
             weight: '244.6 g',
-            upper: 'エンジニアード・メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: '最大級のクッションと快適さを備えたモデル。<br>エンジニアードメッシュアッパーは高い通気性を確保し、柔らかなシュータンが足入れ直後から心地よいフィット感を提供。4mmドロップとロッカー形状により、自然で効率的な蹴り出しをサポートします。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1319,7 +1319,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL", ja: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL" },
             weight: '300.5 g',
-            upper: 'エンジニアード・メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: '最大級のクッションと快適さを備えたモデル。<br>エンジニアードメッシュアッパーは高い通気性を確保し、柔らかなシュータンが足入れ直後から心地よいフィット感を提供。4mmドロップとロッカー形状により、自然で効率的な蹴り出しをサポートします。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1397,7 +1397,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "SOAR", ja: "SOAR" },
             weight: '249 g',
-            upper: 'Ultra-lightweight, breathable',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: 'SOARとALTRAの融合<br>これにより、スピーディでテクニカルな地形での走行に最適なシューズとなっています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1423,7 +1423,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "SOAR", ja: "SOAR" },
             weight: '309 g',
-            upper: 'Ultra-lightweight, breathable',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: 'SOARとALTRAの融合<br>これにより、スピーディでテクニカルな地形での走行に最適なシューズとなっています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1451,7 +1451,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "NAVY/BLACK, TAUPE, WHITE/LIME, BLACK/WHITE", ja: "NAVY/BLACK, TAUPE, WHITE/LIME, BLACK/WHITE" },
             weight: '307.6 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'サポート、クッション、ナチュラルムーブ<br>キーとなるのは、必要なときだけ補正する「GuideRail™」テクノロジー。内側への過度な倒れ込みを自然な形でサポートし、走行時の安定性を確保。癖のあるランナーや、疲労が蓄積するロングランの後半でもしっかりとしたフォームを維持できます。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1479,7 +1479,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "LIGHT GRAY, TAN, NAVY", ja: "LIGHT GRAY, TAN, NAVY" },
             weight: '243.8 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'サポート、クッション、ナチュラルムーブ<br>キーとなるのは、必要なときだけ補正する「GuideRail™」テクノロジー。内側への過度な倒れ込みを自然な形でサポートし、走行時の安定性を確保。癖のあるランナーや、疲労が蓄積するロングランの後半でもしっかりとしたフォームを維持できます。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1506,7 +1506,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/LIME", ja: "WHITE/CORAL, BLACK/LIME" },
             weight: '232.5 g',
-            upper: '超軽量で通気性に優れたアッパー',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: 'スピードに、安定感という武器を<br>スピードを追求するトレイルランナーに愛されるレースモデル「MONT BLANC CARBON」をベースに、より安定した走りを実現するStoneGuard™テクノロジーを搭載した新モデル「MONT BLANC SPEED」が登場。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1533,7 +1533,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/LIME", ja: "WHITE/CORAL, BLACK/LIME" },
             weight: '286.3 g',
-            upper: '超軽量で通気性に優れたアッパー',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: 'スピードに、安定感という武器を<br>スピードを追求するトレイルランナーに愛されるレースモデル「MONT BLANC CARBON」をベースに、より安定した走りを実現するStoneGuard™テクノロジーを搭載した新モデル「MONT BLANC SPEED」が登場。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1560,7 +1560,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "TAUPE, GRAY, BLACK", ja: "TAUPE, GRAY, BLACK" },
             weight: '218.3 g',
-            upper: 'メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'トレイルに足を置いた瞬間、感覚が研ぎ澄まされる<br>俊敏さ、軽さ、そしてナチュラルな走り心地を追求した本モデルは、トレイルランナーから高い信頼を集めてきた定番モデル。そのDNAはそのままに、さらなる進化を遂げました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1587,7 +1587,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/GRAY, TAUPE, DARK GRAY", ja: "BLACK/GRAY, TAUPE, DARK GRAY" },
             weight: '263.6 g',
-            upper: 'メッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Standard',
             summary: 'トレイルに足を置いた瞬間、自分の感覚が研ぎ澄まされる<br>俊敏さ、軽さ、そしてナチュラルな走り心地を追求した本モデルは、トレイルランナーから高い信頼を集めてきた定番モデル。そのDNAはそのままに、さらなる進化を遂げました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1614,7 +1614,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/CORAL, GRAY/PINK", ja: "BLACK/BLACK, WHITE/CORAL, GRAY/PINK" },
             weight: '256.56 g',
-            upper: 'Quick-Dry Air Mesh',
+            upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
             summary: 'TIMPファミリーにBOAモデルが仲間入り<br>高いフィット感、軽量性、アップデートしたグリップ力によって人気を博したTIMP 5シリーズにボアモデルが登場します。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1641,7 +1641,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/CORAL, GRAY/ORANGE", ja: "BLACK/BLACK, WHITE/CORAL, GRAY/ORANGE" },
             weight: '286 g',
-            upper: 'Quick-Dry Air Mesh',
+            upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
             summary: 'TIMPファミリーにBOAモデルが仲間入り<br>高いフィット感、軽量性、アップデートしたグリップ力によって人気を博したTIMP 5シリーズにボアモデルが登場します。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1777,7 +1777,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK, GRAY, BLACK", ja: "BLACK/BLACK, GRAY, BLACK" },
             weight: '277 g',
-            upper: 'GORE-TEX WATERPROOF',
+            upper: 'GORE-TEX',
             footshape: 'Standard',
             summary: 'GORE-TEX + Vibram MEGAGRIP + 軽量 + クッション<br>「グリップ」「クッション」「軽量」「フィット感」といった特徴を持ち、様々な面で高次元なTimp 5。そのTimp 5の防水モデルとして発売されました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1804,7 +1804,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/BLACK, DUSTY OLIVE, BLACK", ja: "BLACK/BLACK, DUSTY OLIVE, BLACK" },
             weight: '331 g',
-            upper: 'GORE-TEX WATERPROOF',
+            upper: 'GORE-TEX',
             footshape: 'Standard',
             summary: 'GORE-TEX + Vibram MEGAGRIP + 軽量 + クッション<br>「グリップ」「クッション」「軽量」「フィット感」といった特徴を持ち、様々な面で高次元なTimp 5。そのTimp 5の防水モデルとして発売されました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1832,7 +1832,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "GRAY/LIME, WHITE/CORAL, WHITE/LIME, BLUE/LIME", ja: "GRAY/LIME, WHITE/CORAL, WHITE/LIME, BLUE/LIME" },
             weight: '229 g',
-            upper: '軽量で通気性に優れたメッシュ',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Slim',
             summary: 'カーボンプレート内蔵セロドロップシューズ<br>従来のモデルでは前足部にのみ配置されていたカーボンプレートを、今回はシューズ全長にわたって搭載しました。これにより、更なる推進力と自然な前進を促しながらも、軽量で柔軟、安定感のある走り心地を実現しました。柔軟性が75%、安定性が14%向上しています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1860,7 +1860,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL", ja: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL" },
             weight: '164 g',
-            upper: '軽量で通気性に優れたメッシュ',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Slim',
             summary: 'カーボンプレート内蔵セロドロップシューズ<br>従来のモデルでは前足部にのみ配置されていたカーボンプレートを、今回はシューズ全長にわたって搭載しました。これにより、更なる推進力と自然な前進を促しながらも、軽量で柔軟、安定感のある走り心地を実現しました。柔軟性が75%、安定性が14%向上しています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1888,7 +1888,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, BLACK/WHITE, GRAY/LIME, DARK SHADOW, DUSTY OLIVE, GRAY, WHITE, WHITE/BLACK", ja: "BLACK/BLACK, BLACK/WHITE, GRAY/LIME, DARK SHADOW, DUSTY OLIVE, GRAY, WHITE, WHITE/BLACK" },
             weight: '269 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: 'まるでソックスを履いているかのよう<br>「エスカランテ」、それはまるで足が自由を得たかのような感覚。アルトラの定番ロードシューズは、そのアッパーがまるでソックスのような柔らかさで、窮屈感なんて言葉は忘れさせてくれます。このシューズは、朝のランニングからウォーキング、買い物、立ち仕事まで、一日中多目的に使用できるよう設計されています。朝のランニングから、ウォーキング、買い物、立ち仕事。どんな一日も、どんなシーンでも、このシューズがあれば心地よく過ごせます。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1916,7 +1916,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/WHITE, PURPLE, DARK BLUE, MINT, WHITE, WHITE/GREEN, BLACK", ja: "BLACK/BLACK, WHITE/WHITE, PURPLE, DARK BLUE, MINT, WHITE, WHITE/GREEN, BLACK" },
             weight: '212 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: 'まるでソックスを履いているかのよう<br>「エスカランテ」、それはまるで足が自由を得たかのような感覚。アルトラの定番ロードシューズは、そのアッパーがまるでソックスのような柔らかさで、窮屈感なんて言葉は忘れさせてくれます。このシューズは、朝のランニングからウォーキング、買い物、立ち仕事まで、一日中多目的に使用できるよう設計されています。朝のランニングから、ウォーキング、買い物、立ち仕事。どんな一日も、どんなシーンでも、このシューズがあれば心地よく過ごせます。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1944,7 +1944,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, WHITE/ORANGE, TEAL, TOKYO, WHITE, WHITE/CORAL, BLACK", ja: "BLACK/BLACK, WHITE/ORANGE, TEAL, TOKYO, WHITE, WHITE/CORAL, BLACK" },
             weight: '181 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: 'あなたの足音を聞いてください<br>とうとうその時が来ました。何度も手に入れたくなる「エスカランテ レーサー」が、待望のアップデートです。完成形とも言えるこのシューズ、履いて走り出すとその魅力がすぐにわかります。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1972,7 +1972,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/BLACK, GRAY/BLUE, GRAY/ORANGE, TOKYO, WHITE/BLACK, WHITE/LIME, BLACK", ja: "BLACK/BLACK, GRAY/BLUE, GRAY/ORANGE, TOKYO, WHITE/BLACK, WHITE/LIME, BLACK" },
             weight: '249 g',
-            upper: 'エンジニアードメッシュ',
+            upper: 'Engineered Mesh',
             footshape: 'Original',
             summary: 'あなたの足音を聞いてください<br>とうとうその時が来ました。何度も手に入れたくなる「エスカランテ レーサー」が、待望のアップデートです。完成形とも言えるこのシューズ、履いて走り出すとその魅力がすぐにわかります。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -1998,7 +1998,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL", ja: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL" },
             weight: '249 g',
-            upper: 'Ultra-lightweight, breathable',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: 'グリップ力、推進力+快適性、カーボン<br>モンブランに新しい仲間が登場しました。その名も、モンブランカーボン。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2024,7 +2024,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/LIME, WHITE/CORAL, WHITE/LIME", ja: "WHITE/ORANGE, GRAY/LIME, WHITE/CORAL, WHITE/LIME" },
             weight: '309 g',
-            upper: 'Ultra-lightweight, breathable',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: 'グリップ力、推進力+快適性、カーボン<br>モンブランに新しい仲間が登場しました。その名も、モンブランカーボン。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2051,7 +2051,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "SAND", ja: "SAND" },
             weight: '343 g',
-            upper: 'G  Durable mesh',
+            upper: 'Engineered Mesh (Durable)',
             footshape: 'Standard',
             summary: '通気性に優れた超軽量ミッドカットモデル<br>快適なクッション性と抜群のフィット感が特徴のTimpシリーズから、ミッドカットモデル「Timp Hiker」が登場。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2078,7 +2078,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "GRAY/GREEN", ja: "GRAY/GREEN" },
             weight: '272 g',
-            upper: 'G  Durable mesh',
+            upper: 'Engineered Mesh (Durable)',
             footshape: 'Standard',
             summary: '通気性に優れた超軽量ミッドカットモデル<br>快適なクッション性と抜群のフィット感が特徴のTimpシリーズから、ミッドカットモデル「Timp Hiker」が登場。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2106,7 +2106,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "DUSTY OLIVE, TAUPE, BLACK", ja: "DUSTY OLIVE, TAUPE, BLACK" },
             weight: '368 g',
-            upper: 'GORE-TEX メンブレン',
+            upper: 'GORE-TEX',
             footshape: 'Standard',
             summary: 'GORE-TEX+Megagrip+軽量 ミッドカット<br>⁡今シーズン、大幅にアップデートされたTimpシリーズから足首までしっかりサポートする防水ミッドカットモデル Timp Hiker GTXが誕生しました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2134,7 +2134,7 @@ const shoes = [
             waterproof: 'GORE-TEX / WP',
             colors: { en: "NAVY, BLACK", ja: "NAVY, BLACK" },
             weight: '283 g',
-            upper: 'GORE-TEX メンブレン',
+            upper: 'GORE-TEX',
             footshape: 'Standard',
             summary: 'GORE-TEX+Megagrip+軽量 ミッドカット<br>⁡今シーズン、大幅にアップデートされたTimpシリーズから足首までしっかりサポートする防水ミッドカットモデル Timp Hiker GTXが誕生しました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2161,7 +2161,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "LIME, TAUPE, RASPBERRY, NEON/CORAL, TAN, BLACK/GRAY, GREEN/FOPREST, DARK PURPLE, DUSTY OLIVE, SAND, BLACK", ja: "LIME, TAUPE, RASPBERRY, NEON/CORAL, TAN, BLACK/GRAY, GREEN/FOPREST, DARK PURPLE, DUSTY OLIVE, SAND, BLACK" },
             weight: '243 g',
-            upper: 'Quick-Dry Air Mesh',
+            upper: 'Air Mesh (Quick-Dry)',
             footshape: 'Standard',
             summary: '全てが高次元なトレイルシューズ<br>Timpは、一日中履いても疲れにくい快適なクッション性と絶妙なフィット感が魅力のモデルです。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2190,7 +2190,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "WHITE/CORAL, GRAY, DARK PURPLE, GRAY/YELLOW", ja: "WHITE/CORAL, GRAY, DARK PURPLE, GRAY/YELLOW" },
             weight: '195 g',
-            upper: 'Breathable Engineered Mesh',
+            upper: 'Engineered Mesh (Breathable)',
             footshape: 'Slim',
             summary: '高速トレーニングやレースのために<br>また、Vanish  Carbonで好評のアクティブスタンスロッカー機能により、少ないエネルギーで自然に前へと歩を進ませてくれます。Vanish Tempoは、レースでもトレーニングでも、しっかりとしたフィット感、足指の快適性、スピードを提供します。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2217,7 +2217,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE", ja: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE" },
             weight: '295 g',
-            upper: 'Durable, engineered mesh',
+            upper: 'Engineered Mesh (Durable)',
             footshape: 'Original',
             summary: 'クッション、グリップ、安定性、そしてフィット感<br>OLYMPUSは33mm厚の「クッション性」、Vibram Megagripを採用した「グリップ力」、底に向けて末広がるような形状による「安定性」といった特徴を持ち、トレイルランナーのみならず多くのハイカーにも支持されてきました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2244,7 +2244,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR", ja: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR" },
             weight: '264 g',
-            upper: 'Ultra-lightweight, hyper-breathable',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: '今その瞬間、自分好みのフィット感を。<br>モンブランはロングトレイルを走る時の大きなアドバンテージとなる 「軽量」「クッション」「グリップ」といった特徴を持っています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2270,7 +2270,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR", ja: "MAROON BELLS, BLUE/GREEN, GOLDEN HOUR" },
             weight: '317 g',
-            upper: 'Ultra-lightweight, hyper-breathable',
+            upper: 'Ultra-lightweight Breathable Mesh',
             footshape: 'Standard',
             summary: '今その瞬間、自分好みのフィット感を。<br>モンブランはロングトレイルを走る時の大きなアドバンテージとなる 「軽量」「クッション」「グリップ」といった特徴を持っています。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2298,7 +2298,7 @@ const shoes = [
             waterproof: false,
             colors: { en: "BLACK/YELLOW, WHITE/GRAY, CORAL/BLACK, DARK PURPLE", ja: "BLACK/YELLOW, WHITE/GRAY, CORAL/BLACK, DARK PURPLE" },
             weight: '176 g',
-            upper: 'engineered mesh upper',
+            upper: 'Engineered Mesh',
             footshape: 'Slim',
             summary: '快適さとスピードの融合<br>これまで長い間、快適性とスピードはレースというカテゴリーでは別々に存在してきました。私たちはこの2つを両立させたいと考え、ALTRA初のカーボンプレートシューズを開発しました。',
             endorsedBy: { en: 'Altra Runner', ja: 'アルトラランナー' }
@@ -2418,14 +2418,13 @@ function populateSpecsFilters() {
     const midsoles = [...new Set(shoes.map(s => s.features.midsole).filter(Boolean).map(v => v.trim()))].sort();
     const outsoles = [...new Set(shoes.map(s => s.features.outsole).filter(Boolean).map(v => v.trim()))].sort();
     const cushions = [...new Set(shoes.map(s => s.features.cushion).filter(Boolean).map(v => v.trim()))].sort();
-    const insoles = [...new Set(shoes.map(s => s.features.insole).filter(Boolean).map(v => v.trim()))].sort();
+    const uppers = [...new Set(shoes.map(s => s.features.upper).filter(Boolean).map(v => v.trim()))].sort();
     const footshapes = ['Standard', 'Original', 'Wide', 'Slim'];
 
     let html = '';
     
     const isJa = (currentLang === 'ja');
-    html += `<div style="font-weight:bold; font-size:0.85rem; margin: 4px 0 2px; color:#10b981;">☔ ${i18n[currentLang].specWaterproof || 'Waterproof'}</div>`;
-    html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="true" data-type="waterproof" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('waterproof', 'true')}> ${isJa ? '防水モデル' : 'Waterproof Only'}</label>`;
+    
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🦶 ${isJa ? 'フットシェイプ' : 'FootShape'}</div>`;
     footshapes.forEach(fs => {
@@ -2442,14 +2441,14 @@ function populateSpecsFilters() {
         html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${o}" data-type="outsole" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('outsole', o)}> ${o}</label>`;
     });
 
+    html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🧵 ${isJa ? 'アッパー' : 'Upper'}</div>`;
+    uppers.forEach(u => {
+        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${u}" data-type="upper" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('upper', u)}> ${u}</label>`;
+    });
+
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">☁️ ${isJa ? 'クッション' : 'Cushion'}</div>`;
     cushions.forEach(c => {
         html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${c}" data-type="cushion" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('cushion', c)}> ${c}</label>`;
-    });
-
-    html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">👟 ${isJa ? 'インソール' : 'Insole'}</div>`;
-    insoles.forEach(i => {
-        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${i}" data-type="insole" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('insole', i)}> ${i}</label>`;
     });
 
     container.innerHTML = html;
@@ -2634,13 +2633,13 @@ function renderStaffList() {
         let matchSpecs = true;
         const selectedSpecsItems = Array.from(document.querySelectorAll('#specs-checkboxes input:checked'));
         if (selectedSpecsItems.length > 0) {
-            const specMap = { footshape: [], waterproof: [], midsole: [], outsole: [], cushion: [], insole: [] };
+            const specMap = { footshape: [], waterproof: [], midsole: [], outsole: [], cushion: [], upper: [] };
             selectedSpecsItems.forEach(el => {
                 const type = el.getAttribute('data-type');
                 if (type) specMap[type].push(el.value);
             });
 
-            if (specMap.waterproof.length > 0 && !shoe.features.waterproof) matchSpecs = false;
+            
             
             if (specMap.footshape.length > 0) {
                 const fs = shoe.features.footshape || '';
@@ -2662,9 +2661,9 @@ function renderStaffList() {
                 if (!specMap.cushion.every(c => cs.includes(c))) matchSpecs = false;
             }
 
-            if (specMap.insole.length > 0) {
-                const ins = shoe.features.insole || '';
-                if (!specMap.insole.every(i => ins.includes(i))) matchSpecs = false;
+            if (specMap.upper.length > 0) {
+                const up = shoe.features.upper || '';
+                if (!specMap.upper.every(u => up.includes(u))) matchSpecs = false;
             }
         }
 
