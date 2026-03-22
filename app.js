@@ -1783,6 +1783,9 @@ function init() {
 
 function toggleView() {
     isStaffView = !isStaffView;
+    
+    let appContainer = document.getElementById('app-container');
+
     if (isStaffView) {
         screens.forEach((s) => {
             s.classList.remove('active');
@@ -1794,7 +1797,10 @@ function toggleView() {
             staffScreen.style.display = 'flex';
             setTimeout(() => staffScreen.classList.add('active'), 50);
         }
+        
+        if (appContainer) appContainer.classList.add('staff-mode');
     } else {
+        if (appContainer) appContainer.classList.remove('staff-mode');
         restartQuiz();
     }
     setLanguage(currentLang);
@@ -1901,24 +1907,24 @@ function renderStaffList() {
     }
 
     filteredShoes.forEach(shoe => {
-        let wpBadge = shoe.features.waterproof ? `<span class="tag-badge wp" style="margin-top:0.5rem;display:inline-block;">☔ ${shoe.features.waterproof}</span>` : '';
-        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:60px; height:60px; object-fit:cover; border-radius:8px; vertical-align:middle; margin-right:12px;" alt="${shoe.name}">` : '';
+        let wpBadge = shoe.features.waterproof ? `<span class="tag-badge wp" style="margin-left:4px;display:inline-block;padding:2px 4px;font-size:0.7rem;">☔ ${shoe.features.waterproof}</span>` : '';
+        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:30px; height:30px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:8px;" alt="${shoe.name}">` : '';
         
         html += `
-            <tr>
+            <tr style="line-height: 1.3;">
                 <td>
                     <div style="display:flex; align-items:center;">
                         ${imgTag}
                         <div>
-                            <strong><a href="${shoe.url}" target="_blank" style="color:#ffffff;">${shoe.name} ↗</a></strong><br>
-                            <span style="color:var(--text-secondary);font-size:0.8rem;">${shoe.support[currentLang]}</span>
+                            <strong><a href="${shoe.url}" target="_blank" style="color:#ffffff; text-decoration:none;">${shoe.name}</a></strong>
+                            <span style="color:var(--text-secondary);font-size:0.75rem;margin-left:6px;">${shoe.support[currentLang]}</span>
                         </div>
                     </div>
                 </td>
-                <td><span class="tag-badge">${shoe.category['en'].includes('Road') ? '🛣️ ' : shoe.category['en'].includes('Trail') ? '🏔️ ' : '❄️ '}${shoe.category[currentLang]}</span></td>
-                <td><span style="font-size:0.85rem;">Mid: <strong>${shoe.features.midsole}</strong></span><br><span style="font-size:0.85rem;">Out: <strong>${shoe.features.outsole}</strong></span></td>
-                <td><span style="font-size:0.85rem;">Stack: <strong>${shoe.stackHeight}</strong></span><br>${wpBadge}<br><span style="font-size:0.8rem;color:var(--text-secondary);">&nbsp;🎨 ${shoe.features.colors[currentLang]}</span></td>
-                <td style="font-size:0.85rem; line-height:1.4;">💬 ${shoe.features.endorsedBy[currentLang]}</td>
+                <td><span style="font-size:0.85rem;">${shoe.category['en'].includes('Road') ? '🛣️ ' : shoe.category['en'].includes('Trail') ? '🏔️ ' : '❄️ '}${shoe.category[currentLang]}</span></td>
+                <td><span style="font-size:0.8rem; color:var(--text-secondary);">Mid:</span> <span style="font-size:0.85rem;">${shoe.features.midsole}</span><br><span style="font-size:0.8rem; color:var(--text-secondary);">Out:</span> <span style="font-size:0.85rem;">${shoe.features.outsole}</span></td>
+                <td><span style="font-size:0.8rem; color:var(--text-secondary);">Stack:</span> <span style="font-size:0.85rem;">${shoe.stackHeight}</span> ${wpBadge}<br><span style="font-size:0.75rem;color:var(--text-secondary);">🎨 ${shoe.features.colors[currentLang]}</span></td>
+                <td style="font-size:0.85rem; color: #d1d5db;">${shoe.features.endorsedBy[currentLang]}</td>
             </tr>
         `;
     });
@@ -2123,6 +2129,9 @@ function restartQuiz() {
     currentQuestionIndex = 0;
     userAnswers = {};
     progressBar.style.width = '0%';
+    
+    let appContainer = document.getElementById('app-container');
+    if (appContainer) appContainer.classList.remove('staff-mode');
     
     let staffScreen = document.getElementById('staff-screen');
     if(staffScreen) {

@@ -82,6 +82,11 @@ body {
     padding: 2rem;
     position: relative;
     z-index: 1;
+    transition: max-width 0.3s ease;
+}
+
+.container.staff-mode {
+    max-width: 1400px;
 }
 
 .screen {
@@ -352,7 +357,7 @@ body {
     margin-top: 1rem;
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 16px;
+    border-radius: 8px;
     backdrop-filter: var(--glass-blur);
 }
 
@@ -360,14 +365,20 @@ body {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    min-width: 700px;
+    min-width: 800px;
 }
 
 .staff-table th, .staff-table td {
-    padding: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    vertical-align: top;
+    padding: 0.5rem 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    vertical-align: middle;
 }
+
+.staff-table th:nth-child(1) { width: 30%; }
+.staff-table th:nth-child(2) { width: 15%; }
+.staff-table th:nth-child(3) { width: 20%; }
+.staff-table th:nth-child(4) { width: 20%; }
+.staff-table th:nth-child(5) { width: 15%; }
 
 /* Append filter UI styles */
 .filter-controls {
