@@ -2527,7 +2527,6 @@ function renderStaffList() {
         <thead>
             <tr>
                 <th>${i18n[currentLang].thName}</th>
-                <th>${i18n[currentLang].thCategory}</th>
                 <th>${i18n[currentLang].thSpecsTitle}</th>
                 <th>${i18n[currentLang].thDesc}</th>
             </tr>
@@ -2536,25 +2535,29 @@ function renderStaffList() {
     `;
 
     if (filteredShoes.length === 0) {
-        html += `<tr><td colspan="4" style="text-align:center; padding: 2rem;">No matching shoes found.</td></tr>`;
+        html += `<tr><td colspan="3" style="text-align:center; padding: 2rem;">No matching shoes found.</td></tr>`;
     }
 
     filteredShoes.forEach(shoe => {
-        let wpBadge = shoe.features.waterproof ? `<span class="tag-badge wp" style="margin-left:4px;display:inline-block;padding:2px 4px;font-size:0.7rem;">☔ ${shoe.features.waterproof}</span>` : '';
-        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:30px; height:30px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:8px;" alt="${shoe.name}">` : '';
+        let imgTag = shoe.image ? `<img src="${shoe.image}" style="width:40px; height:40px; object-fit:cover; border-radius:4px; vertical-align:middle; margin-right:12px;" alt="${shoe.name}">` : '';
 
         html += `
             <tr style="line-height: 1.3;">
-                <td>
-                    <div style="display:flex; align-items:center;">
+                <td style="vertical-align:top;">
+                    <div style="display:flex; align-items:flex-start;">
                         ${imgTag}
                         <div>
                             <strong><a href="${shoe.url}" target="_blank" style="color:#ffffff; text-decoration:none;">${shoe.name}</a></strong>
                             <span style="color:var(--text-secondary);font-size:0.75rem;margin-left:6px;">${shoe.support[currentLang]}</span>
+                            <div style="font-size:0.8rem; color: #a7f3d0; margin-top: 4px; line-height: 1.2;">
+                                ${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' • ')}
+                            </div>
+                            <div style="font-size:0.75rem; color:var(--text-secondary); margin-top: 4px;">
+                                🎨 ${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}
+                            </div>
                         </div>
                     </div>
                 </td>
-                <td><span style="font-size:0.85rem;">${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join('<br>')}</span></td>
                 <td>
                     <div style="font-size:0.8rem; line-height: 1.5; color:var(--text-secondary);">
                         <span style="color:#fff;">重量:</span> ${shoe.features.weight || '-'}<br>
@@ -2562,8 +2565,7 @@ function renderStaffList() {
                         <span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}<br>
                         <span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}<br>
                         <span style="color:#fff;">アッパー:</span> <span style="font-size:0.75rem;">${shoe.features.upper || '-'}</span><br>
-                        <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}<br>
-                        <span style="font-size:0.75rem;color:var(--text-secondary);margin-top:4px;display:inline-block;">🎨 ${shoe.features.colors ? shoe.features.colors[currentLang] : '-'}</span>
+                        <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}
                     </div>
                 </td>
                 <td style="vertical-align:top; max-width:250px;">
