@@ -1366,7 +1366,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ PRO (core) & Altra EGO™ MAX (rim)',
+            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "SOAR", ja: "SOAR" },
@@ -1392,7 +1392,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ PRO (core) & Altra EGO™ MAX (rim)',
+            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "SOAR", ja: "SOAR" },
@@ -1474,7 +1474,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/LIME", ja: "WHITE/CORAL, BLACK/LIME" },
@@ -1500,7 +1500,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ MAX (rim) & Altra EGO™ PRO (core)',
+            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/LIME", ja: "WHITE/CORAL, BLACK/LIME" },
@@ -1795,7 +1795,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Altra EGO PRO',
+            midsole: 'ALTRA EGO™ PRO',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "GRAY/LIME, WHITE/CORAL, WHITE/LIME, BLUE/LIME", ja: "GRAY/LIME, WHITE/CORAL, WHITE/LIME, BLUE/LIME" },
@@ -1823,7 +1823,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Altra EGO PRO',
+            midsole: 'ALTRA EGO™ PRO',
             outsole: 'Rubber',
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL", ja: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL" },
@@ -1961,7 +1961,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ PRO (core) & Altra EGO™ MAX (rim)',
+            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL", ja: "WHITE/ORANGE, GRAY/BLUE, WHITE/LIME, WHITE/CORAL" },
@@ -1987,7 +1987,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: 'Altra EGO™ PRO (core) & Altra EGO™ MAX (rim)',
+            midsole: 'Altra EGO™ MAX (rim) & ALTRA EGO™ PRO (core)',
             outsole: 'Vibram® Megagrip with Litebase',
             waterproof: false,
             colors: { en: "WHITE/ORANGE, GRAY/LIME, WHITE/CORAL, WHITE/LIME", ja: "WHITE/ORANGE, GRAY/LIME, WHITE/CORAL, WHITE/LIME" },
@@ -2147,7 +2147,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'Altra EGO™️ PRO',
+            midsole: 'ALTRA EGO™ PRO',
             outsole: 'EVA Rubber',
             waterproof: false,
             colors: { en: "WHITE/CORAL, GRAY, DARK PURPLE, GRAY/YELLOW", ja: "WHITE/CORAL, GRAY, DARK PURPLE, GRAY/YELLOW" },
