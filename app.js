@@ -37,7 +37,11 @@ const i18n = {
         optSortStack: "Stack (Low-High)",
         optSortStackHigh: "Stack (High-Low)",
         searchPlaceholder: "Search models...",
-        footshapes: { Standard: 'Standard', Original: 'Original', Wide: 'Wide', Slim: 'Slim' }
+        footshapes: { Standard: 'Standard', Original: 'Original', Wide: 'Wide', Slim: 'Slim' },
+        summaryCat: "Categories (All)",
+        summarySpecs: "Specs (All)",
+        optSortWeightLight: "Weight (Lightest)",
+        optSortWeightHeavy: "Weight (Heaviest)"
     },
     ja: {
         title: "STRIDE LAB ニセコ <br> <span class=\"brand-text\">ALTRA セレクター</span>",
@@ -77,7 +81,11 @@ const i18n = {
         optSortStack: "スタックハイト (低い順)",
         optSortStackHigh: "スタックハイト (高い順)",
         searchPlaceholder: "モデル名で検索...",
-        footshapes: { Standard: 'スタンダード', Original: 'オリジナル', Wide: 'ワイド', Slim: 'スリム' }
+        footshapes: { Standard: 'スタンダード', Original: 'オリジナル', Wide: 'ワイド', Slim: 'スリム' },
+        summaryCat: "カテゴリー選択 (すべて)",
+        summarySpecs: "仕様フィルター (すべて)",
+        optSortWeightLight: "重量 (軽い順)",
+        optSortWeightHeavy: "重量 (重い順)"
     }
 };
 
@@ -2385,11 +2393,11 @@ function init() {
     document.getElementById('staff-gender-filter')?.addEventListener('change', renderStaffList);
     document.getElementById('staff-sort')?.addEventListener('change', renderStaffList);
 
-    // checkbox triggers
-    document.querySelectorAll('#category-checkboxes input, #specs-checkboxes input').forEach(el => {
+    document.querySelectorAll('#specs-checkboxes input').forEach(el => {
         el.addEventListener('change', renderStaffList);
     });
 
+    populateCategoryFilters(); // Generate dynamic category checklist options
     populateSpecsFilters(); // Generate dynamic specs checkbox options
 
     setLanguage(currentLang);
@@ -2399,6 +2407,12 @@ function init() {
 function populateSpecsFilters() {
     const container = document.getElementById('specs-checkboxes');
     if (!container) return;
+
+    // Save checked states
+    const checkedVals = Array.from(container.querySelectorAll('input:checked')).map(el => {
+        return { type: el.getAttribute('data-type'), value: el.value };
+    });
+    const isChecked = (type, val) => checkedVals.some(c => c.type === type && c.value === val) ? 'checked' : '';
 
     // Get unique values with grouping
     const midsoles = [...new Set(shoes.map(s => s.features.midsole).filter(Boolean).map(v => v.trim()))].sort();
@@ -2411,37 +2425,67 @@ function populateSpecsFilters() {
     
     const isJa = (currentLang === 'ja');
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 4px 0 2px; color:#10b981;">☔ ${i18n[currentLang].specWaterproof || 'Waterproof'}</div>`;
-    html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="true" data-type="waterproof"> ${isJa ? '防水モデル' : 'Waterproof Only'}</label>`;
+    html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="true" data-type="waterproof" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('waterproof', 'true')}> ${isJa ? '防水モデル' : 'Waterproof Only'}</label>`;
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🦶 ${isJa ? 'フットシェイプ' : 'FootShape'}</div>`;
     footshapes.forEach(fs => {
-        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${fs}" data-type="footshape"> ${fs}</label>`;
+        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${fs}" data-type="footshape" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('footshape', fs)}> ${fs}</label>`;
     });
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🧦 ${isJa ? 'ミッドソール' : 'Midsole'}</div>`;
     midsoles.forEach(m => {
-        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${m}" data-type="midsole"> ${m}</label>`;
+        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${m}" data-type="midsole" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('midsole', m)}> ${m}</label>`;
     });
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🗺️ ${isJa ? 'アウトソール' : 'Outsole'}</div>`;
     outsoles.forEach(o => {
-        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${o}" data-type="outsole"> ${o}</label>`;
+        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${o}" data-type="outsole" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('outsole', o)}> ${o}</label>`;
     });
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">☁️ ${isJa ? 'クッション' : 'Cushion'}</div>`;
     cushions.forEach(c => {
-        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${c}" data-type="cushion"> ${c}</label>`;
+        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${c}" data-type="cushion" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('cushion', c)}> ${c}</label>`;
     });
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">👟 ${isJa ? 'インソール' : 'Insole'}</div>`;
     insoles.forEach(i => {
-        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${i}" data-type="insole"> ${i}</label>`;
+        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" name="spec" value="${i}" data-type="insole" style="accent-color:var(--accent); margin-right: 4px;" ${isChecked('insole', i)}> ${i}</label>`;
     });
-
 
     container.innerHTML = html;
 
-    // Add listeners to these dynamic checkboxes
+    container.querySelectorAll('input').forEach(el => {
+        el.addEventListener('change', renderStaffList);
+    });
+}
+
+function populateCategoryFilters() {
+    const container = document.getElementById('category-checkboxes');
+    if (!container) return;
+
+    // Save checked states
+    const checkedVals = Array.from(container.querySelectorAll('input:checked')).map(el => el.value);
+
+    // Get unique categories
+    const cats = [];
+    const seen = new Set();
+    shoes.forEach(s => {
+        (s.category || []).forEach(c => {
+            if (!seen.has(c.en)) {
+                seen.add(c.en);
+                cats.push(c);
+            }
+        });
+    });
+
+    let html = '';
+    cats.forEach(c => {
+        const isChecked = checkedVals.includes(c.en) ? 'checked' : '';
+        const emoji = getCatEmoji(c.en);
+        html += `<label style="display:block; margin-bottom:4px; font-size: 0.9rem; cursor: pointer;"><input type="checkbox" value="${c.en}" ${isChecked} style="accent-color:var(--accent); margin-right: 4px;"> ${emoji} ${c[currentLang]}</label>`;
+    });
+    container.innerHTML = html;
+
     container.querySelectorAll('input').forEach(el => {
         el.addEventListener('change', renderStaffList);
     });
@@ -2499,7 +2543,7 @@ function setLanguage(lang) {
         staffTitleEl.textContent = i18n[lang].staffTitle;
     }
 
-    const setI18n = (id, key) => { let el = document.getElementById(id); if (el) el.textContent = i18n[lang][key]; };
+    const setI18n = (id, key) => { let el = document.getElementById(id); if (el) el.innerHTML = i18n[lang][key]; };
     setI18n('opt-gender-all', 'optGenderAll');
     setI18n('opt-gender-m', 'optGenderM');
     setI18n('opt-gender-w', 'optGenderW');
@@ -2515,8 +2559,17 @@ function setLanguage(lang) {
     setI18n('opt-sort-name', 'optSortName');
     setI18n('opt-sort-stack', 'optSortStack');
     setI18n('opt-sort-stack-high', 'optSortStackHigh');
+    setI18n('opt-sort-weight-light', 'optSortWeightLight');
+    setI18n('opt-sort-weight-heavy', 'optSortWeightHeavy');
+    setI18n('summary-cat', 'summaryCat');
+    setI18n('summary-specs', 'summarySpecs');
+
     let searchEl = document.getElementById('staff-search');
     if (searchEl) searchEl.placeholder = i18n[lang].searchPlaceholder;
+
+    // Re-render checklist options with currentLang preserving selections
+    populateCategoryFilters();
+    populateSpecsFilters();
 
 
     if (isStaffView) {
@@ -2554,13 +2607,18 @@ function renderStaffList() {
     const selectedSpecs = Array.from(document.querySelectorAll('#specs-checkboxes input:checked')).map(c => c.value);
 
     // Update Summary Title
+    const isJa = (currentLang === 'ja');
     const summaryCat = document.getElementById('summary-cat');
     if (summaryCat) {
-        summaryCat.innerText = selectedCats.length === 0 ? 'カテゴリー選択 (すべて)' : `カテゴリー (${selectedCats.length})`;
+        summaryCat.innerText = selectedCats.length === 0 
+            ? (i18n[currentLang].summaryCat || 'Categories (All)') 
+            : `${isJa ? 'カテゴリー' : 'Categories'} (${selectedCats.length})`;
     }
     const summarySpecs = document.getElementById('summary-specs');
     if (summarySpecs) {
-        summarySpecs.innerText = selectedSpecs.length === 0 ? '仕様フィルター (すべて)' : `仕様 (${selectedSpecs.length})`;
+        summarySpecs.innerText = selectedSpecs.length === 0 
+            ? (i18n[currentLang].summarySpecs || 'Specs (All)') 
+            : `${isJa ? '仕様' : 'Specs'} (${selectedSpecs.length})`;
     }
 
     let filteredShoes = shoes.filter(shoe => {
@@ -2666,14 +2724,14 @@ function renderStaffList() {
 
                             <!-- Integrated Specs -->
                             <div style="font-size:0.75rem; line-height: 1.4; color:var(--text-secondary); margin-top: 8px; border-top: 1px solid #374151; padding-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 12px;">
-                                <div><span style="color:#fff;">重量:</span> ${shoe.features.weight || '-'}</div>
-                                <div><span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? '重量' : 'Weight'}:</span> ${shoe.features.weight || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'スタック' : 'Stack'}:</span> ${shoe.stackHeight || '-'}</div>
                                 <div><span style="color:#fff;">${currentLang === 'ja' ? 'フットシェイプ' : 'FootShape'}:</span> ${shoe.features.footshape || '-'}</div>
-                                <div><span style="color:#fff;">ミッド:</span> ${shoe.features.midsole || '-'}</div>
-                                <div><span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}</div>
-                                <div><span style="color:#fff;">アッパー:</span> ${shoe.features.upper || '-'}</div>
-                                ${shoe.features.cushion ? `<div><span style="color:#fff;">クッション:</span> ${shoe.features.cushion}</div>` : ''}
-                                ${shoe.features.insole ? `<div><span style="color:#fff;">インソール:</span> ${shoe.features.insole}</div>` : ''}
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'ミッド' : 'Midsole'}:</span> ${shoe.features.midsole || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'アウト' : 'Outsole'}:</span> ${shoe.features.outsole || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'アッパー' : 'Upper'}:</span> ${shoe.features.upper || '-'}</div>
+                                ${shoe.features.cushion ? `<div><span style="color:#fff;">${currentLang === 'ja' ? 'クッション' : 'Cushion'}:</span> ${shoe.features.cushion}</div>` : ''}
+                                ${shoe.features.insole ? `<div><span style="color:#fff;">${currentLang === 'ja' ? 'インソール' : 'Insole'}:</span> ${shoe.features.insole}</div>` : ''}
                             </div>
                         </div>
                     </div>
