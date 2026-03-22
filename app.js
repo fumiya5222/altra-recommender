@@ -93,6 +93,8 @@ const i18n = {
     }
 };
 
+const getVal = (v) => v && typeof v === 'object' && v[currentLang] ? v[currentLang] : v;
+
 const shoes = [
     {
         id: 'timp6gtxm26ss',
@@ -218,7 +220,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
             midsole: 'Altra EGO™',
-            outsole: '6 mmラグ付きVibram®MegaGrip™Litebase™',
+            outsole: { en: 'Vibram® MegaGrip™ Litebase™ with 6mm lugs', ja: '6 mmラグ付きVibram®MegaGrip™Litebase™' },
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '245.2 g',
@@ -244,7 +246,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
             midsole: 'Altra EGO™',
-            outsole: '6 mmラグ付きVibram®MegaGrip™Litebase™',
+            outsole: { en: 'Vibram® MegaGrip™ Litebase™ with 6mm lugs', ja: '6 mmラグ付きVibram®MegaGrip™Litebase™' },
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '292 g',
@@ -270,8 +272,8 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'ハイアブレーションEVA',
-            outsole: 'アスレチックラバーアウトソール',
+            midsole: { en: 'High-Abrasion EVA', ja: 'ハイアブレーションEVA' },
+            outsole: { en: 'Athletic Rubber Outsole', ja: 'アスレチックラバーアウトソール' },
             waterproof: false,
             colors: { en: "WHITE, BLACK", ja: "WHITE, BLACK" },
             weight: '259.4 g',
@@ -297,8 +299,8 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'ハイアブレーションEVA',
-            outsole: 'アスレチックラバーアウトソール',
+            midsole: { en: 'High-Abrasion EVA', ja: 'ハイアブレーションEVA' },
+            outsole: { en: 'Athletic Rubber Outsole', ja: 'アスレチックラバーアウトソール' },
             waterproof: false,
             colors: { en: "WHITE, BLACK", ja: "WHITE, BLACK" },
             weight: '310.4 g',
@@ -354,7 +356,7 @@ const shoes = [
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™ P35',
-            outsole: 'ラバー',
+            outsole: { en: 'Rubber', ja: 'ラバー' },
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/WHITE", ja: "WHITE/CORAL, BLACK/WHITE" },
             weight: '208.7 g',
@@ -382,7 +384,7 @@ const shoes = [
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™ P35',
-            outsole: 'ラバー',
+            outsole: { en: 'Rubber', ja: 'ラバー' },
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/WHITE", ja: "WHITE/CORAL, BLACK/WHITE" },
             weight: '212 g',
@@ -523,7 +525,7 @@ const shoes = [
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™ P35',
-            outsole: 'ラバー',
+            outsole: { en: 'Rubber', ja: 'ラバー' },
             waterproof: false,
             colors: { en: "BLUE/GRAY, BLACK/WHITE", ja: "BLUE/GRAY, BLACK/WHITE" },
             weight: '300.5 g',
@@ -551,7 +553,7 @@ const shoes = [
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
             midsole: 'Altra EGO™ P35',
-            outsole: 'ラバー',
+            outsole: { en: 'Rubber', ja: 'ラバー' },
             waterproof: false,
             colors: { en: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL", ja: "LIGHT GRAY, BLACK/BLACK, WHITE/CORAL" },
             weight: '255 g',
@@ -1045,8 +1047,8 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
-            midsole: 'ハイアブレーションEVA',
-            outsole: 'アスレチックラバーアウトソール',
+            midsole: { en: 'High-Abrasion EVA', ja: 'ハイアブレーションEVA' },
+            outsole: { en: 'Athletic Rubber Outsole', ja: 'アスレチックラバーアウトソール' },
             waterproof: false,
             colors: { en: "BLACK", ja: "BLACK" },
             weight: '237 g',
@@ -1125,7 +1127,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK", ja: "GRAY SHADOW, BLACK/BLACK, BLACK/GREEN, TAUPE, WHITE/WHITE, GRAY/BLUE, TEAL, GRAY, RED/ORANGE, SAND, BLACK" },
@@ -1151,7 +1153,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND", ja: "BLACK/BLACK, RED, BLACK/GREEN, TAUPE, WHITE/WHITE, ORANGE/CLAY, BLACK/ORANGE, DUSTY OLIVE, GREEN, DARK BLUE, SAND" },
@@ -1179,7 +1181,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["road"], cushion: ["moderate"], support: ["neutral"], goal: ["everyday"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'MaxTrac™',
             waterproof: false,
             colors: { en: "RED/ORANGE, PURPLE, BLACK", ja: "RED/ORANGE, PURPLE, BLACK" },
@@ -1205,7 +1207,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "GRAY/BLACK, MINERAL BLUE", ja: "GRAY/BLACK, MINERAL BLUE" },
@@ -1232,7 +1234,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK/GRAY, SAND", ja: "BLACK/GRAY, SAND" },
@@ -1344,7 +1346,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "WHITE/CORAL, BLACK/GRAY, CORAL/BLACK", ja: "WHITE/CORAL, BLACK/GRAY, CORAL/BLACK" },
@@ -1370,7 +1372,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "BLACK/YELLOW, GRAY/ORANGE, TAUPE", ja: "BLACK/YELLOW, GRAY/ORANGE, TAUPE" },
@@ -1559,7 +1561,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
             cushion: 'Low',
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'MaxTrac™',
             waterproof: false,
             colors: { en: "TAUPE, GRAY, BLACK", ja: "TAUPE, GRAY, BLACK" },
@@ -1586,7 +1588,7 @@ const shoes = [
         attributes: { terrain: ["trail", "mixed"], cushion: ["minimal"], support: ["neutral"], goal: ["everyday", "speed"] },
         features: {
             cushion: 'Low',
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'MaxTrac™',
             waterproof: false,
             colors: { en: "BLACK/GRAY, TAUPE, DARK GRAY", ja: "BLACK/GRAY, TAUPE, DARK GRAY" },
@@ -1668,7 +1670,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "TAN, BLACK", ja: "TAN, BLACK" },
@@ -1695,7 +1697,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK", ja: "BLACK" },
@@ -1722,7 +1724,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK, BROWN/TAUPE", ja: "BLACK, BROWN/TAUPE" },
@@ -1749,7 +1751,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed", "snow"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: 'GORE-TEX / WP',
             colors: { en: "BLACK", ja: "BLACK" },
@@ -2216,7 +2218,7 @@ const shoes = [
         support: { en: 'Neutral', ja: 'ニュートラル' },
         attributes: { terrain: ["trail", "mixed"], cushion: ["max"], support: ["neutral"], goal: ["everyday", "distance"] },
         features: {
-            midsole: '圧縮成形EVA',
+            midsole: { en: 'Compression Molded EVA', ja: '圧縮成形EVA' },
             outsole: 'Vibram® Megagrip',
             waterproof: false,
             colors: { en: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE", ja: "ORANGE, BLACK/BLACK, WHITE/BLUE, RASPBERRY, BROWN/RED, BLACK/GRAY, SILVER/BLUE, PURPLE/ORANGE, WHITE/LIGHT BLUE" },
@@ -2857,14 +2859,14 @@ function renderStaffList() {
 
                             <!-- Integrated Specs -->
                             <div style="font-size:0.75rem; line-height: 1.4; color:var(--text-secondary); margin-top: 8px; border-top: 1px solid #374151; padding-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 12px;">
-                                <div><span style="color:#fff;">${currentLang === 'ja' ? '重量' : 'Weight'}:</span> ${shoe.features.weight || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? '重量' : 'Weight'}:</span> ${getVal(shoe.features.weight) || '-'}</div>
                                 <div><span style="color:#fff;">${currentLang === 'ja' ? 'スタック' : 'Stack'}:</span> ${shoe.stackHeight || '-'}</div>
-                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'フットシェイプ' : 'FootShape'}:</span> ${shoe.features.footshape || '-'}</div>
-                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'ミッド' : 'Midsole'}:</span> ${shoe.features.midsole || '-'}</div>
-                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'アウト' : 'Outsole'}:</span> ${shoe.features.outsole || '-'}</div>
-                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'アッパー' : 'Upper'}:</span> ${shoe.features.upper || '-'}</div>
-                                ${shoe.features.cushion ? `<div><span style="color:#fff;">${currentLang === 'ja' ? 'クッション' : 'Cushion'}:</span> ${shoe.features.cushion}</div>` : ''}
-                                ${shoe.features.insole ? `<div><span style="color:#fff;">${currentLang === 'ja' ? 'インソール' : 'Insole'}:</span> ${shoe.features.insole}</div>` : ''}
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'フットシェイプ' : 'FootShape'}:</span> ${getVal(shoe.features.footshape) || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'ミッド' : 'Midsole'}:</span> ${getVal(shoe.features.midsole) || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'アウト' : 'Outsole'}:</span> ${getVal(shoe.features.outsole) || '-'}</div>
+                                <div><span style="color:#fff;">${currentLang === 'ja' ? 'アッパー' : 'Upper'}:</span> ${getVal(shoe.features.upper) || '-'}</div>
+                                ${getVal(shoe.features.cushion) ? `<div><span style="color:#fff;">${currentLang === 'ja' ? 'クッション' : 'Cushion'}:</span> ${getVal(shoe.features.cushion)}</div>` : ''}
+                                ${getVal(shoe.features.insole) ? `<div><span style="color:#fff;">${currentLang === 'ja' ? 'インソール' : 'Insole'}:</span> ${getVal(shoe.features.insole)}</div>` : ''}
                             </div>
                         </div>
                     </div>
@@ -3083,7 +3085,7 @@ function renderResult(shoe) {
 
     const specsHtml = specsToDisplay
         .filter(s => s.value && s.value !== '-')
-        .map(s => `<div>${s.label}: ${s.value}</div>`)
+        .map(s => `<div>${s.label}: ${getVal(s.value)}</div>`)
         .join('');
 
     resultContainer.innerHTML = `
