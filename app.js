@@ -2415,8 +2415,7 @@ function populateSpecsFilters() {
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🦶 ${isJa ? 'フットシェイプ' : 'FootShape'}</div>`;
     footshapes.forEach(fs => {
-        const label = (i18n[currentLang] && i18n[currentLang].footshapes && i18n[currentLang].footshapes[fs]) || fs;
-        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${fs}" data-type="footshape"> ${label}</label>`;
+        html += `<label style="display:block; margin-bottom:4px;"><input type="checkbox" name="spec" value="${fs}" data-type="footshape"> ${fs}</label>`;
     });
 
     html += `<div style="font-weight:bold; font-size:0.85rem; margin: 8px 0 2px; color:#10b981;">🧦 ${isJa ? 'ミッドソール' : 'Midsole'}</div>`;
@@ -2669,7 +2668,7 @@ function renderStaffList() {
                             <div style="font-size:0.75rem; line-height: 1.4; color:var(--text-secondary); margin-top: 8px; border-top: 1px solid #374151; padding-top: 4px; display: flex; flex-wrap: wrap; gap: 4px 12px;">
                                 <div><span style="color:#fff;">重量:</span> ${shoe.features.weight || '-'}</div>
                                 <div><span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'}</div>
-                                <div><span style="color:#fff;">FootShape:</span> ${(i18n[currentLang] && i18n[currentLang].footshapes && i18n[currentLang].footshapes[shoe.features.footshape]) || shoe.features.footshape || '-'}</div>
+                                <div><span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}</div>
                                 <div><span style="color:#fff;">ミッド:</span> ${shoe.features.midsole || '-'}</div>
                                 <div><span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}</div>
                                 <div><span style="color:#fff;">アッパー:</span> ${shoe.features.upper || '-'}</div>
