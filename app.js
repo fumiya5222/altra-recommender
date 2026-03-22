@@ -31,6 +31,7 @@ const i18n = {
         optCatWalking: "🚶 Walking",
         optCatLifestyle: "🏙️ Lifestyle",
         optCatGym: "🏋️ Gym Training",
+        optCatWaterproof: "☔ Waterproof",
         optSortDef: "Sort: Default",
         optSortName: "Name (A-Z)",
         optSortStack: "Stack (Low-High)",
@@ -69,6 +70,7 @@ const i18n = {
         optCatWalking: "🚶 ウォーキング",
         optCatLifestyle: "🏙️ ライフスタイル",
         optCatGym: "🏋️ ジムトレーニング",
+        optCatWaterproof: "☔ 防水シューズ",
         optSortDef: "並び順: デフォルト",
         optSortName: "名前順 (A-Z)",
         optSortStack: "スタックハイト (低い順)",
@@ -84,7 +86,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp6gtxm26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85SP_001-HERO_LEFT_4ffdcf9e-bc08-419f-bae5-c3cf796801a8.jpg?v=1765416363',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 6 GTX is built for natural movement.', ja: 'TIMP 6 GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -104,7 +109,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp6midgtxw26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85U3_001-HERO_LEFT.jpg?v=1765350336',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 6 MID GTX is built for natural movement.', ja: 'TIMP 6 MID GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -124,7 +132,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp6gtxw26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85SP_001-HERO_LEFT.jpg?v=1765350609',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 6 GTX is built for natural movement.', ja: 'TIMP 6 GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -144,7 +155,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp6midgtxm26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85UR_001-HERO_LEFT.jpg?v=1765416695',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 6 MID GTX is built for natural movement.', ja: 'TIMP 6 MID GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -164,7 +178,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/kingmt2w25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85S4_000_L_HERO.jpg?v=1752755418',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'KING MT 2 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたKING MT 2。' },
         stackHeight: '22mm~24mm',
@@ -184,7 +200,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/kingmt2mm25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/kingmt2black1.jpg?v=1741060313',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'KING MT 2 M is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたKING MT 2 M。' },
         stackHeight: '22mm~24mm',
@@ -204,7 +222,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/altrasolsticext3w25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85Q6_000_L_HERO.jpg?v=1754447421',
         gender: 'W',
-        category: { en: 'Gym Training', ja: 'ジムトレーニング' },
+        category: [
+            { en: 'Gym Training', ja: 'ジムトレーニング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'SOLSTICE XT 3 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたSOLSTICE XT 3。' },
         stackHeight: '22mm~24mm',
@@ -224,7 +245,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/altrasolsticext3m25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85Q5_000_L_HERO.jpg?v=1754447172',
         gender: 'M',
-        category: { en: 'Gym Training', ja: 'ジムトレーニング' },
+        category: [
+            { en: 'Gym Training', ja: 'ジムトレーニング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'SOLSTICE XT 3 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたSOLSTICE XT 3。' },
         stackHeight: '22mm~24mm',
@@ -244,7 +268,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/experiencewild3-w26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85UZ_001-HERO_LEFT.jpg?v=1765352548',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'EXPERIENCE WILD 3+ is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたEXPERIENCE WILD 3+。' },
         stackHeight: '28mm',
@@ -264,7 +292,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/experienceflowstw26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RK_161-HERO_LEFT.jpg?v=1765354692',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'EXPERIENCE FLOW ST is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたEXPERIENCE FLOW ST。' },
         stackHeight: '28mm',
@@ -284,7 +316,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/experienceflow3w26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85U7_161-HERO_LEFT.jpg?v=1765355301',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'EXPERIENCE FLOW 3 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたEXPERIENCE FLOW 3。' },
         stackHeight: '28mm',
@@ -304,7 +340,12 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/torin8gtxw25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85QH001-HERO_LEFT.jpg?v=1741261495',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TORIN 8 GTX is built for natural movement.', ja: 'TORIN 8 GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -324,7 +365,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/torin8widew25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85QK_010-HERO_LEFT.jpg?v=1741261413',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TORIN 8 WIDE is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTORIN 8 WIDE。' },
         stackHeight: '28mm',
@@ -344,7 +389,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/torin8w25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85QF_141-HERO_LEFT_71041600-253e-45d0-ad26-9206cf561428.jpg?v=1771838300',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TORIN 8 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTORIN 8。' },
         stackHeight: '28mm',
@@ -364,7 +413,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/experiencewild3-m26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85V0_001-HERO_LEFT.jpg?v=1765421635',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'EXPERIENCE WILD 3+ is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたEXPERIENCE WILD 3+。' },
         stackHeight: '28mm',
@@ -384,7 +437,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/experienceflowstm26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RJ_420-HERO_LEFT.jpg?v=1765422622',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'EXPERIENCE FLOW ST is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたEXPERIENCE FLOW ST。' },
         stackHeight: '28mm',
@@ -404,7 +461,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/experienceflow3m26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85SS_161-HERO_LEFT.jpg?v=1765423329',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'EXPERIENCE FLOW 3 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたEXPERIENCE FLOW 3。' },
         stackHeight: '28mm',
@@ -424,7 +485,12 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/torin8gtxm25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85QG001-HERO_LEFT.jpg?v=1768283136',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TORIN 8 GTX is built for natural movement.', ja: 'TORIN 8 GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -444,7 +510,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/torin8widem25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85QJ_010-HERO_LEFT.jpg?v=1741261190',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TORIN 8 WIDE is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTORIN 8 WIDE。' },
         stackHeight: '28mm',
@@ -464,7 +534,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/torin8m25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85QE_102-HERO_LEFT_036f07f5-afea-4066-b93f-02c3dce3605b.jpg?v=1771838254',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TORIN 8 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTORIN 8。' },
         stackHeight: '28mm',
@@ -484,7 +558,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9wpmidw25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85PU_315-HERO_LEFT_39a28753-d5c8-4a52-a497-114c547c39a8.jpg?v=1770009523',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK 9 WP MID is built for natural movement.', ja: 'LONE PEAK 9 WP MIDは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -504,7 +581,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9wpmidm25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85PK_992-HERO_LEFT_486857ea-47f9-4115-9ace-2da65b692d8e.jpg?v=1770009640',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK 9 WP MID is built for natural movement.', ja: 'LONE PEAK 9 WP MIDは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -524,7 +604,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9-widew25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85S2_000-HERO_LEFT_63ccc44d-d584-407b-8f10-fca394328578.jpg?v=1738024080',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: '万能のレジェンド' },
         desc: { en: 'LONE PEAK 9+ WIDE is built for natural movement.', ja: 'トレイルシューズの原点。ちょっとしたダート走行からスルーハイクまであらゆる用途に最適。' },
         stackHeight: '28mm',
@@ -544,7 +626,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9-w25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RH_223-HERO_LEFT_0d1014f6-e523-4594-be79-e37dad79b39d.jpg?v=1770009727',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: '万能のレジェンド' },
         desc: { en: 'LONE PEAK 9+ is built for natural movement.', ja: 'トレイルシューズの原点。ちょっとしたダート走行からスルーハイクまであらゆる用途に最適。' },
         stackHeight: '28mm',
@@ -564,7 +648,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9-widem25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85S2_000-HERO_LEFT_babb7309-4800-4aee-b2db-abd2ff6b4cec.jpg?v=1738023965',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: '万能のレジェンド' },
         desc: { en: 'LONE PEAK 9+ WIDE is built for natural movement.', ja: 'トレイルシューズの原点。ちょっとしたダート走行からスルーハイクまであらゆる用途に最適。' },
         stackHeight: '28mm',
@@ -584,7 +670,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9-m25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RG_280-HERO_LEFT_95629764-dcdb-469b-b4ec-14ce6f448b89.jpg?v=1770009806',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: '万能のレジェンド' },
         desc: { en: 'LONE PEAK 9+ is built for natural movement.', ja: 'トレイルシューズの原点。ちょっとしたダート走行からスルーハイクまであらゆる用途に最適。' },
         stackHeight: '28mm',
@@ -604,7 +692,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9-gtxw26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85SN_001-HERO_LEFT.jpg?v=1765350084',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK 9+ GTX is built for natural movement.', ja: 'LONE PEAK 9+ GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -624,7 +715,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9-gtxm26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85UT_315-HERO_LEFT.jpg?v=1765417626',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK 9+ GTX is built for natural movement.', ja: 'LONE PEAK 9+ GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -644,7 +738,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9wploww25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/lonepeak9wplow_w_Black_1.jpg?v=1768282861',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK 9 WP LOW is built for natural movement.', ja: 'LONE PEAK 9 WP LOWは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -664,7 +761,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lonepeak9wplowm25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/lonepeak9wplow_m_DustyOlive_1.jpg?v=1768282909',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK 9 WP LOW is built for natural movement.', ja: 'LONE PEAK 9 WP LOWは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -684,7 +784,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lone-peak-all-weather-mid-2-m',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/products/AL0A7R6U_000_L_HERO.jpg?v=1714458599',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK ALL-WTHR MID 2 is built for natural movement.', ja: 'LONE PEAK ALL-WTHR MID 2は防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -704,7 +807,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp5m24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/Mdustyolive.jpg?v=1767940320',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP 5 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP 5。' },
         stackHeight: '30mm+',
@@ -724,7 +829,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lone-peak-7-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A7R7G_330_L_HERO.jpg?v=1724289120',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'LONE PEAK 7 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたLONE PEAK 7。' },
         stackHeight: '28mm',
@@ -744,7 +851,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/lone-peak-all-weather-mid-2-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/products/AL0A7R7J_000_L_HERO.jpg?v=1678633366',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'LONE PEAK ALL-WTHR MID 2 is built for natural movement.', ja: 'LONE PEAK ALL-WTHR MID 2は防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '28mm',
@@ -764,7 +874,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/solstice-xt-2-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/SOLSTICEWBLACK1.png?v=1685338539',
         gender: 'W',
-        category: { en: 'Lifestyle', ja: 'ライフスタイル' },
+        category: [
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'SOLSTICE XT 2 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたSOLSTICE XT 2。' },
         stackHeight: '22mm~24mm',
@@ -784,7 +896,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp6m26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85T6_315-HERO_LEFT.jpg?v=1767956378',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP 6 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP 6。' },
         stackHeight: '30mm+',
@@ -804,7 +918,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp6w26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85US_342-HERO_LEFT.jpg?v=1765353398',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP 6 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP 6。' },
         stackHeight: '30mm+',
@@ -824,7 +940,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympus6ww24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85NK_223-HERO_LEFT_b740ad3d-13e6-457d-a0e0-87a059b55f0c.jpg?v=1767838112',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'OLYMPUS 6 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたOLYMPUS 6。' },
         stackHeight: '30mm+',
@@ -844,7 +962,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympus6m24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85NJ_831-HERO_LEFT_2ec3e75f-dc24-40db-b61d-694090262b88.jpg?v=1767837991',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'OLYMPUS 6 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたOLYMPUS 6。' },
         stackHeight: '30mm+',
@@ -864,7 +984,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/experiencewildww24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/EXWILD_W_redorange.jpg?v=1715657000',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'EXPERIENCE WILD is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたEXPERIENCE WILD。' },
         stackHeight: '28mm',
@@ -884,7 +1008,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympus-5-hike-low-gtx-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/products/OLYMPUS5HIKELOWGTXWGRAYBLACK1.webp?v=1767928122',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'OLYMPUS 5 HIKE LOW GTX is built for natural movement.', ja: 'OLYMPUS 5 HIKE LOW GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -904,7 +1031,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympus-5-hike-mid-gtx-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/products/OLYMPUS5HIKEMIDGTXWSAND1.webp?v=1767928519',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'OLYMPUS 5 HIKE MID GTX is built for natural movement.', ja: 'OLYMPUS 5 HIKE MID GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -924,7 +1054,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/torin7w23fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A82CZ_770_L_HERO.jpg?v=1768283640',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TORIN 7 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTORIN 7。' },
         stackHeight: '28mm',
@@ -944,7 +1078,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/fwdvia2w26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85TW_161-HERO_LEFT.jpg?v=1760527340',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'FWD VIA 2 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたFWD VIA 2。' },
         stackHeight: '30mm+',
@@ -964,7 +1102,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/fwdvia2m26ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85SR_161-HERO_LEFT.jpg?v=1768286231',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'FWD VIA 2 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたFWD VIA 2。' },
         stackHeight: '30mm+',
@@ -984,7 +1126,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympus275w25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RU_161-HERO_LEFT_b489bf2c-7a3d-4ff1-ba97-09d67d9c715b.jpg?v=1766107781',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'OLYMPUS 275 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたOLYMPUS 275。' },
         stackHeight: '30mm+',
@@ -1004,7 +1148,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympus275m25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RT_923-HERO_LEFT.jpg?v=1767924750',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'OLYMPUS 275 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたOLYMPUS 275。' },
         stackHeight: '30mm+',
@@ -1024,7 +1170,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/montblanccarbonxsoarw25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85V1_99L-HERO_LEFT.jpg?v=1751862143',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC CARBON x SOAR is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC CARBON x SOAR。' },
         stackHeight: '30mm+',
@@ -1044,7 +1192,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/montblanccarbonxsoarm25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85TS_99L-HERO_LEFT.jpg?v=1751862122',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC CARBON x SOAR is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC CARBON x SOAR。' },
         stackHeight: '30mm+',
@@ -1064,7 +1214,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/paradigm8m25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RM_102-HERO_LEFT_bb17822e-5495-4cce-beda-2076bd2801af.jpg?v=1769050878',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'PARADIGM 8 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたPARADIGM 8。' },
         stackHeight: '30mm+',
@@ -1084,7 +1238,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/paradigm8w25fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RN_922-HERO_LEFT_b94a68ae-676b-48d4-b4e1-e782314af571.jpg?v=1769050983',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'PARADIGM 8 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたPARADIGM 8。' },
         stackHeight: '30mm+',
@@ -1104,7 +1262,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/montblancspeedw25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85S0_161-HERO_LEFT.jpg?v=1754382962',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC SPEED is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC SPEED。' },
         stackHeight: '30mm+',
@@ -1124,7 +1284,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/montblancspeedm25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85RZ_161-HERO_LEFT.jpg?v=1754378402',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC SPEED is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC SPEED。' },
         stackHeight: '30mm+',
@@ -1144,7 +1306,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/superior7w25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85Q8_923-HERO_LEFT.jpg?v=1768286783',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'SUPERIOR 7 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたSUPERIOR 7。' },
         stackHeight: '22mm~24mm',
@@ -1164,7 +1328,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/superior7m25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85Q7_923-HERO_LEFT.jpg?v=1768286825',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'SUPERIOR 7 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたSUPERIOR 7。' },
         stackHeight: '22mm~24mm',
@@ -1184,7 +1350,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp5boaw25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85QA_262-HERO_LEFT.jpg?v=1768286951',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP 5 BOA is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP 5 BOA。' },
         stackHeight: '30mm+',
@@ -1204,7 +1372,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp5boam25ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85Q9_280-HERO_LEFT.jpg?v=1754377099',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP 5 BOA is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP 5 BOA。' },
         stackHeight: '30mm+',
@@ -1225,7 +1395,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympushikemidgtx2m24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/OLYMPUS6HIKEMIDGTXMBlack_1.jpg?v=1721286962',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'OLYMPUS 6 HIKE MID GTX is built for natural movement.', ja: 'OLYMPUS 6 HIKE MID GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1245,7 +1418,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympushikemidgtx2ww24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/OLYMPUS6HIKEMIDGTXWBlack_1.jpg?v=1719972419',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'OLYMPUS 6 HIKE MID GTX is built for natural movement.', ja: 'OLYMPUS 6 HIKE MID GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1265,7 +1441,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympushikelowgtx2m24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85NM_992-HERO_LEFT_f839c817-d370-45b6-944a-ea917977a4b1.jpg?v=1769051430',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'OLYMPUS 6 HIKE LOW GTX is built for natural movement.', ja: 'OLYMPUS 6 HIKE LOW GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1285,7 +1464,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympushikelowgtx2ww24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/OLYMPUS6HIKELOWGTXWBLACK_1.jpg?v=1721286379',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'OLYMPUS 6 HIKE LOW GTX W is built for natural movement.', ja: 'OLYMPUS 6 HIKE LOW GTX Wは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1305,7 +1487,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp5gtxww24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85Q2_001HERO_LEFT.jpg?v=1768287093',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 5 GTX is built for natural movement.', ja: 'TIMP 5 GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1325,7 +1510,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp5gtxm24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85Q1_001-HERO_LEFT.jpg?v=1754379054',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 5 GTX is built for natural movement.', ja: 'TIMP 5 GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1345,7 +1533,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/vanishcarbon2m24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85PC_431-HERO_LEFT.jpg?v=1758291157',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'VANISH CARBON 2 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたVANISH CARBON 2。' },
         stackHeight: '22mm~24mm',
@@ -1365,7 +1557,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/vanishcarbon2w24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85PD_108-HERO_LEFT.jpg?v=1758291305',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'VANISH CARBON 2 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたVANISH CARBON 2。' },
         stackHeight: '22mm~24mm',
@@ -1385,7 +1581,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/escalante4m24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85NE_232-HERO_LEFT_7b96a8a2-7aa0-4013-bff7-8acfc2598d95.jpg?v=1769049778',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'ESCALANTE 4 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたESCALANTE 4。' },
         stackHeight: '22mm~24mm',
@@ -1405,7 +1605,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/escalante4w24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85NF_442-HERO_LEFT_d52369b6-4bbc-4124-8cf5-23b90d563387.jpg?v=1769049715',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'ESCALANTE 4 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたESCALANTE 4。' },
         stackHeight: '22mm~24mm',
@@ -1425,7 +1629,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/escalanteracer2w24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85NH_108-HERO_LEFT_aaa7fe63-e0cf-4ec3-bb4a-eaa12675ff8f.jpg?v=1769050194',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: '深浦店長のおすすめ' },
         desc: { en: 'ESCALANTE RACER 2 is built for natural movement.', ja: '自然な足裏感覚を最大限に引き出す、深浦店長愛用のスピードモデル。' },
         stackHeight: '22mm~24mm',
@@ -1445,7 +1653,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/escalanteracer2m24fw',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85NG_280-HERO_LEFT_e06cd020-672b-4811-9490-1e722602e728.jpg?v=1769050258',
         gender: 'M',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: '深浦店長のおすすめ' },
         desc: { en: 'ESCALANTE RACER 2 is built for natural movement.', ja: '自然な足裏感覚を最大限に引き出す、深浦店長愛用のスピードモデル。' },
         stackHeight: '22mm~24mm',
@@ -1465,7 +1677,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/montblanccarbonw24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A82PF_108-HERO_LEFT.jpg?v=1754382636',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC CARBON is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC CARBON。' },
         stackHeight: '30mm+',
@@ -1485,7 +1699,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/montblanccarbonm24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A82CA_108-HERO_LEFT.jpg?v=1754378049',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC CARBON is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC CARBON。' },
         stackHeight: '30mm+',
@@ -1505,7 +1721,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timphikerm24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/TIMPHIKERM1.jpg?v=1706839041',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP HIKER is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP HIKER。' },
         stackHeight: '30mm+',
@@ -1525,7 +1743,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timphikerw24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/TIMPHIKERW1.jpg?v=1706838970',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP HIKER is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP HIKER。' },
         stackHeight: '30mm+',
@@ -1545,7 +1765,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timphikergtxm24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/timp5hikergtxMtaupe1_90257d11-fc82-400a-8246-1baa4efd629a.jpg?v=1748954075',
         gender: 'M',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 5 HIKER GTX is built for natural movement.', ja: 'TIMP 5 HIKER GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1565,7 +1788,10 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timphikergtxw24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/TIMPHIKERGTXWblack.jpg?v=1706151873',
         gender: 'W',
-        category: { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+        category: [
+            { en: 'Outdoor Adventure', ja: 'アウトドアアドベンチャー' },
+            { en: 'Waterproof', ja: '防水シューズ' }
+        ],
         tag: { en: 'All-Weather Protection', ja: '全天候対応' },
         desc: { en: 'TIMP 5 HIKER GTX is built for natural movement.', ja: 'TIMP 5 HIKER GTXは防水仕様。ニセコの雪道や雨天のアクティビティに対応。' },
         stackHeight: '30mm+',
@@ -1585,7 +1811,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/timp5w24ss',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/AL0A85P6_921-HERO_LEFT.jpg?v=1756018939',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'TIMP 5 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたTIMP 5。' },
         stackHeight: '30mm+',
@@ -1605,7 +1833,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/vanish-tempo-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/products/VANISHTENPOWOMENSGRAYYELLOW1.webp?v=1714529365',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'VANISH TEMPO is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたVANISH TEMPO。' },
         stackHeight: '22mm~24mm',
@@ -1626,7 +1858,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/olympus-5-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/98_5.jpg?v=1720143670',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'OLYMPUS 5 is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたOLYMPUS 5。' },
         stackHeight: '30mm+',
@@ -1647,7 +1881,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/mont-blanc-boa-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/files/MONTBLANCBOAw_d83f4678-7c5b-47e8-a07e-c28445f11c3b.jpg?v=1721698348',
         gender: 'W',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC BOA is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC BOA。' },
         stackHeight: '30mm+',
@@ -1667,7 +1903,9 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/mont-blanc-boa-m',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/products/AL0A7R6E_456_L_HERO.jpg?v=1767927677',
         gender: 'M',
-        category: { en: 'Trail Running', ja: 'トレイルランニング' },
+        category: [
+            { en: 'Trail Running', ja: 'トレイルランニング' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'MONT BLANC BOA is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたMONT BLANC BOA。' },
         stackHeight: '30mm+',
@@ -1687,7 +1925,11 @@ const shoes = [
         url: 'https://altrafootwear.jp/products/vanish-carbon-w',
         image: 'https://cdn.shopify.com/s/files/1/0560/0283/8685/products/AL0A548F_070_R_HERO.jpg?v=1714462095',
         gender: 'W',
-        category: { en: 'Road Running', ja: 'ロードランニング' },
+        category: [
+            { en: 'Road Running', ja: 'ロードランニング' },
+            { en: 'Walking', ja: 'ウォーキング' },
+            { en: 'Lifestyle', ja: 'ライフスタイル' }
+        ],
         tag: { en: 'Altra Performance', ja: 'アルトラ・ランニング' },
         desc: { en: 'VANISH CARBON is built for natural movement.', ja: 'アルトラのゼロドロップと広々としたトゥボックスを備えたVANISH CARBON。' },
         stackHeight: '22mm~24mm',
@@ -1852,6 +2094,7 @@ function setLanguage(lang) {
     setI18n('opt-cat-walking', 'optCatWalking');
     setI18n('opt-cat-lifestyle', 'optCatLifestyle');
     setI18n('opt-cat-gym', 'optCatGym');
+    setI18n('opt-cat-waterproof', 'optCatWaterproof');
     setI18n('opt-sort-def', 'optSortDef');
     setI18n('opt-sort-name', 'optSortName');
     setI18n('opt-sort-stack', 'optSortStack');
@@ -1890,12 +2133,12 @@ function renderStaffList() {
     let sortVal = document.getElementById('staff-sort')?.value || 'default';
 
     let filteredShoes = shoes.filter(shoe => {
-        let matchSearch = shoe.name.toLowerCase().includes(searchTxt) || shoe.category[currentLang].toLowerCase().includes(searchTxt);
+        let matchSearch = shoe.name.toLowerCase().includes(searchTxt) || shoe.category.some(c => c[currentLang].toLowerCase().includes(searchTxt));
         let matchGender = genderVal === 'ALL' || shoe.gender === genderVal || shoe.gender === 'U';
         
         let matchCat = true;
         if (catVal !== 'ALL') {
-            matchCat = shoe.category['en'].includes(catVal);
+            matchCat = shoe.category.some(c => c.en === catVal);
         }
         
         return matchSearch && matchGender && matchCat;
@@ -1942,7 +2185,7 @@ function renderStaffList() {
                         </div>
                     </div>
                 </td>
-                <td><span style="font-size:0.85rem;">${getCatEmoji(shoe.category['en'])}${shoe.category[currentLang]}</span></td>
+                <td><span style="font-size:0.85rem;">${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' / ')}</span></td>
                 <td><span style="font-size:0.8rem; color:var(--text-secondary);">Mid:</span> <span style="font-size:0.85rem;">${shoe.features.midsole}</span><br><span style="font-size:0.8rem; color:var(--text-secondary);">Out:</span> <span style="font-size:0.85rem;">${shoe.features.outsole}</span></td>
                 <td><span style="font-size:0.8rem; color:var(--text-secondary);">Stack:</span> <span style="font-size:0.85rem;">${shoe.stackHeight}</span> ${wpBadge}<br><span style="font-size:0.75rem;color:var(--text-secondary);">🎨 ${shoe.features.colors[currentLang]}</span></td>
                 <td style="font-size:0.85rem; color: #d1d5db;">${shoe.features.endorsedBy[currentLang]}</td>
@@ -2088,15 +2331,15 @@ function calculateResults() {
         
         // Extra scoring for Walking / Lifestyle / Gym based on category
         if (userAnswers.terrain === 'walking') {
-            if (shoe.category['en'] === 'Walking') score += 10;
-            else if (shoe.category['en'] === 'Road Running') score += 3;
+            if (shoe.category.some(c => c.en === 'Walking')) score += 10;
+            else if (shoe.category.some(c => c.en === 'Road Running')) score += 3;
         }
         if (userAnswers.terrain === 'lifestyle') {
-            if (shoe.category['en'] === 'Lifestyle') score += 10;
-            else if (shoe.category['en'] === 'Road Running') score += 2;
+            if (shoe.category.some(c => c.en === 'Lifestyle')) score += 10;
+            else if (shoe.category.some(c => c.en === 'Road Running')) score += 2;
         }
         if (userAnswers.terrain === 'gym') {
-            if (shoe.category['en'] === 'Gym Training') score += 10;
+            if (shoe.category.some(c => c.en === 'Gym Training')) score += 10;
         }
         
         if (shoe.attributes.support.includes(userAnswers.support)) {
@@ -2117,7 +2360,7 @@ function calculateResults() {
 }
 
 function renderResult(shoe) {
-    let catEmoji = getCatEmoji(shoe.category['en']);
+    let catEmoji = getCatEmoji(shoe.category[0].en);
     let wpText = shoe.features.waterproof ? `<span style="color:#93c5fd; font-weight:bold;">${shoe.features.waterproof}</span>` : i18n[currentLang].wpNo;
     
     let imageHtml = shoe.image 
@@ -2129,7 +2372,7 @@ function renderResult(shoe) {
             ${imageHtml}
         </div>
         <div class="result-info">
-            <div class="shoe-tag">${catEmoji}${shoe.category[currentLang]} • ${shoe.tag[currentLang]}</div>
+            <div class="shoe-tag">${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' • ')} • ${shoe.tag[currentLang]}</div>
             <h2 class="shoe-name">${shoe.name} <a href="${shoe.url}" target="_blank" style="font-size:1.5rem; text-decoration:none;" title="${i18n[currentLang].officialLink}">🛒</a></h2>
             <p class="shoe-desc">${shoe.desc[currentLang]}</p>
             <div class="specs-grid" style="margin-bottom: 2rem;">
