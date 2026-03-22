@@ -18,9 +18,9 @@ const i18n = {
         staffTitle: "Staff Shoe Database",
         thName: "Model",
         thCategory: "Category",
-        thSole: "Midsole / Outsole",
-        thSpecs: "Specs",
-        thEndorsed: "Endorsed By",
+        thSpecsTitle: "Specifications",
+        thDesc: "Description",
+        
         optGenderAll: "All Genders",
         optGenderM: "Men's",
         optGenderW: "Women's",
@@ -57,9 +57,9 @@ const i18n = {
         staffTitle: "店員用 搭載機能データベース",
         thName: "モデル名",
         thCategory: "カテゴリー",
-        thSole: "ミッドソール / アウトソール",
-        thSpecs: "スタック / 特殊素材",
-        thEndorsed: "愛用者・おすすめ層",
+        thSpecsTitle: "仕様",
+        thDesc: "説明",
+        
         optGenderAll: "すべての性別",
         optGenderM: "メンズ",
         optGenderW: "ウィメンズ",
@@ -2159,16 +2159,15 @@ function renderStaffList() {
             <tr>
                 <th>${i18n[currentLang].thName}</th>
                 <th>${i18n[currentLang].thCategory}</th>
-                <th>${i18n[currentLang].thSole}</th>
-                <th>${i18n[currentLang].thSpecs}</th>
-                <th>${i18n[currentLang].thEndorsed}</th>
+                <th>${i18n[currentLang].thSpecsTitle}</th>
+                <th>${i18n[currentLang].thDesc}</th>
             </tr>
         </thead>
         <tbody>
     `;
 
     if (filteredShoes.length === 0) {
-        html += `<tr><td colspan="5" style="text-align:center; padding: 2rem;">No matching shoes found.</td></tr>`;
+        html += `<tr><td colspan="4" style="text-align:center; padding: 2rem;">No matching shoes found.</td></tr>`;
     }
 
     filteredShoes.forEach(shoe => {
@@ -2186,10 +2185,21 @@ function renderStaffList() {
                         </div>
                     </div>
                 </td>
-                <td><span style="font-size:0.85rem;">${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join(' / ')}</span></td>
-                <td><span style="font-size:0.8rem; color:var(--text-secondary);">Mid:</span> <span style="font-size:0.85rem;">${shoe.features.midsole}</span><br><span style="font-size:0.8rem; color:var(--text-secondary);">Out:</span> <span style="font-size:0.85rem;">${shoe.features.outsole}</span></td>
-                <td><span style="font-size:0.8rem; color:var(--text-secondary);">Stack:</span> <span style="font-size:0.85rem;">${shoe.stackHeight}</span> ${wpBadge}<br><span style="font-size:0.75rem;color:var(--text-secondary);">🎨 ${shoe.features.colors[currentLang]}</span></td>
-                <td style="font-size:0.85rem; color: #d1d5db;">${shoe.features.endorsedBy[currentLang]}</td>
+                <td><span style="font-size:0.85rem;">${shoe.category.map(c => getCatEmoji(c.en) + c[currentLang]).join('<br>')}</span></td>
+                <td>
+                    <div style="font-size:0.8rem; line-height: 1.5; color:var(--text-secondary);">
+                        <span style="color:#fff;">重量:</span> ${shoe.features.weight || '-'}<br>
+                        <span style="color:#fff;">ミッド:</span> ${shoe.features.midsole || '-'}<br>
+                        <span style="color:#fff;">アウト:</span> ${shoe.features.outsole || '-'}<br>
+                        <span style="color:#fff;">スタック:</span> ${shoe.stackHeight || '-'} ${wpBadge}<br>
+                        <span style="color:#fff;">アッパー:</span> <span style="font-size:0.75rem;">${shoe.features.upper || '-'}</span><br>
+                        <span style="color:#fff;">FootShape:</span> ${shoe.features.footshape || '-'}
+                    </div>
+                </td>
+                <td style="vertical-align:top; max-width:250px;">
+                    <p style="font-size:0.85rem; margin:0 0 8px; color:#d1d5db; line-height: 1.4;">${shoe.features.summary || shoe.desc[currentLang]}</p>
+                    <span style="font-size:0.75rem;color:var(--text-secondary);">🎨 ${shoe.features.colors[currentLang]}</span>
+                </td>
             </tr>
         `;
     });
